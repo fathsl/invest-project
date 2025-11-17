@@ -1,0 +1,40 @@
+{
+  "app_title": "Invest Layihəsi",
+  "welcome": "Xoş gəlmisiniz",
+  "change_language": "Dili dəyiş",
+  "counter": "{{count}} dəfə kliklədiniz",
+  "nav": {
+    "home": "Ana səhifə",
+    "services": "Xidmətlər",
+    "contact": "Əlaqə"
+  },
+  "pages": {
+    "home": { "title": "Ana səhifə", "body": "Bu ana səhifədir." },
+    "services": { "title": "Xidmətlər", "body": "Bunlar bizim xidmətlərimizdir." },
+    "contact": { "title": "Əlaqə", "body": "Bizimlə əlaqə saxlayın." }
+  },
+  "home": {
+    "hero": {
+      "badge": "10,000+ investor tərəfindən etibar edilir",
+      "title_main": "Ağıllı İnvestisiyalar",
+      "title_highlight": "Təhlükəsiz Gələcək",
+      "subtitle": "Maliyyə məqsədlərinizə uyğun strateji investisiya həlləri ilə sərvətinizi artırmağa kömək edirik.",
+      "cta_primary": "İnvestisiyaya Başla",
+      "cta_secondary": "Daha çox öyrən"
+    },
+    "why": {
+      "title": "Niyə Invest?",
+      "subtitle": "Məqsədlərinizə çatmaq üçün ekspertiza, texnologiya və fərdi xidməti birləşdiririk",
+      "cards": {
+        "analysis": { "title": "Ekspert Analizi", "body": "Təcrübəli analitiklərimiz gəlirinizi maksimuma çatdırmaq üçün məlumat yönümlü baxışlar təqdim edir." },
+        "secure": { "title": "Təhlükəsiz Platforma", "body": "Bank səviyyəli təhlükəsizlik investisiyalarınızı və şəxsi məlumatlarınızı qoruyur." },
+        "support": { "title": "Fərdi Dəstək", "body": "Hər bir investisiya qərarında 24/7 dəstək verən məsləhətçilər." }
+      }
+    },
+    "cta": {
+      "title": "İnvestisiya Səyahətinə Hazırsınız?",
+      "subtitle": "Maliyyə gələcəyini bizə etibar edən minlərlə uğurlu investora qoşulun. Dəqiqələr içində başlayın.",
+      "button": "Hesab Aç"
+    }
+  }
+}

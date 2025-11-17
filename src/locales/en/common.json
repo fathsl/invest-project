@@ -1,0 +1,49 @@
+{
+  "app_title": "Invest Project",
+  "welcome": "Welcome",
+  "change_language": "Change language",
+  "counter": "You clicked {{count}} times",
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "pages": {
+    "home": { "title": "Home", "body": "This is the home page." },
+    "services": { "title": "Services", "body": "These are our services." },
+    "contact": { "title": "Contact", "body": "Get in touch with us." }
+  },
+  "home": {
+    "hero": {
+      "badge": "Trusted by 10,000+ Investors",
+      "title_main": "Smart Investments",
+      "title_highlight": "Secure Future",
+      "subtitle": "We help you build wealth through strategic investment solutions tailored to your financial goals. Experience growth with confidence.",
+      "cta_primary": "Start Investing",
+      "cta_secondary": "Learn More"
+    },
+    "why": {
+      "title": "Why Choose Invest?",
+      "subtitle": "We combine expertise, technology, and personalized service to help you achieve your financial goals",
+      "cards": {
+        "analysis": {
+          "title": "Expert Analysis",
+          "body": "Our team of seasoned analysts provides data-driven insights to maximize your investment returns."
+        },
+        "secure": {
+          "title": "Secure Platform",
+          "body": "Bank-level security ensures your investments and personal data are always protected."
+        },
+        "support": {
+          "title": "Personal Support",
+          "body": "Dedicated advisors available 24/7 to guide you through every investment decision."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Your Investment Journey?",
+      "subtitle": "Join thousands of successful investors who trust us with their financial future. Get started in minutes with our simple onboarding process.",
+      "button": "Open an Account"
+    }
+  }
+}

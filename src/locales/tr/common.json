@@ -1,0 +1,40 @@
+{
+  "app_title": "Yatırım Projesi",
+  "welcome": "Hoşgeldiniz",
+  "change_language": "Dili değiştir",
+  "counter": "{{count}} kez tıkladınız",
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "contact": "İletişim"
+  },
+  "pages": {
+    "home": { "title": "Ana Sayfa", "body": "Burası ana sayfadır." },
+    "services": { "title": "Hizmetler", "body": "Bunlar hizmetlerimizdir." },
+    "contact": { "title": "İletişim", "body": "Bizimle iletişime geçin." }
+  },
+  "home": {
+    "hero": {
+      "badge": "10.000+ yatırımcı tarafından güveniliyor",
+      "title_main": "Akıllı Yatırımlar",
+      "title_highlight": "Güvenli Gelecek",
+      "subtitle": "Mali hedeflerinize uygun stratejik yatırım çözümleriyle servetinizi büyütmenize yardımcı oluyoruz.",
+      "cta_primary": "Yatırıma Başla",
+      "cta_secondary": "Daha Fazla Bilgi"
+    },
+    "why": {
+      "title": "Neden Invest?",
+      "subtitle": "Hedeflerinize ulaşmanız için uzmanlık, teknoloji ve kişisel hizmeti bir araya getiriyoruz",
+      "cards": {
+        "analysis": { "title": "Uzman Analiz", "body": "Deneyimli analistlerimiz getirinizi en üst düzeye çıkarmak için veri odaklı içgörüler sunar." },
+        "secure": { "title": "Güvenli Platform", "body": "Banka düzeyinde güvenlik yatırımlarınızı ve kişisel verilerinizi korur." },
+        "support": { "title": "Kişisel Destek", "body": "Yatırım kararlarınızda 7/24 yanınızda uzman danışmanlar." }
+      }
+    },
+    "cta": {
+      "title": "Yatırım Yolculuğuna Hazır mısın?",
+      "subtitle": "Geleceğini bize emanet eden binlerce başarılı yatırımcıya katıl. Dakikalar içinde başla.",
+      "button": "Hesap Aç"
+    }
+  }
+}
