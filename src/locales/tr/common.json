@@ -6,12 +6,24 @@
   "nav": {
     "home": "Ana Sayfa",
     "services": "Hizmetler",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "aboutUs": "Hakkımızda",
+    "references": "Referanslar",
+    "workingModels": "Çalışma Modelleri"
   },
   "pages": {
-    "home": { "title": "Ana Sayfa", "body": "Burası ana sayfadır." },
-    "services": { "title": "Hizmetler", "body": "Bunlar hizmetlerimizdir." },
-    "contact": { "title": "İletişim", "body": "Bizimle iletişime geçin." }
+    "home": {
+      "title": "Ana Sayfa",
+      "body": "Burası ana sayfadır."
+    },
+    "services": {
+      "title": "Hizmetler",
+      "body": "Bunlar hizmetlerimizdir."
+    },
+    "contact": {
+      "title": "İletişim",
+      "body": "Bizimle iletişime geçin."
+    }
   },
   "home": {
     "hero": {
@@ -26,9 +38,18 @@
       "title": "Neden Invest?",
       "subtitle": "Hedeflerinize ulaşmanız için uzmanlık, teknoloji ve kişisel hizmeti bir araya getiriyoruz",
       "cards": {
-        "analysis": { "title": "Uzman Analiz", "body": "Deneyimli analistlerimiz getirinizi en üst düzeye çıkarmak için veri odaklı içgörüler sunar." },
-        "secure": { "title": "Güvenli Platform", "body": "Banka düzeyinde güvenlik yatırımlarınızı ve kişisel verilerinizi korur." },
-        "support": { "title": "Kişisel Destek", "body": "Yatırım kararlarınızda 7/24 yanınızda uzman danışmanlar." }
+        "analysis": {
+          "title": "Uzman Analiz",
+          "body": "Deneyimli analistlerimiz getirinizi en üst düzeye çıkarmak için veri odaklı içgörüler sunar."
+        },
+        "secure": {
+          "title": "Güvenli Platform",
+          "body": "Banka düzeyinde güvenlik yatırımlarınızı ve kişisel verilerinizi korur."
+        },
+        "support": {
+          "title": "Kişisel Destek",
+          "body": "Yatırım kararlarınızda 7/24 yanınızda uzman danışmanlar."
+        }
       }
     },
     "cta": {

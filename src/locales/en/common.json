@@ -6,12 +6,24 @@
   "nav": {
     "home": "Home",
     "services": "Services",
-    "contact": "Contact"
+    "contact": "Contact",
+    "aboutUs": "About Us",
+    "references": "References",
+    "workingModels": "Working Models"
   },
   "pages": {
-    "home": { "title": "Home", "body": "This is the home page." },
-    "services": { "title": "Services", "body": "These are our services." },
-    "contact": { "title": "Contact", "body": "Get in touch with us." }
+    "home": {
+      "title": "Home",
+      "body": "This is the home page."
+    },
+    "services": {
+      "title": "Services",
+      "body": "These are our services."
+    },
+    "contact": {
+      "title": "Contact",
+      "body": "Get in touch with us."
+    }
   },
   "home": {
     "hero": {

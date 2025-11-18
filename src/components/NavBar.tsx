@@ -20,9 +20,10 @@ export default function NavBar() {
   const navLinks = [
     { name: t('nav.home', { defaultValue: 'Home' }), to: '/' },
     { name: t('nav.services', { defaultValue: 'Services' }), to: '/services' },
-    { name: t('nav.contact', { defaultValue: 'Contact' }), to: '/contact' },
+    { name: t('nav.references', { defaultValue: 'References' }), to: '/references' },
+    { name: t('nav.workingModels', { defaultValue: 'Working Models' }), to: '/workingModels' },
+    { name: t('nav.aboutUs', { defaultValue: 'About Us' }), to: '/about' },
   ];
-
 
   return (
     <nav 
