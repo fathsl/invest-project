@@ -57,5 +57,22 @@
       "subtitle": "Join thousands of successful investors who trust us with their financial future. Get started in minutes with our simple onboarding process.",
       "button": "Open an Account"
     }
+  },
+  "services": {
+    "Market Analysis and Research": "Market Analysis and Research",
+    "Market Analysis and Research Description": "We guide your business in the right direction through detailed analysis of target markets, competitive environment assessment and opportunity identification.",
+    "Market Analysis and Research Features 1": "Market Size Analysis",
+    "Market Analysis and Research Features 2": "Competitive Mapping",
+    "Market Analysis and Research Features 3": "Consumer Behavior Analysis",
+    "Entry Strategy Development": "Entry Strategy Development",
+    "Entry Strategy Development Description": "Business-specific, risk-minimized and sustainable market entry strategies.",
+    "Entry Strategy Development Features 1": "Strategy Planning",
+    "Entry Strategy Development Features 2": "Risk Analysis",
+    "Entry Strategy Development Features 3": "Roadmap Creation",
+    "Business Partner Sourcing": "Business Partner Sourcing",
+    "Business Partner Sourcing Description": "Identification and connection with reliable distributors, suppliers and business partners.",
+    "Business Partner Sourcing Features 1": "Distributor Network",
+    "Business Partner Sourcing Features 2": "Supplier Evaluation",
+    "Business Partner Sourcing Features 3": "Partnership Negotiations"
   }
 }

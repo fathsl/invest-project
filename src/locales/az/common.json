@@ -57,5 +57,22 @@
       "subtitle": "Maliyyə gələcəyini bizə etibar edən minlərlə uğurlu investora qoşulun. Dəqiqələr içində başlayın.",
       "button": "Hesab Aç"
     }
+  },
+  "services": {
+    "Market Analysis and Research": "Bazar təhlili və tədqiqat",
+    "Market Analysis and Research Description": "Hədəf bazarlarının ətraflı təhlili, rəqabət mühitinin qiymətləndirilməsi və şəxsiyyətinin müəyyənləşdirilməsi yolu ilə işinizi düzgün istiqamətə yönəldirik.",
+    "Market Analysis and Research Features 1": "Bazar ölçüsü təhlili",
+    "Market Analysis and Research Features 2": "Rəqabətli Xəritəçəkmə",
+    "Market Analysis and Research Features 3": "İstehlakçı davranış təhlili",
+    "Entry Strategy Development": "Giriş strategiyasının inkişafı",
+    "Entry Strategy Development Description": "Biznesə xas, risklərin minimuma endirilməsi və davamlı bazar giriş strategiyaları.",
+    "Entry Strategy Development Features 1": "Strategiya planlaşdırması",
+    "Entry Strategy Development Features 2": "Risk təhlili",
+    "Entry Strategy Development Features 3": "Yol xəritəsi yaradıcılığı",
+    "Business Partner Sourcing": "İş ortağı qaynaq",
+    "Business Partner Sourcing Description": "Etibarlı distribyutorlar, təchizatçılar və biznes tərəfdaşları ilə eyniləşdirmə və əlaqə.",
+    "Business Partner Sourcing Features 1": "Distribyutor şəbəkəsi",
+    "Business Partner Sourcing Features 2": "Təchizatçı qiymətləndirməsi",
+    "Business Partner Sourcing Features 3": "Tərəfdaşlıq danışıqları"
   }
 }

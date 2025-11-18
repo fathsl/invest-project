@@ -57,5 +57,22 @@
       "subtitle": "Присоединяйтесь к тысячам успешных инвесторов, которые доверяют нам своё будущее. Начните за минуты.",
       "button": "Открыть счёт"
     }
+  },
+  "services": {
+    "Market Analysis and Research": "Анализ рынка и исследования",
+    "Market Analysis and Research Description": "Мы направим ваш бизнес в правильном направлении посредством детального анализа целевых рынков, оценки конкурентной среды и выявления возможностей.",
+    "Market Analysis and Research Features 1": "Анализ размера рынка",
+    "Market Analysis and Research Features 2": "Конкурентное картографирование",
+    "Market Analysis and Research Features 3": "Анализ поведения потребителей",
+    "Entry Strategy Development": "Разработка стратегии входа",
+    "Entry Strategy Development Description": "Специфические для бизнеса, минимизирующие риски и устойчивые стратегии выхода на рынок.",
+    "Entry Strategy Development Features 1": "Стратегическое планирование",
+    "Entry Strategy Development Features 2": "Анализ рисков",
+    "Entry Strategy Development Features 3": "Создание дорожной карты",
+    "Business Partner Sourcing": "Поиск деловых партнеров",
+    "Business Partner Sourcing Description": "Выявление и связь с надежными дистрибьюторами, поставщиками и деловыми партнерами.",
+    "Business Partner Sourcing Features 1": "Дистрибьюторская сеть",
+    "Business Partner Sourcing Features 2": "Оценка поставщика",
+    "Business Partner Sourcing Features 3": "Переговоры о партнерстве"
   }
 }

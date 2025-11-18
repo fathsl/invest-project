@@ -8,138 +8,242 @@ export default function Services() {
   const services = [
     {
       id: 1,
-      icon: "📊",
-      title: "Pazar Analizi ve Araştırma",
-      titleEn: "Market Analysis & Research",
+      image:
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+      title: t("services.Market Analysis and Research"),
       description:
-        "Hedef pazarların detaylı analizi, rekabet ortamı değerlendirmesi ve fırsat tespiti.",
-      descriptionEn:
-        "Detailed analysis of target markets, competitive environment assessment and opportunity identification.",
+         t("services.Market Analysis and Research Description"),
+      features: [
+        t("services.Market Analysis and Research Features 1"),
+        t("services.Market Analysis and Research Features 2"),
+        t("services.Market Analysis and Research Features 3"),
+      ],
     },
     {
       id: 2,
-      icon: "🎯",
-      title: "Giriş Stratejisi Geliştirme",
-      titleEn: "Entry Strategy Development",
+      image:
+        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+      title: t("services.Entry Strategy Development"),
       description:
-        "İşletmenize özel, risk minimizasyonlu ve sürdürülebilir pazar giriş stratejileri.",
-      descriptionEn:
-        "Business-specific, risk-minimized and sustainable market entry strategies.",
+         t("services.Entry Strategy Development Description"),
+      features: [
+        t("services.Entry Strategy Development Features 1"),
+        t("services.Entry Strategy Development Features 2"),
+        t("services.Entry Strategy Development Features 3"),
+      ],
     },
     {
       id: 3,
-      icon: "🤝",
-      title: "İş Ortağı Bulma",
-      titleEn: "Business Partner Sourcing",
+      image:
+        "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80",
+      title: t("services.Business Partner Sourcing"),
       description:
-        "Güvenilir distribütör, tedarikçi ve iş ortaklarının tespiti ve bağlantı kurulması.",
-      descriptionEn:
-        "Identification and connection with reliable distributors, suppliers and business partners.",
+         t("services.Business Partner Sourcing Description"),
+      features: [
+        t("services.Business Partner Sourcing Features 1"),
+        t("services.Business Partner Sourcing Features 2"),
+        t("services.Business Partner Sourcing Features 3"),
+      ],
     },
     {
       id: 4,
-      icon: "📋",
-      title: "Uyumluluk ve Düzenleme Danışmanlığı",
-      titleEn: "Compliance & Regulatory Consulting",
+      image:
+        "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+      title: t("services.Compliance & Regulatory Consulting"),
       description:
-        "Yerel yasal düzenlemeler, sertifikasyonlar ve uyum süreçlerinde rehberlik.",
-      descriptionEn:
-        "Guidance on local regulations, certifications and compliance processes.",
+         t("services.Compliance & Regulatory Consulting Description"),
+      features: [
+        "Yasal Uyumluluk",
+        "Sertifikasyon Desteği",
+        "Gümrük Danışmanlığı",
+      ],
     },
     {
       id: 5,
-      icon: "🌍",
-      title: "Saha Desteği",
-      titleEn: "Field Support",
+      image:
+        "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80",
+      title: t("services.Field Support"),
       description:
-        "Yurt dışı ziyaretler, fuarlar ve müşteri görüşmelerinde profesyonel destek.",
-      descriptionEn:
-        "Professional support during overseas visits, trade fairs and client meetings.",
+         t("services.Field Support Description"),
+      features: ["Fuar Organizasyonu", "B2B Görüşmeleri", "Yerel Rehberlik"],
     },
     {
       id: 6,
-      icon: "📈",
-      title: "Büyüme ve Ölçeklendirme",
-      titleEn: "Growth & Scaling",
+      image:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+      title: t("services.Growth & Scaling"),
       description:
-        "Mevcut pazarlarda genişleme ve yeni bölgelere açılma stratejileri.",
-      descriptionEn:
-        "Expansion strategies in existing markets and entry into new regions.",
+         t("services.Growth & Scaling Description"),
+      features: [
+        "Büyüme Stratejisi",
+        "Operasyonel Verimlilik",
+        "Çok Bölgeli Yönetim",
+      ],
     },
   ];
+
   return (
-    <section className="min-h-screen bg-slate-900 text-white py-20 px-6 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
-        <div
-          className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400 rounded-full filter blur-3xl animate-pulse"
-          style={{ animationDelay: "1s" }}
-        ></div>
-      </div>
+    <section className="min-h-screen bg-white py-20 px-6 relative overflow-hidden">
+      <div
+        className="absolute inset-0 opacity-[0.02]"
+        style={{
+          backgroundImage: `radial-gradient(circle at 1px 1px, rgb(30, 64, 175) 1px, transparent 0)`,
+          backgroundSize: "40px 40px",
+        }}
+      ></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-16 animate-fadeIn">
-          <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+        <div className="text-center mb-20 animate-fadeIn">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-slate-900">
             {t("pages.services.title") || "Hizmetlerimiz"}
-          </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          </h1>
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
             Uluslararası pazarlara açılmak isteyen işletmeler için strateji,
             analiz ve saha desteği sunan profesyonel danışmanlık hizmetleri
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {services.map((service, index) => (
             <div
               key={service.id}
-              className="group relative bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20"
+              className="group relative bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-blue-300 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
               style={{
                 animation: `slideUp 0.6s ease-out ${index * 0.1}s both`,
               }}
               onMouseEnter={() => setHoveredService(service.id)}
               onMouseLeave={() => setHoveredService(null)}
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-blue-600/0 group-hover:from-blue-500/10 group-hover:to-blue-600/5 rounded-2xl transition-all duration-500"></div>
+              <div className="relative h-56 overflow-hidden bg-slate-100">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
 
-              <div className="relative mb-6">
-                <div className="text-6xl transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                  {service.icon}
+                <div className="absolute top-4 right-4 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
+                  {service.id}
                 </div>
-                <div className="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-to-r from-blue-500 to-transparent transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
               </div>
 
-              <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-blue-300 transition-colors duration-300">
-                {service.title}
-              </h3>
-              <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
-                {service.description}
-              </p>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-slate-900 group-hover:text-blue-600 transition-colors duration-300">
+                  {service.title}
+                </h3>
+                <p className="text-slate-600 leading-relaxed mb-4">
+                  {service.description}
+                </p>
 
-              <div className="absolute bottom-8 right-8 w-8 h-8 rounded-full border-2 border-blue-500 flex items-center justify-center opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-500">
-                <span className="text-blue-500 text-xl">→</span>
+                <ul className="space-y-2">
+                  {service.features.map((feature, idx) => (
+                    <li
+                      key={idx}
+                      className="flex items-center text-sm text-slate-500"
+                    >
+                      <svg
+                        className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-6 pt-4 border-t border-slate-100">
+                  <button className="text-blue-600 font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                    Detaylı Bilgi
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
+
+              <div className="absolute inset-0 border-2 border-blue-600 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300 pointer-events-none"></div>
             </div>
           ))}
         </div>
 
         <div
-          className="mt-20 text-center animate-fadeIn"
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20 animate-fadeIn"
+          style={{ animationDelay: "0.6s" }}
+        >
+          {[
+            { number: "50+", label: "Başarılı Proje" },
+            { number: "30+", label: "Ülke Deneyimi" },
+            { number: "100%", label: "Müşteri Memnuniyeti" },
+            { number: "15+", label: "Yıllık Deneyim" },
+          ].map((stat, idx) => (
+            <div
+              key={idx}
+              className="text-center p-6 bg-slate-50 rounded-xl border border-slate-200"
+            >
+              <div className="text-4xl font-bold text-blue-600 mb-2">
+                {stat.number}
+              </div>
+              <div className="text-slate-600 font-medium">{stat.label}</div>
+            </div>
+          ))}
+        </div>
+
+        <div
+          className="text-center animate-fadeIn"
           style={{ animationDelay: "0.8s" }}
         >
-          <div className="bg-gradient-to-r from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-2xl p-12 border border-slate-700/50 max-w-4xl mx-auto">
-            <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
-              Uluslararası Pazarlara Hazır mısınız?
-            </h3>
-            <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-              Doğru pazara, doğru modelle ve minimum riskle giriş yapmanız için
-              profesyonel destek sunuyoruz.
-            </p>
-            <button className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/50 inline-flex items-center gap-2">
-              İletişime Geçin
-              <span className="transform group-hover:translate-x-1 transition-transform">
-                →
-              </span>
-            </button>
+          <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-12 shadow-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600 rounded-full filter blur-3xl opacity-20"></div>
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl opacity-20"></div>
+
+            <div className="relative z-10">
+              <h2 className="text-4xl font-bold mb-4 text-white">
+                Uluslararası Pazarlara Hazır mısınız?
+              </h2>
+              <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
+                Doğru pazara, doğru modelle ve minimum riskle giriş yapmanız
+                için profesyonel destek sunuyoruz.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2">
+                  Ücretsiz Danışmanlık
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </button>
+                <button className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 backdrop-blur-sm">
+                  İletişime Geçin
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

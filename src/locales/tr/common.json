@@ -57,5 +57,22 @@
       "subtitle": "Geleceğini bize emanet eden binlerce başarılı yatırımcıya katıl. Dakikalar içinde başla.",
       "button": "Hesap Aç"
     }
+  },
+  "services": {
+    "Market Analysis and Research": "Pazar Analizi ve Araştırması",
+    "Market Analysis and Research Description": "Hedef pazarların detaylı analizi, rekabet ortamı değerlendirmesi ve fırsat tespiti ile işletmenizi doğru yöne yönlendiriyoruz.",
+    "Market Analysis and Research Features 1": "Pazar Büyüklüğü Analizi",
+    "Market Analysis and Research Features 2": "Rekabetçi Haritalama",
+    "Market Analysis and Research Features 3": "Tüketici Davranış Analizi",
+    "Entry Strategy Development": "Giriş Stratejisi Geliştirme",
+    "Entry Strategy Development Description": "İşe özel, riski en aza indirilmiş ve sürdürülebilir pazara giriş stratejileri.",
+    "Entry Strategy Development Features 1": "Strateji Planlama",
+    "Entry Strategy Development Features 2": "Risk Analizi",
+    "Entry Strategy Development Features 3": "Yol Haritası Oluşturma",
+    "Business Partner Sourcing": "İş Ortağı Kaynak Kullanımı",
+    "Business Partner Sourcing Description": "Güvenilir distribütörler, tedarikçiler ve iş ortaklarıyla kimlik ve bağlantı.",
+    "Business Partner Sourcing Features 1": "Distribütör Ağı",
+    "Business Partner Sourcing Features 2": "Tedarikçi Değerlendirmesi",
+    "Business Partner Sourcing Features 3": "Ortaklık Müzakereleri"
   }
 }
