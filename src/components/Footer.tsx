@@ -1,14 +1,5 @@
-import {
-  ArrowRight,
-  ChevronDown,
-  Facebook,
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-} from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
+import { ChevronDown, Mail, Phone } from "lucide-react";
+import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export default function Footer() {
@@ -53,6 +44,43 @@ export default function Footer() {
               Your trusted partner in international business expansion.
               Professional consultancy services for global market entry.
             </p>
+            <div className="relative mt-4">
+              <button
+                onClick={() => setIsLanguageOpen(!isLanguageOpen)}
+                className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-all duration-300 border border-white/20"
+              >
+                <span className="text-2xl">{currentLang.flag}</span>
+                <span className="text-sm font-medium">{currentLang.name}</span>
+                <ChevronDown
+                  size={16}
+                  className={`transition-transform duration-300 ${
+                    isLanguageOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+
+              {isLanguageOpen && (
+                <div className="absolute bottom-full mb-2 right-0 bg-white rounded-lg shadow-2xl py-2 min-w-[200px] border border-gray-200">
+                  {languages.map((language) => (
+                    <button
+                      key={language.code}
+                      onClick={() => handleLanguageChange(language)}
+                      className={`w-full flex items-center gap-3 px-4 py-2 text-left hover:bg-blue-50 transition-colors ${
+                        currentLang.code === language.code ? "bg-blue-50" : ""
+                      }`}
+                    >
+                      <span className="text-2xl">{language.flag}</span>
+                      <span className="text-gray-900 font-medium">
+                        {language.name}
+                      </span>
+                      {currentLang.code === language.code && (
+                        <span className="ml-auto text-blue-600">✓</span>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
 
           <div>
@@ -84,7 +112,6 @@ export default function Footer() {
                 { name: "About Us", link: "#about" },
                 { name: "Working Models", link: "#process" },
                 { name: "Contact", link: "#contact" },
-                { name: "Careers", link: "#contact" },
               ].map((item, idx) => (
                 <li key={idx}>
                   <a

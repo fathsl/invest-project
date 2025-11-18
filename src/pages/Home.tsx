@@ -17,7 +17,6 @@ import {
   TrendingUpIcon,
   Truck,
   Users,
-  Zap,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -26,6 +25,43 @@ export default function Home() {
   const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [visibleSections, setVisibleSections] = useState(new Set());
+
+  const sectionOrder = [
+    "home",
+    "services",
+    "process",
+    "about",
+    "contact",
+  ] as const;
+
+  const getCurrentSectionIndex = () => {
+    for (let i = 0; i < sectionOrder.length; i++) {
+      if (visibleSections.has(sectionOrder[i])) return i;
+    }
+    return 0;
+  };
+
+  const scrollToSection = (index: number) => {
+    const id = sectionOrder[index];
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+    }
+  };
+
+  const scrollToNextSection = () => {
+    const current = getCurrentSectionIndex();
+    const next = Math.min(current + 1, sectionOrder.length - 1);
+    if (next !== current) scrollToSection(next);
+  };
+
+  const scrollToPrevSection = () => {
+    const current = getCurrentSectionIndex();
+    const prev = Math.max(current - 1, 0);
+    if (prev !== current) scrollToSection(prev);
+  };
 
   const services = [
     {
@@ -201,95 +237,65 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="w-full">
       <section
         id="home"
-        className="relative pt-32 pb-20 bg-white overflow-hidden"
+        className="relative min-h-screen flex items-center justify-center bg-fixed bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.60)), 
+                      url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1920&q=80')`,
+        }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-50/50 to-white"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 via-slate-900/40 to-slate-900/20"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fadeInUp">
-              <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+        <div className="relative z-10 min-h-screen flex items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div className="max-w-3xl animate-fadeInUp">
+              <div className="inline-flex items-center gap-2 bg-blue-600/20 backdrop-blur-sm text-blue-300 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-blue-400/30">
                 <Globe size={16} />
                 Your Gateway to Global Markets
               </div>
-
-              <h1 className="text-5xl md:text-6xl font-bold text-slate-900 leading-tight mb-6">
+              <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
                 Expand Your Business
-                <span className="block text-blue-600">Across Borders</span>
+                <span className="block text-blue-400 mt-2">Across Borders</span>
               </h1>
-
-              <p className="text-xl text-slate-600 leading-relaxed mb-8">
+              <p className="text-xl text-slate-200 leading-relaxed mb-8">
                 AB Invest – Export Partner MMC provides comprehensive
                 consultancy services for companies seeking international growth.
                 From market analysis to partner connections, we ensure your
                 success in global markets.
               </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <div className="flex flex-col sm:flex-row gap-4 mb-16">
                 <a
                   href="#contact"
-                  className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20"
+                  className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/30"
                 >
                   Start Your Journey
                   <ArrowRight size={20} />
                 </a>
                 <a
                   href="#services"
-                  className="inline-flex items-center justify-center gap-2 bg-white border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-lg font-semibold hover:border-slate-400 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition-colors"
                 >
                   Explore Services
                 </a>
               </div>
-
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 {stats.map((stat, idx) => {
                   const Icon = stat.icon;
                   return (
-                    <div key={idx} className="text-center">
-                      <Icon className="mx-auto mb-2 text-blue-600" size={28} />
-                      <div className="text-3xl font-bold text-slate-900 mb-1">
+                    <div key={idx} className="text-center bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+                      <Icon className="mx-auto mb-2 text-blue-400" size={28} />
+                      <div className="text-3xl font-bold text-white mb-1">
                         {stat.number}
                       </div>
-                      <div className="text-sm text-slate-600">{stat.label}</div>
+                      <div className="text-sm text-slate-300">{stat.label}</div>
                     </div>
                   );
                 })}
               </div>
             </div>
-
-            <div
-              className="relative animate-fadeInUp"
-              style={{ animationDelay: "0.2s" }}
-            >
-              <img
-                src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80"
-                alt="Business professionals"
-                className="rounded-2xl shadow-2xl w-full"
-              />
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-slate-200">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                    <Award className="text-white" size={24} />
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-slate-900">98%</div>
-                    <div className="text-sm text-slate-600">
-                      Client Satisfaction
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
-
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <a href="#services">
-            <ChevronDown className="text-slate-400" size={32} />
-          </a>
         </div>
       </section>
 
@@ -907,6 +913,24 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Floating up/down pager control */}
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <button
+          aria-label="Scroll up"
+          onClick={scrollToPrevSection}
+          className="w-12 h-12 rounded-full bg-white shadow-lg border border-slate-200 flex items-center justify-center hover:bg-slate-50 active:scale-95 transition"
+        >
+          <ChevronDown className="rotate-180 text-slate-600" size={22} />
+        </button>
+        <button
+          aria-label="Scroll down"
+          onClick={scrollToNextSection}
+          className="w-12 h-12 rounded-full bg-white shadow-lg border border-slate-200 flex items-center justify-center hover:bg-slate-50 active:scale-95 transition"
+        >
+          <ChevronDown className="text-slate-600" size={22} />
+        </button>
+      </div>
 
       <style>{`
         @keyframes fadeIn {
