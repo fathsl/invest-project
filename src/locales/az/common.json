@@ -18,11 +18,135 @@
     },
     "services": {
       "title": "Xidmətlər",
-      "body": "Bunlar bizim xidmətlərimizdir."
+      "body": "Bunlar bizim xidmətlərimizdir.",
+      "description": "Peşəkar konsaltinq xidmətləri beynəlxalq bazarlara genişləndirmək istəyən müəssisələr üçün strategiya, təhlil və sahə dəstəyi təklif edir.",
+      "detailButton": "təfərrüatlar",
+      "stat1": "Uğurlu layihə",
+      "stat2": "Ölkə təcrübəsi",
+      "stat3": "Müştəri məmnuniyyəti",
+      "stat4": "İllər təcrübəsi",
+      "stat5": "Doğru Model və minimal risklə düzgün bazara girməyinizə kömək etmək üçün peşəkar dəstək təklif edirik.",
+      "stat6": "Bizimlə əlaqə saxlayın",
+      "stat7": "Beynəlxalq bazarlara hazırsınız?",
+      "stat8": "Pulsuz məsləhətləşmə"
     },
     "contact": {
       "title": "Əlaqə",
       "body": "Bizimlə əlaqə saxlayın."
+    },
+    "about": {
+      "values": {
+        "reliability": {
+          "description": "İşgüzar tərəfdaşlarımızla uzunmüddətli, şəffaf və etibar əsaslı əlaqələr qururuq.",
+          "title": "Etibarlılıq"
+        },
+        "expertise": {
+          "description": "Ən doğru strategiyaları təmin etmək üçün təcrübə və sektor bilikləri.",
+          "title": "Təcrübə"
+        },
+        "resultsDriven": {
+          "description": "Müştərilərimizin uğurları bizim prioritetimizdir.",
+          "title": "Nəticələr tərəfindən idarə olunan"
+        },
+        "innovation": {
+          "description": "Dəyişən bazar dinamikasına uyğunlaşmaq üçün yenilikçi həllər hazırlayırıq.",
+          "title": "Yenilik"
+        },
+        "title": "Bizim dəyərlərimiz",
+        "description": "İşimizi müəyyən edən əsas prinsiplər."
+      },
+      "milestones": {
+        "foundation": {
+          "title": "Təməl",
+          "description": "AB sərmayəsi MMC İstanbulda quruldu."
+        },
+        "50Projects": {
+          "title": "50 layihə",
+          "description": "50-dən çox uğurlu layihəni başa vurduq."
+        },
+        "regionalExpansion": {
+          "title": "Regional genişlənmə",
+          "description": "Yaxın Şərq və Avropa bazarlarına çıxdıq."
+        },
+        "digitalTransformation": {
+          "title": "Rəqəmsal çevrilmə",
+          "description": "Rəqəmsal konsaltinq xidmətlərinə başladıq."
+        },
+        "globalLeader": {
+          "title": "Qlobal lider",
+          "description": "30-dan çox ölkədə fəaliyyət göstəririk."
+        }
+      },
+      "title": "Beynəlxalq ticarətin etibarlı tərəfdaşı",
+      "description": "İşinizin qlobal bazarlara girməsinə kömək etmək üçün düzgün strategiyalarla davamlı böyümə təmin edirik.",
+      "mission": {
+        "title": "Missiyamız",
+        "description": "Türk müəssisələrinin beynəlxalq bazarlara inamla genişlənə biləcəyini və düzgün strategiya və peşəkar dəstəklə davamlı böyümə mühiti yarada biləcəyini təmin etməyi hədəfləyirik. \nHər bir müştəriyə xüsusi həllər təklif etməklə riskləri minimuma endirməyi və səmərəliliyi artırmağı hədəfləyirik."
+      },
+      "vision": {
+        "title": "Görmə qabiliyyətimiz",
+        "description": "Bölgənin ən etibarlı və üstünlük verdiyi ixrac məsləhətçisi olmaq. \nYenilikçi yanaşmaları və müştəri yönümlü xidmət yanaşmamızla, qlobal arenada türk şirkətlərinin güclü bir nümayəndəliyini təmin etməyi hədəfləyirik."
+      },
+      "journey": {
+        "description": "Uğur hekayəmizin mərhələləri.",
+        "title": "Səyahətimiz"
+      },
+      "contact": {
+        "title": "Birlikdə uğur qazanaq",
+        "description": "Beynəlxalq bazarlarda uğurlarınız üçün xüsusi strategiyaları inkişaf etdirməyə hazırıq.",
+        "button": "Bizimlə əlaqə saxlayın"
+      }
+    },
+    "references": {
+      "title": "Müştərilərimizin uğur hekayələrimizi",
+      "description": "Fərqli sektorlardan onlarla şirkətin beynəlxalq bazarlara çıxmasına kömək etdik.",
+      "button": "Pulsuz məsləhətləşmə",
+      "industry": {
+        "technology": "Texnologiya",
+        "food": "Qida",
+        "health": "Sağlamlıq",
+        "textile": "Titrəmə",
+        "energy": "Enerji",
+        "auto": "Avtomobil",
+        "all": "Hamar"
+      },
+      "country": {
+        "germany": "Almaniya",
+        "bae": "Birləşmiş Ərəb Əmirlikləri",
+        "france": "Fransız",
+        "italy": "İtaliya",
+        "netherlands": "Hollandiya",
+        "spain": "Vayqə"
+      },
+      "testimonial": {
+        "food": "Mərkəzi və Şərqi Avropa bazarında sıfırdan başladıq. \nAb Invest-in rəhbərliyi iki il ərzində bölgədəki ən böyük tədarükçülərdən biri olmağa kömək etdi.",
+        "technology": "AB sərmayəsi sayəsində Avropa bazarına uğurla girdik. \nOnların peşə yanaşması və yerli bazar biliyi əvəzsiz idi.",
+        "health": "Mürəkkəb hüquqi proseslər vasitəsilə bizi rəhbər tutan AB Invest komandası sayəsində Avropa Səhiyyə sektoruna girməyimiz kritik idi.",
+        "textile": "AB İnvestin şəbəkəsi və təcrübəsi sayəsində, Tekstil markaları ilə İtalyan bazarına uğurla girdik.",
+        "energy": "AB sərmayəsi sayəsində Avropa bazarına uğurla girdik. \nOnların peşə yanaşması və yerli bazar biliyi əvəzsiz idi.",
+        "auto": "AB-nin İnvestin sektoru dəstəyi və bazar analizi sayəsində İspan bazarına uğurla girdik. \nEtibarlı bir iş ortağı."
+      },
+      "result": {
+        "technology": "3 ölkənin distribyutor şəbəkəsi quruldu",
+        "food": "İxracat həcmi 5 dəfə artdı",
+        "health": "3 ölkədə CE sertifikatı və satışları",
+        "textile": "10 nüfuzlu marka imzalanmışdır",
+        "energy": "5M € Layihə həcmi çatdı",
+        "auto": "Birinci il% 200 böyümə"
+      },
+      "position": {
+        "food": "İxracatçı",
+        "health": "Qurucu Tərəfdaş",
+        "textile": "Baş direktoru",
+        "energy": "İdarə Heyətinin sədri",
+        "auto": "İxrac direktoru"
+      },
+      "stats": {
+        "successfulProjects": "Uğurlu layihələr",
+        "countries": "Ölkələr",
+        "customerSatisfaction": "Müştəri məmnuniyyəti",
+        "tradeVolume": "Ticarət həcmi"
+      }
     }
   },
   "home": {
@@ -73,6 +197,21 @@
     "Business Partner Sourcing Description": "Etibarlı distribyutorlar, təchizatçılar və biznes tərəfdaşları ilə eyniləşdirmə və əlaqə.",
     "Business Partner Sourcing Features 1": "Distribyutor şəbəkəsi",
     "Business Partner Sourcing Features 2": "Təchizatçı qiymətləndirməsi",
-    "Business Partner Sourcing Features 3": "Tərəfdaşlıq danışıqları"
+    "Business Partner Sourcing Features 3": "Tərəfdaşlıq danışıqları",
+    "Compliance and Regulatory Consulting": "Uyğunluq",
+    "Compliance and Regulatory Consulting Description": "Yerli qaydalar, sertifikatlar və uyğunluq prosesləri haqqında rəhbərlik.",
+    "Compliance and Regulatory Consulting Features 1": "Qanuni uyğunluq",
+    "Compliance and Regulatory Consulting Features 2": "Sertifikat dəstəyi",
+    "Compliance and Regulatory Consulting Features 3": "Gömrük üzrə məsləhət",
+    "Field Support": "Sahə dəstəyi",
+    "Field Support Description": "Xarici ziyarətlər zamanı peşəkar dəstək, ticarət yarmarkaları və müştəri görüşləri.",
+    "Growth and Scaling Description": "Mövcud bazarlarda genişlənmə strategiyaları və yeni bölgələrə giriş.",
+    "Growth and Scaling Features 1": "Böyümə strategiyası",
+    "Growth and Scaling Features 2": "Əməliyyat səmərəliliyi",
+    "Growth and Scaling Features 3": "Çox zonalı idarəetmə",
+    "Growth and Scaling": "Böyümə",
+    "Field Support Features 1": "Ədalətli təşkilat",
+    "Field Support Features 2": "B2B görüşləri",
+    "Field Support Features 3": "Rehberlik"
   }
 }

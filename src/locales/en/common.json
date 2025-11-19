@@ -18,11 +18,135 @@
     },
     "services": {
       "title": "Services",
-      "body": "These are our services."
+      "body": "These are our services.",
+      "description": "Professional consulting services offering strategy, analysis, and field support for businesses seeking to expand into international markets.",
+      "detailButton": "details",
+      "stat1": "Successful Project",
+      "stat2": "Country Experience",
+      "stat3": "Customer Satisfaction",
+      "stat4": "Years of Experience",
+      "stat5": "We offer professional support to help you enter the right market with the right model and minimal risk.",
+      "stat6": "Contact Us",
+      "stat7": "Are You Ready for International Markets?",
+      "stat8": "Free Consultation"
     },
     "contact": {
       "title": "Contact",
       "body": "Get in touch with us."
+    },
+    "about": {
+      "values": {
+        "reliability": {
+          "description": "We establish long-term, transparent and trust-based relationships with our business partners.",
+          "title": "Reliability"
+        },
+        "expertise": {
+          "description": "Years of experience and sector knowledge to provide the most accurate strategies.",
+          "title": "Expertise"
+        },
+        "resultsDriven": {
+          "description": "Our customers' success is our top priority.",
+          "title": "Results-Driven"
+        },
+        "innovation": {
+          "description": "We develop innovative solutions to adapt to changing market dynamics.",
+          "title": "Innovation"
+        },
+        "title": "Our Values",
+        "description": "The fundamental principles that define the way we do business."
+      },
+      "milestones": {
+        "foundation": {
+          "title": "Foundation",
+          "description": "AB Invest MMC was established in Istanbul."
+        },
+        "regionalExpansion": {
+          "title": "Regional Expansion",
+          "description": "We expanded into the Middle Eastern and European markets."
+        },
+        "50Projects": {
+          "title": "50+  Projects",
+          "description": "We completed over 50 successful projects."
+        },
+        "digitalTransformation": {
+          "title": "Digital Transformation",
+          "description": "We launched digital consulting services."
+        },
+        "globalLeader": {
+          "title": "Global Leader",
+          "description": "We are operational in over 30 countries."
+        }
+      },
+      "title": "Reliable Partner of International Trade",
+      "description": "We provide sustainable growth with the right strategies to help your business expand into global markets.",
+      "mission": {
+        "title": "Our mission",
+        "description": "We aim to ensure that Turkish businesses can confidently expand into international markets and create a sustainable growth environment with the right strategies and professional support. By offering customized solutions to each client, we aim to minimize risk and maximize efficiency."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "description": "To be the region's most reliable and preferred export consultancy company. With our innovative approaches and customer-focused service approach, we aim to ensure a strong representation of Turkish companies in the global arena."
+      },
+      "journey": {
+        "description": "Milestones of our success story.",
+        "title": "Our Journey"
+      },
+      "contact": {
+        "title": "Let's Achieve Success Together",
+        "description": "We are ready to develop customized strategies for your success in international markets.",
+        "button": "Contact Us"
+      }
+    },
+    "references": {
+      "title": "Our Customers' Success Stories",
+      "description": "We have helped dozens of companies from different sectors expand into international markets.",
+      "button": "Free Consultation",
+      "industry": {
+        "technology": "Technology",
+        "food": "Food",
+        "health": "Health",
+        "textile": "Textile",
+        "energy": "Energy",
+        "auto": "Automotive",
+        "all": "All"
+      },
+      "country": {
+        "germany": "Germany",
+        "bae": " United Arab Emirates",
+        "france": "France",
+        "italy": "Italy",
+        "netherlands": "Netherlands",
+        "spain": "Spain"
+      },
+      "testimonial": {
+        "food": "We started from scratch in the Central and Eastern European market. AB Invest's guidance helped us become one of the largest suppliers in the region over two years.",
+        "technology": "Thanks to AB Invest, we successfully entered the European market. Their professional approach and local market knowledge were invaluable.",
+        "health": "Thanks to AB Invest's team that guided us through complex legal processes, our entry into the European healthcare sector was critical.",
+        "textile": "Thanks to AB Invest's network and experience, we successfully entered the Italian market with textile brands.",
+        "energy": "Thanks to AB Invest, we successfully entered the European market. Their professional approach and local market knowledge were invaluable.",
+        "auto": "Thanks to AB Invest's sector support and market analysis, we successfully entered the Spanish market. A reliable business partner."
+      },
+      "result": {
+        "technology": "3 countries distributor network established",
+        "food": "Export volume increased 5 times",
+        "health": "CE certification and sales in 3 countries",
+        "textile": "10+ prestigious brands signed",
+        "energy": "€5M+ project volume reached",
+        "auto": "First year %200 growth"
+      },
+      "position": {
+        "food": "Export Manager",
+        "health": "Founding Partner",
+        "textile": "General Manager",
+        "energy": "Board Chairman",
+        "auto": "Export Director"
+      },
+      "stats": {
+        "successfulProjects": "Successful Projects",
+        "countries": "Countries",
+        "customerSatisfaction": "Customer Satisfaction",
+        "tradeVolume": "Trade Volume"
+      }
     }
   },
   "home": {
@@ -73,6 +197,21 @@
     "Business Partner Sourcing Description": "Identification and connection with reliable distributors, suppliers and business partners.",
     "Business Partner Sourcing Features 1": "Distributor Network",
     "Business Partner Sourcing Features 2": "Supplier Evaluation",
-    "Business Partner Sourcing Features 3": "Partnership Negotiations"
+    "Business Partner Sourcing Features 3": "Partnership Negotiations",
+    "Compliance and Regulatory Consulting": "Compliance & Regulatory Consulting",
+    "Compliance and Regulatory Consulting Description": "Guidance on local regulations, certifications and compliance processes.",
+    "Compliance and Regulatory Consulting Features 1": "Legal Compliance",
+    "Compliance and Regulatory Consulting Features 2": "Certification Support",
+    "Compliance and Regulatory Consulting Features 3": "Customs Consultancy",
+    "Field Support": "Field Support",
+    "Field Support Description": "Professional support during overseas visits, trade fairs and client meetings.",
+    "Growth and Scaling Description": "Expansion strategies in existing markets and entry into new regions.",
+    "Growth and Scaling Features 1": "Growth Strategy",
+    "Growth and Scaling Features 2": "Operational Efficiency",
+    "Growth and Scaling Features 3": "Multi-Zone Management",
+    "Growth and Scaling": "Growth & Scaling",
+    "Field Support Features 1": "Fair Organization",
+    "Field Support Features 2": "B2B Meetings",
+    "Field Support Features 3": "Yerel Rehberlik"
   }
 }

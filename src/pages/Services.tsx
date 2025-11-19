@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 export default function Services() {
   const { t } = useTranslation();
   const [hoveredService, setHoveredService] = useState<number | null>(null);
+  const navigate = useNavigate();
 
   const services = [
     {
@@ -49,13 +51,13 @@ export default function Services() {
       id: 4,
       image:
         "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
-      title: t("services.Compliance & Regulatory Consulting"),
+      title: t("services.Compliance and Regulatory Consulting"),
       description:
-         t("services.Compliance & Regulatory Consulting Description"),
+         t("services.Compliance and Regulatory Consulting Description"),
       features: [
-        "Yasal Uyumluluk",
-        "Sertifikasyon Desteği",
-        "Gümrük Danışmanlığı",
+        t("services.Compliance and Regulatory Consulting Features 1"),
+        t("services.Compliance and Regulatory Consulting Features 2"),
+        t("services.Compliance and Regulatory Consulting Features 3"),
       ],
     },
     {
@@ -65,19 +67,23 @@ export default function Services() {
       title: t("services.Field Support"),
       description:
          t("services.Field Support Description"),
-      features: ["Fuar Organizasyonu", "B2B Görüşmeleri", "Yerel Rehberlik"],
+      features: [
+        t("services.Field Support Features 1"),
+        t("services.Field Support Features 2"),
+        t("services.Field Support Features 3"),
+      ],
     },
     {
       id: 6,
       image:
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-      title: t("services.Growth & Scaling"),
+      title: t("services.Growth and Scaling"),
       description:
-         t("services.Growth & Scaling Description"),
+         t("services.Growth and Scaling Description"),
       features: [
-        "Büyüme Stratejisi",
-        "Operasyonel Verimlilik",
-        "Çok Bölgeli Yönetim",
+        t("services.Growth and Scaling Features 1"),
+        t("services.Growth and Scaling Features 2"),
+        t("services.Growth and Scaling Features 3"),
       ],
     },
   ];
@@ -98,8 +104,7 @@ export default function Services() {
             {t("pages.services.title") || "Hizmetlerimiz"}
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Uluslararası pazarlara açılmak isteyen işletmeler için strateji,
-            analiz ve saha desteği sunan profesyonel danışmanlık hizmetleri
+            {t("pages.services.description") || "Hizmetlerimiz"}
           </p>
         </div>
 
@@ -161,7 +166,7 @@ export default function Services() {
 
                 <div className="mt-6 pt-4 border-t border-slate-100">
                   <button className="text-blue-600 font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
-                    Detaylı Bilgi
+                    {t("pages.services.detailButton") || "Hizmetlerimiz"}
                     <svg
                       className="w-4 h-4"
                       fill="none"
@@ -189,10 +194,10 @@ export default function Services() {
           style={{ animationDelay: "0.6s" }}
         >
           {[
-            { number: "50+", label: "Başarılı Proje" },
-            { number: "30+", label: "Ülke Deneyimi" },
-            { number: "100%", label: "Müşteri Memnuniyeti" },
-            { number: "15+", label: "Yıllık Deneyim" },
+            { number: "50+", label: t("pages.services.stat1") || "Successful Projects" },
+            { number: "30+", label: t("pages.services.stat2") || "Country Experience" },
+            { number: "100%", label: t("pages.services.stat3") || "Customer Satisfaction" },
+            { number: "15+", label: t("pages.services.stat4") || "Years of Experience" },
           ].map((stat, idx) => (
             <div
               key={idx}
@@ -216,15 +221,14 @@ export default function Services() {
 
             <div className="relative z-10">
               <h2 className="text-4xl font-bold mb-4 text-white">
-                Uluslararası Pazarlara Hazır mısınız?
+                {t("pages.services.stat7") || "Are You Ready for International Markets?"}
               </h2>
               <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
-                Doğru pazara, doğru modelle ve minimum riskle giriş yapmanız
-                için profesyonel destek sunuyoruz.
+                {t("pages.services.stat5") || "Years of Experience"}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2">
-                  Ücretsiz Danışmanlık
+                  {t("pages.services.stat8") || "Free Consultation"}
                   <svg
                     className="w-5 h-5"
                     fill="none"
@@ -239,8 +243,8 @@ export default function Services() {
                     />
                   </svg>
                 </button>
-                <button className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 backdrop-blur-sm">
-                  İletişime Geçin
+                <button onClick={() => navigate("/contact")} className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 backdrop-blur-sm">
+                  {t("pages.services.stat6") || "Years of Experience"}
                 </button>
               </div>
             </div>

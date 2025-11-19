@@ -18,11 +18,135 @@
     },
     "services": {
       "title": "Hizmetler",
-      "body": "Bunlar hizmetlerimizdir."
+      "body": "Bunlar hizmetlerimizdir.",
+      "description": "Uluslararası pazarlara açılmak isteyen işletmelere strateji, analiz ve saha desteği sunan profesyonel danışmanlık hizmetleri.",
+      "detailButton": "detaylar",
+      "stat1": "Başarılı Proje",
+      "stat2": "Ülke Deneyimi",
+      "stat3": "Müşteri Memnuniyeti",
+      "stat4": "Yılların Deneyimi",
+      "stat5": "Doğru model ve minimum riskle doğru pazara girmenize yardımcı olmak için profesyonel destek sunuyoruz.",
+      "stat6": "Bize Ulaşın",
+      "stat7": "Uluslararası Pazarlara Hazır mısınız?",
+      "stat8": "Ücretsiz Danışmanlık"
     },
     "contact": {
       "title": "İletişim",
       "body": "Bizimle iletişime geçin."
+    },
+    "about": {
+      "values": {
+        "reliability": {
+          "description": "İş ortaklarımızla uzun vadeli, şeffaf ve güvene dayalı ilişkiler kurarız.",
+          "title": "Güvenilirlik"
+        },
+        "expertise": {
+          "description": "Yılların tecrübesi ve sektör bilgisi ile en doğru stratejileri sunmak.",
+          "title": "Uzmanlık"
+        },
+        "resultsDriven": {
+          "description": "Müşterilerimizin başarısı bizim önceliğimizdir.",
+          "title": "Sonuç Odaklı"
+        },
+        "innovation": {
+          "description": "Değişen pazar dinamiklerine uyum sağlayacak yenilikçi çözümler geliştiriyoruz.",
+          "title": "Yenilik"
+        },
+        "title": "Değerlerimiz",
+        "description": "İş yapma şeklimizi tanımlayan temel ilkeler."
+      },
+      "milestones": {
+        "foundation": {
+          "title": "Temel",
+          "description": "AB Invest MMC İstanbul'da kuruldu."
+        },
+        "50Projects": {
+          "title": "50 Proje",
+          "description": "50'nin üzerinde başarılı projeye imza attık."
+        },
+        "regionalExpansion": {
+          "title": "Bölgesel Genişleme",
+          "description": "Ortadoğu ve Avrupa pazarlarına açıldık."
+        },
+        "digitalTransformation": {
+          "title": "Dijital Dönüşüm",
+          "description": "Dijital danışmanlık hizmetlerini başlattık."
+        },
+        "globalLeader": {
+          "title": "Küresel Lider",
+          "description": "30'dan fazla ülkede faaliyet gösteriyoruz."
+        }
+      },
+      "title": "Uluslararası Ticaretin Güvenilir Ortağı",
+      "description": "İşletmenizin küresel pazarlara açılmasına yardımcı olacak doğru stratejilerle sürdürülebilir büyüme sağlıyoruz.",
+      "mission": {
+        "title": "Misyonumuz",
+        "description": "Doğru stratejiler ve profesyonel destek ile Türk işletmelerinin uluslararası pazarlara güvenle açılabilmesini ve sürdürülebilir bir büyüme ortamı yaratabilmesini hedefliyoruz. \nHer müşteriye özelleştirilmiş çözümler sunarak riski en aza indirmeyi ve verimliliği en üst düzeye çıkarmayı hedefliyoruz."
+      },
+      "vision": {
+        "title": "Vizyonumuz",
+        "description": "Bölgenin en güvenilir ve tercih edilen ihracat danışmanlık şirketi olmak. \nYenilikçi yaklaşımlarımız ve müşteri odaklı hizmet anlayışımızla Türk firmalarının global arenada güçlü bir şekilde temsil edilmesini hedefliyoruz."
+      },
+      "journey": {
+        "description": "Başarı öykümüzün kilometre taşları.",
+        "title": "Yolculuğumuz"
+      },
+      "contact": {
+        "title": "Başarıya Birlikte Ulaşalım",
+        "description": "Uluslararası pazarlarda başarınız için size özel stratejiler geliştirmeye hazırız.",
+        "button": "Bize Ulaşın"
+      }
+    },
+    "references": {
+      "title": "Müşterilerimizin Başarı Hikayeleri",
+      "description": "Farklı sektörlerden onlarca firmanın uluslararası pazarlara açılmasına yardımcı olduk.",
+      "button": "Ücretsiz Danışmanlık",
+      "industry": {
+        "technology": "Teknoloji",
+        "food": "Yiyecek",
+        "health": "Sağlık",
+        "textile": "Tekstil",
+        "energy": "Enerji",
+        "auto": "Otomotiv",
+        "all": "Tüm"
+      },
+      "country": {
+        "germany": "Almanya",
+        "bae": "Birleşik Arap Emirlikleri",
+        "france": "Fransa",
+        "italy": "İtalya",
+        "netherlands": "Hollanda",
+        "spain": "İspanya"
+      },
+      "testimonial": {
+        "food": "Orta ve Doğu Avrupa pazarında sıfırdan başladık. \nAB Invest'in rehberliği, iki yıl içinde bölgedeki en büyük tedarikçilerden biri olmamıza yardımcı oldu.",
+        "technology": "AB Invest sayesinde Avrupa pazarına başarıyla girdik. \nProfesyonel yaklaşımları ve yerel pazar bilgileri çok değerliydi.",
+        "health": "AB Invest'in karmaşık hukuki süreçlerde bize rehberlik eden ekibi sayesinde Avrupa sağlık sektörüne girişimiz kritik önemdeydi.",
+        "textile": "AB Invest'in ağı ve tecrübesi sayesinde tekstil markalarıyla İtalya pazarına başarıyla girdik.",
+        "energy": "AB Invest sayesinde Avrupa pazarına başarıyla girdik. \nProfesyonel yaklaşımları ve yerel pazar bilgileri çok değerliydi.",
+        "auto": "AB Invest'in sektör desteği ve pazar analizi sayesinde İspanya pazarına başarıyla girdik. \nGüvenilir bir iş ortağı."
+      },
+      "result": {
+        "technology": "3 ülke distribütör ağı kuruldu",
+        "food": "İhracat hacmi 5 kat arttı",
+        "health": "CE sertifikası ve 3 ülkede satış",
+        "textile": "10 prestijli marka imza attı",
+        "energy": "5 milyon Avro'luk proje hacmine ulaşıldı",
+        "auto": "İlk yıl %200 büyüme"
+      },
+      "position": {
+        "food": "İhracat Müdürü",
+        "health": "Kurucu Ortak",
+        "textile": "Genel Müdür",
+        "energy": "Yönetim Kurulu Başkanı",
+        "auto": "İhracat Direktörü"
+      },
+      "stats": {
+        "successfulProjects": "Başarılı Projeler",
+        "countries": "Ülkeler",
+        "tradeVolume": "Ticaret Hacmi",
+        "customerSatisfaction": "Müşteri Memnuniyeti"
+      }
     }
   },
   "home": {
@@ -73,6 +197,19 @@
     "Business Partner Sourcing Description": "Güvenilir distribütörler, tedarikçiler ve iş ortaklarıyla kimlik ve bağlantı.",
     "Business Partner Sourcing Features 1": "Distribütör Ağı",
     "Business Partner Sourcing Features 2": "Tedarikçi Değerlendirmesi",
-    "Business Partner Sourcing Features 3": "Ortaklık Müzakereleri"
+    "Business Partner Sourcing Features 3": "Ortaklık Müzakereleri",
+    "Compliance and Regulatory Consulting Description": "Yerel düzenlemeler, sertifikalar ve uyumluluk süreçlerine ilişkin rehberlik.",
+    "Compliance and Regulatory Consulting Features 1": "Yasal Uyumluluk",
+    "Compliance and Regulatory Consulting Features 2": "Sertifikasyon Desteği",
+    "Compliance and Regulatory Consulting Features 3": "Gümrük Müşavirliği",
+    "Field Support": "Saha Desteği",
+    "Field Support Description": "Yurt dışı ziyaretleri, fuarlar ve müşteri toplantıları sırasında profesyonel destek.",
+    "Growth and Scaling Description": "Mevcut pazarlarda genişleme ve yeni bölgelere giriş stratejileri.",
+    "Growth and Scaling Features 1": "Büyüme Stratejisi",
+    "Growth and Scaling Features 2": "Operasyonel Verimlilik",
+    "Growth and Scaling Features 3": "Çoklu Bölge Yönetimi",
+    "Growth and Scaling": "Büyüme",
+    "Field Support Features 1": "Fuar Organizasyonu",
+    "Field Support Features 2": "B2B Toplantıları"
   }
 }

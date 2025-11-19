@@ -21,7 +21,7 @@ export default function NavBar() {
     { name: t('nav.home', { defaultValue: 'Home' }), to: '/' },
     { name: t('nav.services', { defaultValue: 'Services' }), to: '/services' },
     { name: t('nav.references', { defaultValue: 'References' }), to: '/references' },
-    { name: t('nav.workingModels', { defaultValue: 'Working Models' }), to: '/workingModels' },
+    { name: t('nav.workingModels', { defaultValue: 'Working Models' }), to: '/working-models' },
     { name: t('nav.aboutUs', { defaultValue: 'About Us' }), to: '/about' },
   ];
 
