@@ -32,7 +32,56 @@
     },
     "contact": {
       "title": "Əlaqə",
-      "body": "Bizimlə əlaqə saxlayın."
+      "body": "Bizimlə əlaqə saxlayın.",
+      "contactInfo": {
+        "address": {
+          "title": "Kömək"
+        },
+        "email": {
+          "title": "E-posta"
+        },
+        "phone": {
+          "title": "Telefon"
+        },
+        "workingHours": {
+          "title": "İş saatı"
+        }
+      },
+      "faqs": {
+        "question1": "Məsləhət prosesinə necə başlamaq olar?",
+        "question2": "Hansı ölkələrə xidmət edirsiniz?",
+        "question3": "Qiymət necə müəyyən edilir?",
+        "answer1": "İlkin görüşümüz zamanı ehtiyaclarınızı dinləyəcəyik və fərdi ilkin qiymətləndirmə təmin edəcəyik. \nBu görüş pulsuzdur.",
+        "answer2": "Avropada, Yaxın Şərq, Şimali Afrika və Asiyada 30-dan çox ölkəyə fəal xidmət edirik ..",
+        "answer3": "Layihə sahəsi, müddəti və seçilmiş iş modelinə əsasən xüsusi təkliflər hazırlayırıq. \nÇevik ödəmə seçimləri mövcuddur.",
+        "title": "Tez-tez verilən suallar",
+        "description": "Suallarınıza sürətli cavablar",
+        "button": "Başqa suallarınız varmı?",
+        "buttonView": "Bütün suallara baxın"
+      },
+      "description": "Suallarınızı cavablandırmaq üçün buradayıq. \nƏn qısa müddətdə sizə qayıdacağıq.",
+      "sendMessage": {
+        "title": "Mesaj göndər",
+        "description": "Formanı doldurun və ən qısa müddətdə sizinlə əlaqə saxlayacağıq.",
+        "name": "Tam adı",
+        "namePlaceholder": "Tam adınız",
+        "email": "E-poçt",
+        "emailPlaceholder": "john.doe@example.com",
+        "phone": "Telefon",
+        "company": "Şirkəti",
+        "companyPlaceholder": "Şirkət Adı",
+        "service": "Sizi maraqlandıran xidmət",
+        "message": "Mesajınız",
+        "messagePlaceholder": "Mesajınızı buraya yazın ...",
+        "send": "Göndərmək",
+        "sent": "Göndərmə ..."
+      },
+      "callToAction": {
+        "title": "İndi pulsuz bir məsləhət alın",
+        "description": "İlk görüşünüz tamamilə pulsuzdur. \nGəlin hədəflərinizi müzakirə edək.",
+        "phone": "İndi zəng edin: 90 (212) 123 45 67",
+        "online": "Bir görüş onlayn edin"
+      }
     },
     "about": {
       "values": {
@@ -146,6 +195,142 @@
         "countries": "Ölkələr",
         "customerSatisfaction": "Müştəri məmnuniyyəti",
         "tradeVolume": "Ticarət həcmi"
+      }
+    },
+    "workingModels": {
+      "models": {
+        "projectBased": {
+          "title": "Layihə əsaslı məsləhət",
+          "description": "Müəyyən bir layihə və ya məqsəd üçün hərtərəfli məsləhət xidmətləri.",
+          "features": {
+            "marketResearch": "Bazar araşdırması və təhlili",
+            "entryStrategy": "Giriş strategiyasının inkişafı",
+            "partnerSearch": "Tərəfdaş axtarışı və qiymətləndirmə",
+            "support": "Xüsusi dövr üçün dəstək"
+          },
+          "ideal": "İlk ixracatlarını edəcək şirkətlər",
+          "pricing": "Sabit aylıq ödəniş",
+          "duration": "3-6 ay"
+        },
+        "ongoingAdvisory": {
+          "title": "Davam edən məsləhət",
+          "description": "Davamlı strateji dəstək ilə uzunmüddətli iş ortaqlığı.",
+          "features": {
+            "marketResearch": "Aylıq strateji görüşlər",
+            "entryStrategy": "İzləmə bazar inkişafları",
+            "partnerSearch": "Davamlı biznesin inkişafı dəstəyi",
+            "support": "24/7 Müşavirə Giriş"
+          },
+          "pricing": "Aylıq abunə modeli",
+          "ideal": "İlk ixracatlarını edəcək şirkətlər",
+          "duration": "12 ay"
+        },
+        "successPartnership": {
+          "title": "Uğur Tərəfdaşlığı",
+          "description": "Performans əsaslı iş ortaqlığı modeli",
+          "features": {
+            "marketResearch": "Nəticə yönümlü",
+            "entryStrategy": "Performansa əsaslanan mükafat",
+            "partnerSearch": "Aktiv sahə və satış dəstəyi",
+            "support": "Risk paylaşma yanaşması"
+          },
+          "ideal": "Təcavüzkar böyümə yönümlü şirkətlər",
+          "pricing": "Uğur Komissiyası Aşağı Sabit haqqı",
+          "duration": "24 ay"
+        },
+        "fieldSupport": {
+          "title": "Sahə dəstəyi",
+          "description": "Xaricdə ziyarət və hadisələr üçün peşəkar dəstək",
+          "features": {
+            "fairParticipation": "Ədalətli İştirak Təşkilatı",
+            "b2bMeeting": "B2B görüş təşkili",
+            "translationService": "Tərcümə xidməti",
+            "localMarketGuidance": "Yerli bazar rəhbərliyi"
+          },
+          "ideal": "İlk ixracatlarını edəcək şirkətlər",
+          "pricing": "Hadisə əsaslı ödəniş",
+          "duration": "Hadisə əsaslı"
+        },
+        "exportTraining": {
+          "title": "İxracat təhsili",
+          "description": "Komanda tutumunu artırmaq üçün təlim proqramları.",
+          "features": {
+            "exportProcessTraining": "İxrac prosesi təhsili",
+            "marketResearchTechniques": "Bazar tədqiqat texnikaları",
+            "negotiationAndCulturalAwareness": "Danışıqlar və mədəni maarifləndirmə",
+            "onlineAndFaceToFaceTraining": "Onlayn və üz-üzə təlim"
+          },
+          "ideal": "İlk ixracatlarını edəcək şirkətlər",
+          "pricing": "Təlim Proqramı haqqı",
+          "duration": "1-3 ay"
+        },
+        "customSolutions": {
+          "title": "Xüsusi həllər",
+          "description": "İş ehtiyaclarınıza uyğun xüsusi həllər.",
+          "features": {
+            "fullyCustomizable": "Tamamilə özelleştirilebilir",
+            "hybridWorkingModels": "Hibrid işləyən modellər",
+            "flexiblePaymentOptions": "Çevik ödəniş seçimləri",
+            "customTeamAssignment": "Xüsusi komanda tapşırığı"
+          },
+          "duration": "Ehtiyaclara əsasən",
+          "ideal": "Unikal ehtiyacları olan şirkətlər",
+          "pricing": "Xüsusi təklif"
+        },
+        "duration": "Müddəti",
+        "pricing": "Qiymət",
+        "features": "Xüsusiyyət",
+        "ideal": "İdeal",
+        "showLess": "Az göstərmək",
+        "showDetails": "Ətraflı məlumat"
+      },
+      "processSteps": {
+        "firstMeeting": {
+          "title": "İlk görüş",
+          "description": "Ehtiyaclarınızı başa düşürük və hədəflərinizi müəyyənləşdiririk"
+        },
+        "analysisAndPlanning": {
+          "title": "Təhlil və planlaşdırma",
+          "description": "Bazar təhlili və xüsusi bir strategiyanın inkişafı"
+        },
+        "implementation": {
+          "title": "İcra",
+          "description": "Strategiyaların və sahə dəstəyinin tətbiqi"
+        },
+        "trackingAndOptimization": {
+          "title": "İzləmə və optimallaşdırma",
+          "description": "Nəticələrin ölçülməsi və proseslərin davamlı yaxşılaşdırılması"
+        },
+        "title": "İş prosesimiz",
+        "description": "Məqsədlərinizə çatmaq üçün addım-addım peşəkar dəstək"
+      },
+      "title": "İşiniz üçün düzgün işləyən model seçin",
+      "description": "İş ehtiyaclarınıza uyğun çevik iş modellərini təklif edirik",
+      "compareModels": {
+        "title": "Modelləri müqayisə edin",
+        "description": "Hansı model sizin üçün uyğundur?",
+        "table": {
+          "feature": "Xüsusiyyət",
+          "projectBased": "Layihə əsaslı",
+          "continuous": "Davamlı",
+          "successPartnership": "Uğur Tərəfdaşlığı",
+          "startUpCost": "Başlanğıc dəyəri",
+          "flexibility": "Elastiklik",
+          "riskSharing": "Risk paylaşımı",
+          "longTermSupport": "Uzunmüddətli dəstək"
+        }
+      },
+      "medium": "Mühit",
+      "low": "Alçaq",
+      "veryLow": "Çox aşağı",
+      "high": "Yüksək",
+      "no": "Yox",
+      "yes": "Bəli",
+      "offer": {
+        "title": "Sizə xüsusi bir həll təklif edək",
+        "description": "Ehtiyaclarınızı qiymətləndiririk və ən uyğun iş modelini təklif edirik",
+        "button": "Pulsuz məsləhətləşmə",
+        "button2": "Sitat gətirmək"
       }
     }
   },

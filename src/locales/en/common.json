@@ -32,7 +32,56 @@
     },
     "contact": {
       "title": "Contact",
-      "body": "Get in touch with us."
+      "body": "Get in touch with us.",
+      "contactInfo": {
+        "address": {
+          "title": "Address"
+        },
+        "email": {
+          "title": "Email"
+        },
+        "phone": {
+          "title": "Phone"
+        },
+        "workingHours": {
+          "title": "Working Hours"
+        }
+      },
+      "faqs": {
+        "question1": "How to start the consulting process?",
+        "question2": "Which countries do you serve?",
+        "question3": "How is pricing determined?",
+        "answer1": "During our initial meeting, we'll listen to your needs and provide a personalized initial assessment. This meeting is free of charge.",
+        "answer2": "We actively serve more than 30 countries in Europe, the Middle East, North Africa, and Asia..",
+        "answer3": "We prepare customized proposals based on project scope, duration, and chosen working model. Flexible payment options are available.",
+        "title": "Frequently Asked Questions",
+        "description": "Quick answers to your questions",
+        "button": "Do you have any other questions?",
+        "buttonView": "View All FAQs"
+      },
+      "description": "We're here to answer your questions. We'll get back to you as soon as possible.",
+      "sendMessage": {
+        "title": "Send Message",
+        "description": "Fill out the form and we will contact you as soon as possible.",
+        "name": "Full Name",
+        "namePlaceholder": "Your Full Name",
+        "email": "Email",
+        "emailPlaceholder": "john.doe@example.com",
+        "phone": "Phone",
+        "company": "Company",
+        "companyPlaceholder": "Company Name",
+        "service": "Service You Are Interested In",
+        "message": "Your message",
+        "messagePlaceholder": "Write your message here...",
+        "sent": "Sending ...",
+        "send": "Send"
+      },
+      "callToAction": {
+        "title": "Get a Free Consultation Now",
+        "description": "Your first meeting is completely free. Let's discuss your goals.",
+        "phone": "Call Now: +90 (212) 123 45 67",
+        "online": "Make an Appointment Online"
+      }
     },
     "about": {
       "values": {
@@ -146,6 +195,142 @@
         "countries": "Countries",
         "customerSatisfaction": "Customer Satisfaction",
         "tradeVolume": "Trade Volume"
+      }
+    },
+    "workingModels": {
+      "models": {
+        "projectBased": {
+          "title": "Project-Based Consulting",
+          "description": "Comprehensive consultancy services for a specific project or goal.",
+          "features": {
+            "marketResearch": "Market research and analysis",
+            "entryStrategy": "Development of entry strategy",
+            "partnerSearch": "Partner search and evaluation",
+            "support": "Support for specific period"
+          },
+          "ideal": "Companies that will make their first export",
+          "pricing": "Fixed monthly fee",
+          "duration": "3-6 Months"
+        },
+        "ongoingAdvisory": {
+          "title": "Ongoing Advisory",
+          "description": "Long-term business partnership with continuous strategic support.",
+          "features": {
+            "marketResearch": "Monthly strategic meetings",
+            "entryStrategy": "Tracking market developments",
+            "partnerSearch": "Continuous business development support",
+            "support": "24/7 advisory access"
+          },
+          "pricing": "Monthly subscription model",
+          "ideal": "Companies that will make their first export",
+          "duration": "12+ Months"
+        },
+        "successPartnership": {
+          "title": "Success Partnership",
+          "description": "Performance-based business partnership model",
+          "features": {
+            "marketResearch": "Result-oriented work",
+            "entryStrategy": "Performance-based remuneration",
+            "partnerSearch": "Active field and sales support",
+            "support": "Risk sharing approach"
+          },
+          "ideal": "Aggressive growth-oriented companies",
+          "pricing": "Success commission + low fixed fee",
+          "duration": "24+ Months"
+        },
+        "fieldSupport": {
+          "title": "Field Support",
+          "description": "Professional support for overseas visits and events",
+          "features": {
+            "fairParticipation": "Fair participation organization",
+            "b2bMeeting": "B2B meeting arrangement",
+            "translationService": "Translation service",
+            "localMarketGuidance": "Local market guidance"
+          },
+          "ideal": "Companies that will make their first export",
+          "pricing": "Event-based fee",
+          "duration": "Event-based"
+        },
+        "exportTraining": {
+          "title": "Export Training",
+          "description": "Training programs to increase team capacity.",
+          "features": {
+            "exportProcessTraining": "Export process training",
+            "marketResearchTechniques": "Market research techniques",
+            "negotiationAndCulturalAwareness": "Negotiation and cultural awareness",
+            "onlineAndFaceToFaceTraining": "Online and face-to-face training"
+          },
+          "ideal": "Companies that will make their first export",
+          "pricing": "Training program fee",
+          "duration": "1-3 Months"
+        },
+        "customSolutions": {
+          "title": "Custom Solutions",
+          "description": "Custom solutions tailored to your business needs.",
+          "features": {
+            "fullyCustomizable": "Fully customizable",
+            "hybridWorkingModels": "Hybrid working models",
+            "flexiblePaymentOptions": "Flexible payment options",
+            "customTeamAssignment": "Custom team assignment"
+          },
+          "duration": "Based on needs",
+          "ideal": "Companies with unique needs",
+          "pricing": "Custom quote"
+        },
+        "duration": "Duration",
+        "pricing": "Pricing",
+        "features": "Features",
+        "ideal": "Ideal",
+        "showLess": "Show Less",
+        "showDetails": "Show Details"
+      },
+      "processSteps": {
+        "firstMeeting": {
+          "title": "First Meeting",
+          "description": "We understand your needs and define your goals"
+        },
+        "analysisAndPlanning": {
+          "title": "Analysis and Planning",
+          "description": "Market analysis and development of a custom strategy"
+        },
+        "implementation": {
+          "title": "Implementation",
+          "description": "Implementation of strategies and field support"
+        },
+        "trackingAndOptimization": {
+          "title": "Tracking and Optimization",
+          "description": "Measurement of results and continuous improvement of processes"
+        },
+        "title": "Our Working Process",
+        "description": "Step by step professional support to reach your goals"
+      },
+      "title": "Choose the right working model for your business",
+      "description": "We offer flexible working models tailored to your business needs",
+      "compareModels": {
+        "title": "Compare Models",
+        "description": "Which model is right for you?",
+        "table": {
+          "feature": "Feature",
+          "projectBased": "Project Based",
+          "continuous": "Continuous",
+          "successPartnership": "Success Partnership",
+          "startUpCost": "Start-up Cost",
+          "flexibility": "Flexibility",
+          "riskSharing": "Risk Sharing",
+          "longTermSupport": "Long-term Support"
+        }
+      },
+      "medium": "Medium",
+      "low": "Low",
+      "veryLow": "Very Low",
+      "high": "High",
+      "no": "No",
+      "yes": "Yes",
+      "offer": {
+        "title": "Let Us Offer You a Special Solution",
+        "description": "We are evaluating your needs and offering the most suitable working model",
+        "button": "Free Consultation",
+        "button2": "Get a Quote"
       }
     }
   },

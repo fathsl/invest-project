@@ -8,139 +8,170 @@ export default function WorkingModels() {
   const models = [
     {
       id: 1,
-      title: "Proje Bazlı Danışmanlık",
-      titleEn: "Project-Based Consulting",
-      description:
-        "Belirli bir proje veya hedef için kapsamlı danışmanlık hizmeti",
+      title: t("pages.workingModels.models.projectBased.title"),
+      description: t("pages.workingModels.models.projectBased.description"),
       image:
         "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
       icon: "📋",
       features: [
-        "Pazar araştırması ve analizi",
-        "Giriş stratejisi geliştirme",
-        "İş ortağı bulma ve değerlendirme",
-        "Belirli süre için destek",
+        t("pages.workingModels.models.projectBased.features.marketResearch"),
+        t("pages.workingModels.models.projectBased.features.entryStrategy"),
+        t("pages.workingModels.models.projectBased.features.partnerSearch"),
+        t("pages.workingModels.models.projectBased.features.support"),
       ],
-      duration: "3-6 Ay",
-      ideal: "İlk defa ihracat yapacak şirketler",
-      pricing: "Proje bazlı sabit ücret",
+      duration: t("pages.workingModels.models.projectBased.duration"),
+      ideal: t("pages.workingModels.models.projectBased.ideal"),
+      pricing: t("pages.workingModels.models.projectBased.pricing"),
     },
     {
       id: 2,
-      title: "Sürekli Danışmanlık",
-      titleEn: "Ongoing Advisory",
-      description: "Uzun vadeli iş birliği ile sürekli stratejik destek",
+      title: t("pages.workingModels.models.ongoingAdvisory.title"),
+      description: t("pages.workingModels.models.ongoingAdvisory.description"),
       image:
         "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80",
       icon: "🤝",
       features: [
-        "Aylık stratejik görüşmeler",
-        "Pazar gelişmelerinin takibi",
-        "Sürekli iş geliştirme desteği",
-        "7/24 danışmanlık erişimi",
+        t("pages.workingModels.models.ongoingAdvisory.features.marketResearch"),
+        t("pages.workingModels.models.ongoingAdvisory.features.entryStrategy"),
+        t("pages.workingModels.models.ongoingAdvisory.features.partnerSearch"),
+        ,
+        t("pages.workingModels.models.ongoingAdvisory.features.support"),
       ],
-      duration: "12+ Ay",
-      ideal: "Aktif ihracat yapan büyüyen şirketler",
-      pricing: "Aylık abonelik modeli",
+      duration: t("pages.workingModels.models.ongoingAdvisory.duration"),
+      ideal: t("pages.workingModels.models.ongoingAdvisory.ideal"),
+      pricing: t("pages.workingModels.models.ongoingAdvisory.pricing"),
     },
     {
       id: 3,
-      title: "Başarı Ortaklığı",
-      titleEn: "Success Partnership",
-      description: "Performans bazlı iş birliği modeli",
+      title: t("pages.workingModels.models.successPartnership.title"),
+      description: t(
+        "pages.workingModels.models.successPartnership.description"
+      ),
       image:
         "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=800&q=80",
       icon: "💼",
       features: [
-        "Sonuç odaklı çalışma",
-        "Satış performansına göre ücretlendirme",
-        "Aktif saha ve satış desteği",
-        "Risk paylaşımı yaklaşımı",
+        t(
+          "pages.workingModels.models.successPartnership.features.marketResearch"
+        ),
+        t(
+          "pages.workingModels.models.successPartnership.features.entryStrategy"
+        ),
+        t(
+          "pages.workingModels.models.successPartnership.features.partnerSearch"
+        ),
+        t("pages.workingModels.models.successPartnership.features.support"),
       ],
-      duration: "24+ Ay",
-      ideal: "Agresif büyüme hedefleyen şirketler",
-      pricing: "Başarı komisyonu + düşük sabit ücret",
+      duration: t("pages.workingModels.models.successPartnership.duration"),
+      ideal: t("pages.workingModels.models.successPartnership.ideal"),
+      pricing: t("pages.workingModels.models.successPartnership.pricing"),
     },
     {
       id: 4,
-      title: "Saha Desteği",
-      titleEn: "Field Support",
-      description: "Yurt dışı ziyaret ve etkinliklerde profesyonel destek",
+      title: t("pages.workingModels.models.fieldSupport.title"),
+      description: t("pages.workingModels.models.fieldSupport.description"),
       image:
         "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80",
       icon: "✈️",
       features: [
-        "Fuar katılımı organizasyonu",
-        "B2B görüşme düzenleme",
-        "Tercümanlık hizmeti",
-        "Yerel pazar rehberliği",
+        t("pages.workingModels.models.fieldSupport.features.fairParticipation"),
+        t("pages.workingModels.models.fieldSupport.features.b2bMeeting"),
+        t(
+          "pages.workingModels.models.fieldSupport.features.translationService"
+        ),
+        t(
+          "pages.workingModels.models.fieldSupport.features.localMarketGuidance"
+        ),
       ],
-      duration: "Etkinlik bazlı",
-      ideal: "Fuarlara katılan veya pazar ziyareti yapan şirketler",
-      pricing: "Gün/etkinlik bazlı ücretlendirme",
+      duration: t("pages.workingModels.models.fieldSupport.duration"),
+      ideal: t("pages.workingModels.models.fieldSupport.ideal"),
+      pricing: t("pages.workingModels.models.fieldSupport.pricing"),
     },
     {
       id: 5,
-      title: "İhracat Eğitimi",
-      titleEn: "Export Training",
-      description: "Ekip kapasitesini artırmak için eğitim programları",
+      title: t("pages.workingModels.models.exportTraining.title"),
+      description: t("pages.workingModels.models.exportTraining.description"),
       image:
         "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80",
       icon: "📚",
       features: [
-        "İhracat süreçleri eğitimi",
-        "Pazar araştırma teknikleri",
-        "Müzakere ve kültürel farkındalık",
-        "Online ve yüz yüze eğitimler",
+        t(
+          "pages.workingModels.models.exportTraining.features.exportProcessTraining"
+        ),
+        t(
+          "pages.workingModels.models.exportTraining.features.marketResearchTechniques"
+        ),
+        t(
+          "pages.workingModels.models.exportTraining.features.negotiationAndCulturalAwareness"
+        ),
+        t(
+          "pages.workingModels.models.exportTraining.features.onlineAndFaceToFaceTraining"
+        ),
       ],
-      duration: "1-3 Ay",
-      ideal: "İç kaynaklarını güçlendirmek isteyen şirketler",
-      pricing: "Eğitim programı başına sabit ücret",
+      duration: t("pages.workingModels.models.exportTraining.duration"),
+      ideal: t("pages.workingModels.models.exportTraining.ideal"),
+      pricing: t("pages.workingModels.models.exportTraining.pricing"),
     },
     {
       id: 6,
-      title: "Özel Çözümler",
-      titleEn: "Custom Solutions",
-      description: "İşletmenizin özel ihtiyaçlarına göre tasarlanmış model",
+      title: t("pages.workingModels.models.customSolutions.title"),
+      description: t("pages.workingModels.models.customSolutions.description"),
       image:
         "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80",
       icon: "⚙️",
       features: [
-        "Tamamen özelleştirilebilir",
-        "Hibrit çalışma modelleri",
-        "Esnek ödeme seçenekleri",
-        "Özel ekip ataması",
+        t(
+          "pages.workingModels.models.customSolutions.features.fullyCustomizable"
+        ),
+        t(
+          "pages.workingModels.models.customSolutions.features.hybridWorkingModels"
+        ),
+        t(
+          "pages.workingModels.models.customSolutions.features.flexiblePaymentOptions"
+        ),
+        t(
+          "pages.workingModels.models.customSolutions.features.customTeamAssignment"
+        ),
       ],
-      duration: "İhtiyaca göre",
-      ideal: "Benzersiz ihtiyaçları olan kurumsal şirketler",
-      pricing: "Özel teklif",
+      duration: t("pages.workingModels.models.customSolutions.duration"),
+      ideal: t("pages.workingModels.models.customSolutions.ideal"),
+      pricing: t("pages.workingModels.models.customSolutions.pricing"),
     },
   ];
 
   const processSteps = [
     {
       step: "01",
-      title: "İlk Görüşme",
-      description: "İhtiyaçlarınızı anlıyoruz ve hedeflerinizi belirliyoruz",
+      title: t("pages.workingModels.processSteps.firstMeeting.title"),
+      description: t(
+        "pages.workingModels.processSteps.firstMeeting.description"
+      ),
       icon: "💬",
     },
     {
       step: "02",
-      title: "Analiz ve Planlama",
-      description: "Pazar analizi yapıyor ve size özel strateji geliştiriyoruz",
+      title: t("pages.workingModels.processSteps.analysisAndPlanning.title"),
+      description: t(
+        "pages.workingModels.processSteps.analysisAndPlanning.description"
+      ),
       icon: "📊",
     },
     {
       step: "03",
-      title: "Uygulama",
-      description:
-        "Belirlenen stratejileri hayata geçiriyor ve saha desteği sağlıyoruz",
+      title: t("pages.workingModels.processSteps.implementation.title"),
+      description: t(
+        "pages.workingModels.processSteps.implementation.description"
+      ),
       icon: "🚀",
     },
     {
       step: "04",
-      title: "Takip ve Optimizasyon",
-      description: "Sonuçları ölçüyor ve süreçleri sürekli iyileştiriyoruz",
+      title: t(
+        "pages.workingModels.processSteps.trackingAndOptimization.title"
+      ),
+      description: t(
+        "pages.workingModels.processSteps.trackingAndOptimization.description"
+      ),
       icon: "📈",
     },
   ];
@@ -152,19 +183,14 @@ export default function WorkingModels() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl opacity-20"></div>
 
         <div className="max-w-7xl mx-auto text-center relative z-10">
-          <div className="inline-flex items-center gap-2 bg-blue-600/20 backdrop-blur-sm text-blue-300 px-5 py-2.5 rounded-full text-sm font-semibold mb-6 border border-blue-400/30">
-            <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
-            Çalışma Modellerimiz
-          </div>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fadeIn">
-            Size Uygun Çalışma Modelini Seçin
+            {t("pages.workingModels.title")}
           </h1>
           <p
             className="text-xl text-slate-300 max-w-3xl mx-auto animate-fadeIn"
             style={{ animationDelay: "0.2s" }}
           >
-            İşletmenizin ihtiyaçlarına ve hedeflerine göre esnek çalışma
-            modelleri sunuyoruz
+            {t("pages.workingModels.description")}
           </p>
         </div>
       </div>
@@ -208,13 +234,19 @@ export default function WorkingModels() {
                     <div className="flex items-center gap-2 text-sm">
                       <span className="text-blue-600">⏱️</span>
                       <span className="text-slate-600">
-                        <strong>Süre:</strong> {model.duration}
+                        <strong>
+                          {t("pages.workingModels.models.duration")}:
+                        </strong>{" "}
+                        {model.duration}
                       </span>
                     </div>
                     <div className="flex items-center gap-2 text-sm">
                       <span className="text-blue-600">💰</span>
                       <span className="text-slate-600">
-                        <strong>Fiyat:</strong> {model.pricing}
+                        <strong>
+                          {t("pages.workingModels.models.pricing")}:
+                        </strong>{" "}
+                        {model.pricing}
                       </span>
                     </div>
                   </div>
@@ -226,7 +258,7 @@ export default function WorkingModels() {
                   >
                     <div className="border-t border-slate-200 pt-4 mb-4">
                       <p className="text-sm font-semibold text-slate-900 mb-2">
-                        Özellikler:
+                        {t("pages.workingModels.models.features")}:
                       </p>
                       <ul className="space-y-2">
                         {model.features.map((feature, idx) => (
@@ -255,7 +287,7 @@ export default function WorkingModels() {
 
                     <div className="bg-blue-50 border border-blue-100 rounded-lg p-3">
                       <p className="text-xs font-semibold text-blue-900 mb-1">
-                        İdeal:
+                        {t("pages.workingModels.models.ideal")}:
                       </p>
                       <p className="text-sm text-blue-800">{model.ideal}</p>
                     </div>
@@ -263,8 +295,8 @@ export default function WorkingModels() {
 
                   <button className="w-full mt-4 text-blue-600 font-semibold text-sm flex items-center justify-center gap-2 hover:gap-3 transition-all">
                     {selectedModel === model.id
-                      ? "Daha Az Göster"
-                      : "Detayları Gör"}
+                      ? t("pages.workingModels.models.showLess")
+                      : t("pages.workingModels.models.showDetails")}
                     <svg
                       className={`w-4 h-4 transform transition-transform ${
                         selectedModel === model.id ? "rotate-180" : ""
@@ -292,10 +324,10 @@ export default function WorkingModels() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Çalışma Sürecimiz
+              {t("pages.workingModels.processSteps.title")}
             </h2>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Adım adım profesyonel destek ile hedeflerinize ulaşın
+              {t("pages.workingModels.processSteps.description")}
             </p>
           </div>
 
@@ -336,10 +368,10 @@ export default function WorkingModels() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">
-              Modelleri Karşılaştırın
+              {t("pages.workingModels.compareModels.title")}
             </h2>
             <p className="text-xl text-slate-600">
-              Hangi model sizin için en uygun?
+              {t("pages.workingModels.compareModels.description")}
             </p>
           </div>
 
@@ -348,45 +380,69 @@ export default function WorkingModels() {
               <thead className="bg-slate-50">
                 <tr>
                   <th className="px-6 py-4 text-left text-sm font-bold text-slate-900">
-                    Özellik
+                    {t("pages.workingModels.compareModels.table.feature")}
                   </th>
                   <th className="px-6 py-4 text-center text-sm font-bold text-slate-900">
-                    Proje Bazlı
+                    {t("pages.workingModels.compareModels.table.projectBased")}
                   </th>
                   <th className="px-6 py-4 text-center text-sm font-bold text-slate-900">
-                    Sürekli
+                    {t("pages.workingModels.compareModels.table.continuous")}
                   </th>
                   <th className="px-6 py-4 text-center text-sm font-bold text-slate-900">
-                    Başarı Ortaklığı
+                    {t(
+                      "pages.workingModels.compareModels.table.successPartnership"
+                    )}
                   </th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-200">
                 <tr className="hover:bg-slate-50">
                   <td className="px-6 py-4 text-sm text-slate-600">
-                    Başlangıç Maliyeti
+                    {t("pages.workingModels.compareModels.table.startUpCost")}
                   </td>
-                  <td className="px-6 py-4 text-center text-sm">Orta</td>
-                  <td className="px-6 py-4 text-center text-sm">Düşük</td>
-                  <td className="px-6 py-4 text-center text-sm">Çok Düşük</td>
-                </tr>
-                <tr className="hover:bg-slate-50">
-                  <td className="px-6 py-4 text-sm text-slate-600">Esneklik</td>
-                  <td className="px-6 py-4 text-center text-sm">Orta</td>
-                  <td className="px-6 py-4 text-center text-sm">Yüksek</td>
-                  <td className="px-6 py-4 text-center text-sm">Yüksek</td>
+                  <td className="px-6 py-4 text-center text-sm">
+                    {t("pages.workingModels.medium")}
+                  </td>
+                  <td className="px-6 py-4 text-center text-sm">
+                    {t("pages.workingModels.low")}
+                  </td>
+                  <td className="px-6 py-4 text-center text-sm">
+                    {t("pages.workingModels.veryLow")}
+                  </td>
                 </tr>
                 <tr className="hover:bg-slate-50">
                   <td className="px-6 py-4 text-sm text-slate-600">
-                    Risk Paylaşımı
+                    {t("pages.workingModels.compareModels.table.flexibility")}
                   </td>
-                  <td className="px-6 py-4 text-center text-sm">Hayır</td>
-                  <td className="px-6 py-4 text-center text-sm">Hayır</td>
-                  <td className="px-6 py-4 text-center text-sm">Evet</td>
+                  <td className="px-6 py-4 text-center text-sm">
+                    {t("pages.workingModels.medium")}
+                  </td>
+                  <td className="px-6 py-4 text-center text-sm">
+                    {t("pages.workingModels.high")}
+                  </td>
+                  <td className="px-6 py-4 text-center text-sm">
+                    {t("pages.workingModels.high")}
+                  </td>
                 </tr>
                 <tr className="hover:bg-slate-50">
                   <td className="px-6 py-4 text-sm text-slate-600">
-                    Uzun Vadeli Destek
+                    {t("pages.workingModels.compareModels.table.riskSharing")}
+                  </td>
+                  <td className="px-6 py-4 text-center text-sm">
+                    {t("pages.workingModels.no")}
+                  </td>
+                  <td className="px-6 py-4 text-center text-sm">
+                    {t("pages.workingModels.no")}
+                  </td>
+                  <td className="px-6 py-4 text-center text-sm">
+                    {t("pages.workingModels.yes")}
+                  </td>
+                </tr>
+                <tr className="hover:bg-slate-50">
+                  <td className="px-6 py-4 text-sm text-slate-600">
+                    {t(
+                      "pages.workingModels.compareModels.table.longTermSupport"
+                    )}
                   </td>
                   <td className="px-6 py-4 text-center text-sm">❌</td>
                   <td className="px-6 py-4 text-center text-sm">✅</td>
@@ -405,15 +461,14 @@ export default function WorkingModels() {
 
           <div className="relative z-10">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Size Özel Çözüm Önerelim
+              {t("pages.workingModels.offer.title")}
             </h2>
             <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-              İhtiyaçlarınızı değerlendiriyor ve en uygun çalışma modelini
-              öneriyoruz
+              {t("pages.workingModels.offer.description")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-xl inline-flex items-center justify-center gap-2">
-                Ücretsiz Danışmanlık
+                {t("pages.workingModels.offer.button")}
                 <svg
                   className="w-5 h-5"
                   fill="none"
@@ -429,7 +484,7 @@ export default function WorkingModels() {
                 </svg>
               </button>
               <button className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 backdrop-blur-sm">
-                Teklif Alın
+                {t("pages.workingModels.offer.button2")}
               </button>
             </div>
           </div>
