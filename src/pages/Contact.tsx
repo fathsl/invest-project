@@ -45,7 +45,7 @@ export default function Contact() {
     {
       icon: "📍",
       title: t("pages.contact.contactInfo.address.title"),
-      details: ["İstanbul, Türkiye", "Merkez Ofis"],
+      details: [t("pages.contact.contactInfo.address.details")],
       link: null,
     },
     {
@@ -63,7 +63,7 @@ export default function Contact() {
     {
       icon: "⏰",
       title: t("pages.contact.contactInfo.workingHours.title"),
-      details: ["Pazartesi - Cuma: 09:00 - 18:00", "Cumartesi: 10:00 - 14:00"],
+      details: [t("pages.contact.contactInfo.workingHours.details")],
       link: null,
     },
   ];
@@ -78,18 +78,15 @@ export default function Contact() {
   const faqs = [
     {
       question: t("pages.contact.faqs.question1"),
-      answer:
-        t("pages.contact.faqs.answer1"),
+      answer: t("pages.contact.faqs.answer1"),
     },
     {
       question: t("pages.contact.faqs.question2"),
-      answer:
-        t("pages.contact.faqs.answer2"),
+      answer: t("pages.contact.faqs.answer2"),
     },
     {
       question: t("pages.contact.faqs.question3"),
-      answer:
-        t("pages.contact.faqs.answer3"),
+      answer: t("pages.contact.faqs.answer3"),
     },
   ];
 
@@ -160,8 +157,8 @@ export default function Contact() {
                 {t("pages.contact.sendMessage.description")}
               </p>
 
-              <div className="space-y-6">
-                <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit}>
+                <div className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-semibold text-slate-900 mb-2">
@@ -173,7 +170,9 @@ export default function Contact() {
                         value={formData.name}
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
-                        placeholder={t("pages.contact.sendMessage.namePlaceholder")}
+                        placeholder={t(
+                          "pages.contact.sendMessage.namePlaceholder"
+                        )}
                       />
                     </div>
                     <div>
@@ -186,7 +185,9 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
-                        placeholder={t("pages.contact.sendMessage.emailPlaceholder")}
+                        placeholder={t(
+                          "pages.contact.sendMessage.emailPlaceholder"
+                        )}
                       />
                     </div>
                   </div>
@@ -215,7 +216,9 @@ export default function Contact() {
                         value={formData.company}
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
-                        placeholder={t("pages.contact.sendMessage.companyPlaceholder")}
+                        placeholder={t(
+                          "pages.contact.sendMessage.companyPlaceholder"
+                        )}
                       />
                     </div>
                   </div>
@@ -230,13 +233,13 @@ export default function Contact() {
                       onChange={handleChange}
                       className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
                     >
-                      <option value="">Seçiniz</option>
-                      <option value="market-analysis">Pazar Analizi</option>
-                      <option value="entry-strategy">Giriş Stratejisi</option>
-                      <option value="partner-sourcing">İş Ortağı Bulma</option>
-                      <option value="field-support">Saha Desteği</option>
-                      <option value="training">Eğitim</option>
-                      <option value="other">Diğer</option>
+                      <option value="">{t("pages.contact.sendMessage.servicePlaceholder")}</option>
+                      <option value="market-analysis">{t("pages.contact.sendMessage.marketAnalysis")}</option>
+                      <option value="entry-strategy">{t("pages.contact.sendMessage.entryStrategy")}</option>
+                      <option value="partner-sourcing">{t("pages.contact.sendMessage.partnerSourcing")}</option>
+                      <option value="field-support">{t("pages.contact.sendMessage.fieldSupport")}</option>
+                      <option value="training">{t("pages.contact.sendMessage.training")}</option>
+                      <option value="other">{t("pages.contact.sendMessage.other")}</option>
                     </select>
                   </div>
 
@@ -249,14 +252,16 @@ export default function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all resize-none"
-                      placeholder={t("pages.contact.sendMessage.messagePlaceholder")}
+                      placeholder={t(
+                        "pages.contact.sendMessage.messagePlaceholder"
+                      )}
                     ></textarea>
                   </div>
 
                   <button
                     type="submit"
                     disabled={submitted}
-                    className={`w-full py-4 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2 ${
+                    className={`w-full py-4 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2 mt-4 ${
                       submitted
                         ? "bg-green-600 text-white"
                         : "bg-blue-600 hover:bg-blue-500 text-white hover:shadow-xl"
@@ -298,8 +303,8 @@ export default function Contact() {
                       </>
                     )}
                   </button>
-                </form>
-              </div>
+                </div>
+              </form>
             </div>
 
             <div className="space-y-8">
@@ -315,17 +320,17 @@ export default function Contact() {
                 <div className="text-center p-8">
                   <div className="text-6xl mb-4">🗺️</div>
                   <p className="text-slate-600 font-semibold">
-                    İstanbul, Türkiye
+                    {t("pages.contact.sendMessage.location")}
                   </p>
                   <p className="text-slate-500 text-sm mt-2">
-                    Detaylı konum bilgisi için bize ulaşın
+                    {t("pages.contact.sendMessage.locationDescription")}
                   </p>
                 </div>
               </div>
 
               <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-lg">
                 <h3 className="text-xl font-bold text-slate-900 mb-4">
-                  Sosyal Medya
+                  {t("pages.contact.sendMessage.socialMedia")}
                 </h3>
                 <div className="grid grid-cols-2 gap-3">
                   {socialLinks.map((social, index) => (
@@ -349,7 +354,7 @@ export default function Contact() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">
-            {t("pages.contact.faqs.title")}
+              {t("pages.contact.faqs.title")}
             </h2>
             <p className="text-xl text-slate-600">
               {t("pages.contact.faqs.description")}
@@ -375,7 +380,9 @@ export default function Contact() {
           </div>
 
           <div className="mt-8 text-center">
-            <p className="text-slate-600 mb-4">{t("pages.contact.faqs.button")}</p>
+            <p className="text-slate-600 mb-4">
+              {t("pages.contact.faqs.button")}
+            </p>
             <button className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
               {t("pages.contact.faqs.buttonView")}
             </button>

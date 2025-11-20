@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 
 export default function Footer() {
   const { i18n } = useTranslation();
+  const { t } = useTranslation();
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
 
   const languages = useMemo(
@@ -37,12 +38,11 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="text-lg font-bold">AB Invest</h3>
-                <p className="text-xs text-slate-400">Export Partner MMC</p>
+                <p className="text-xs text-slate-400">{t("pages.footer.company")}</p>
               </div>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Your trusted partner in international business expansion.
-              Professional consultancy services for global market entry.
+              {t("pages.footer.description")}
             </p>
             <div className="relative mt-4">
               <button
@@ -84,17 +84,19 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold text-lg mb-6">Services</h4>
+            <h4 className="font-bold text-lg mb-6">{t("pages.footer.services")}</h4>
             <ul className="space-y-3">
               {[
-                "Export Consultancy",
-                "Business Development",
-                "International Branding",
-                "Logistics & Operations",
+                t("services.Market Analysis and Research"),
+                t("services.Entry Strategy Development"),
+                t("services.Business Partner Sourcing"),
+                t("services.Compliance and Regulatory Consulting"),
+                t("services.Field Support"),
+                t("services.Growth and Scaling")
               ].map((item, idx) => (
                 <li key={idx}>
                   <a
-                    href="#services"
+                    href="/services"
                     className="text-slate-400 hover:text-white transition-colors text-sm flex items-center gap-2"
                   >
                     <ChevronDown className="rotate-[-90deg]" size={14} />
@@ -106,12 +108,12 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold text-lg mb-6">Company</h4>
+            <h4 className="font-bold text-lg mb-6">{t("pages.footer.companyDetails")}</h4>
             <ul className="space-y-3">
               {[
-                { name: "About Us", link: "#about" },
-                { name: "Working Models", link: "#process" },
-                { name: "Contact", link: "#contact" },
+                { name: t("pages.footer.aboutUs"), link: "/about" },
+                { name: t("pages.footer.workingModels"), link: "/working-models" },
+                { name: t("pages.footer.contact"), link: "/contact" },
               ].map((item, idx) => (
                 <li key={idx}>
                   <a
@@ -127,9 +129,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold text-lg mb-6">Connect With Us</h4>
+            <h4 className="font-bold text-lg mb-6">{t("pages.footer.connectWithUs")}</h4>
             <p className="text-slate-400 text-sm mb-6">
-              Stay updated with our latest insights and market intelligence
+              {t("pages.footer.connectWithUsDescription")}
             </p>
             <div className="flex gap-3 mb-6">
               {[
@@ -168,26 +170,20 @@ export default function Footer() {
 
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-400 text-sm">
-            © 2025 AB Invest - Export Partner MMC. All rights reserved.
+            {t("pages.footer.copyright")}
           </p>
           <div className="flex gap-6 text-sm">
             <a
-              href="#"
+              href="/privacy-policy"
               className="text-slate-400 hover:text-white transition-colors"
             >
-              Privacy Policy
+              {t("pages.footer.privacyPolicy")}
             </a>
             <a
-              href="#"
+              href="/service-terms"
               className="text-slate-400 hover:text-white transition-colors"
             >
-              Terms of Service
-            </a>
-            <a
-              href="#"
-              className="text-slate-400 hover:text-white transition-colors"
-            >
-              Cookie Policy
+              {t("pages.footer.termsOfService")}
             </a>
           </div>
         </div>

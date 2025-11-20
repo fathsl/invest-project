@@ -8,6 +8,8 @@ import Contact from './pages/Contact'
 import AboutUs from './pages/About'
 import References from './pages/References'
 import WorkingModels from './pages/WorkingModels'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsOfService from './pages/ServiceTerms'
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/references" element={<References />} />
           <Route path="/working-models" element={<WorkingModels />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/service-terms" element={<TermsOfService />} />
         </Routes>
         <Footer />
       </main>
