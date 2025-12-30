@@ -66,60 +66,60 @@ export default function Home() {
   const services = [
     {
       icon: Search,
-      title: "Export Consultancy",
-      subtitle: "Strategic Market Entry & Analysis",
+      title: "Export Promotion",
+      subtitle: "International Market Access Solutions",
       description:
-        "Comprehensive market research, competitor analysis, and strategic entry planning for international markets.",
+        "Supporting local products and services to reach international markets. We provide strategic guidance, market analysis, and connections to help Azerbaijani businesses expand their export potential and succeed globally.",
       features: [
-        "Target Market Analysis",
-        "Competitor Research",
-        "Entry Strategy Development",
-        "Regulatory Compliance",
+        "International Market Entry Strategy",
+        "Export Documentation & Compliance",
+        "Trade Partnership Development",
+        "Market Research & Analysis",
       ],
       image:
         "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
     },
     {
       icon: Handshake,
-      title: "Business Development",
-      subtitle: "Partner & Distributor Network",
+      title: "Foreign Investment Attraction",
+      subtitle: "Capital & Investment Facilitation",
       description:
-        "Connect with the right partners, distributors, and master dealers to expand your market reach.",
+        "Directing foreign capital to Azerbaijan's economy and improving the investment environment. We connect international investors with high-potential opportunities and facilitate successful investment partnerships.",
       features: [
-        "Partner Identification",
-        "Franchise Development",
-        "Market Feasibility Studies",
-        "Network Building",
+        "Investment Opportunity Sourcing",
+        "Due Diligence Support",
+        "Investor Relations Management",
+        "Investment Climate Advisory",
       ],
       image:
         "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80",
     },
     {
       icon: Award,
-      title: "International Branding",
-      subtitle: "Global Brand Strategy & Positioning",
+      title: "Digital Business Solutions",
+      subtitle: "Technology-Driven Innovation",
       description:
-        "Strategic brand positioning and digital visibility consulting for international market success.",
+        "Developing and implementing innovative digital tools based on modern technologies. Our AI-powered platforms and digital solutions help businesses transform, scale, and compete in the global marketplace.",
       features: [
-        "Brand Strategy",
-        "Market Positioning",
-        "Digital Marketing",
-        "Corporate Identity",
+        "AI-Integrated B2B Platforms",
+        "Digital Transformation Consulting",
+        "Virtual Business Portals",
+        "Technology Implementation",
       ],
       image:
         "https://images.unsplash.com/photo-1553484771-371a605b060b?w=800&q=80",
     },
     {
       icon: Truck,
-      title: "Logistics & Operations",
-      subtitle: "Supply Chain & Compliance Solutions",
+      title: "Event & Consulting Services",
+      subtitle: "Strategic Business Development",
       description:
-        "End-to-end logistics planning including customs, taxation, and transportation management.",
+        "Professional business event organization, strategic consulting, and comprehensive training services. We create platforms for meaningful connections and provide expert guidance for business growth.",
       features: [
-        "Customs Solutions",
-        "Tax Optimization",
-        "Supply Chain Management",
-        "Documentation Support",
+        "Business Event Management",
+        "Strategic Consulting Services",
+        "Professional Training Programs",
+        "Partnership Facilitation",
       ],
       image:
         "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
@@ -131,79 +131,86 @@ export default function Home() {
       icon: FileText,
       title: "Project-Based",
       description:
-        "Single project consultation with defined deliverables and timeline",
+        "Single project consultation for specific business objectives with defined deliverables and timeline.",
       price: "Custom Quote",
       features: [
-        "Defined Project Scope",
-        "Clear Deliverables",
-        "Fixed Timeline",
-        "One-time Investment",
+        "Market Entry Projects",
+        "Investment Facilitation",
+        "Export Strategy Development",
+        "Digital Platform Integration",
       ],
-      ideal: "Ideal for: Market entry projects, feasibility studies",
+      ideal:
+        "Ideal for: Companies seeking specific market entry or investment opportunities",
     },
     {
       icon: Brain,
-      title: "Monthly Retainer",
+      title: "Partnership Retainer (Popular)",
       description:
-        "Ongoing strategic partnership for continuous growth and support",
-      price: "From €2,500/mo",
+        "Ongoing strategic partnership for continuous business development and growth support.",
+      price: "Contact for Custom Package",
       features: [
-        "Unlimited Consultations",
-        "Priority Support",
-        "Monthly Reports",
-        "Strategic Planning Sessions",
+        "Continuous Strategic Guidance",
+        "Priority Investment Opportunities",
+        "Regular Business Matching",
+        "Ongoing Digital Support",
       ],
-      ideal: "Ideal for: Established exporters, growing businesses",
+      ideal:
+        "Ideal for: Growing businesses and active exporters seeking sustained growth",
       popular: true,
     },
     {
       icon: Globe,
-      title: "Country Packages",
+      title: "Comprehensive Solutions",
       description:
-        "Specialized market entry packages tailored to specific countries",
+        "Full-service package including all consulting, digital, and partnership services.",
       price: "Custom Package",
       features: [
-        "Market-Specific Research",
-        "Local Partnerships",
-        "Regulatory Navigation",
-        "On-ground Support",
+        "Complete Business Development",
+        "End-to-End Digital Solutions",
+        "Event Participation Access",
+        "Dedicated Account Management",
       ],
-      ideal: "Ideal for: Targeted market expansion",
+      ideal:
+        "Ideal for: Businesses committed to comprehensive international expansion",
     },
   ];
 
   const whyChoose = [
     {
       icon: Building2,
-      title: "European Business Culture",
+      title: "Foreign Investment Expertise",
       description:
-        "We bring European standards of professionalism, transparency, and business ethics to every engagement.",
+        "Proven track record in attracting foreign capital to Azerbaijan with $65M+ successfully facilitated and strategic partnerships across international markets.",
     },
     {
       icon: Globe,
-      title: "Extensive Global Network",
+      title: "Digital Innovation Leaders",
       description:
-        "Access to established partnerships and networks across Europe, Asia, and the Middle East.",
+        "Cutting-edge digital platforms with AI integration, supporting 720+ active users and delivering 70% success rate on digital transformation projects.",
     },
     {
       icon: Target,
-      title: "Proven Track Record",
+      title: "Strategic Event Management",
       description:
-        "Successfully guided 50+ companies into international markets with measurable results.",
+        "Professional business event organization with 1,200+ annual participants, fostering valuable B2B connections and partnership opportunities.",
     },
     {
       icon: Users,
-      title: "Expert Multilingual Team",
+      title: "Comprehensive Business Support",
       description:
-        "Professional consultants fluent in multiple languages with deep local market knowledge.",
+        "End-to-end consulting services from market entry to operational excellence, with 160+ businesses trained and 35+ strategic partnerships established.",
     },
   ];
 
   const stats = [
-    { number: "50+", label: "Successful Market Entries", icon: Target },
-    { number: "15+", label: "Years of Experience", icon: Award },
-    { number: "€100M+", label: "Client Revenue Generated", icon: TrendingUp },
-    { number: "25+", label: "Countries Covered", icon: Globe },
+    { number: "$65M+", label: "Foreign Capital Attracted", icon: Target },
+    { number: "10+", label: "International Contracts Signed", icon: Award },
+    {
+      number: "1,200+",
+      label: "Event Participants Annually",
+      icon: TrendingUp,
+    },
+    { number: "25+", label: "Countries in Our Network", icon: MapPin },
   ];
 
   const isVisible = (sectionId: string) => visibleSections.has(sectionId);
@@ -256,14 +263,15 @@ export default function Home() {
                 Your Gateway to Global Markets
               </div>
               <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
-                Expand Your Business
-                <span className="block text-blue-400 mt-2">Across Borders</span>
+                Your Gateway to Investment,
+                <span className="block text-blue-400 mt-2">
+                  Export & Global Partnerships
+                </span>
               </h1>
               <p className="text-xl text-slate-200 leading-relaxed mb-8">
-                AB Invest – Export Partner MMC provides comprehensive
-                consultancy services for companies seeking international growth.
-                From market analysis to partner connections, we ensure your
-                success in global markets.
+                AB Invest – strategic business, investment, and export platform
+                connecting companies, investors, and partners across
+                international markets.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-16">
                 <a
@@ -284,7 +292,10 @@ export default function Home() {
                 {stats.map((stat, idx) => {
                   const Icon = stat.icon;
                   return (
-                    <div key={idx} className="text-center bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+                    <div
+                      key={idx}
+                      className="text-center bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20"
+                    >
                       <Icon className="mx-auto mb-2 text-blue-400" size={28} />
                       <div className="text-3xl font-bold text-white mb-1">
                         {stat.number}
@@ -666,33 +677,43 @@ export default function Home() {
               </div>
 
               <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-                Your Trusted Partner in International Expansion
+                Your Trusted Partner in International Business Growth
               </h2>
 
               <p className="text-lg text-slate-600 leading-relaxed mb-6">
-                AB Invest – Export Partner MMC is a professional consultancy
-                firm specializing in helping businesses enter and succeed in
-                international markets. With a European-based business culture
-                and extensive network, we provide strategic guidance, market
-                analysis, and on-ground support.
+                AB Invest & Export & Partners MMC is a professional consultancy
+                firm specializing in foreign investment attraction, export
+                promotion, and digital business innovation. Based in Baku,
+                Azerbaijan, we serve as a strategic bridge connecting local
+                businesses with international markets and foreign investors with
+                Azerbaijan's growing economy.
               </p>
 
               <p className="text-lg text-slate-600 leading-relaxed mb-8">
-                Our mission is simple: enable companies to enter the right
-                markets, with the right model, and with minimum risk. We combine
-                local market expertise with global business acumen to deliver
-                measurable results.
+                Our mission is to increase export opportunities, attract foreign
+                investment, and strengthen local-international business
+                cooperation through cutting-edge digital solutions. We combine
+                deep local market knowledge with global business expertise to
+                deliver measurable results and sustainable economic growth.
               </p>
 
               <div className="grid grid-cols-2 gap-6">
                 {[
-                  { icon: Award, number: "15+", label: "Years Experience" },
-                  { icon: Globe, number: "25+", label: "Countries" },
-                  { icon: Users, number: "50+", label: "Success Stories" },
+                  { icon: Award, number: "$65M+", label: "Capital Attracted" },
+                  {
+                    icon: Globe,
+                    number: "10+",
+                    label: "International Contracts",
+                  },
                   {
                     icon: TrendingUpIcon,
-                    number: "€100M+",
-                    label: "Revenue Generated",
+                    number: "22+",
+                    label: "B2B Partnerships",
+                  },
+                  {
+                    icon: Users,
+                    number: "720+",
+                    label: "Platform Users",
                   },
                 ].map((stat, idx) => {
                   const Icon = stat.icon;
@@ -743,20 +764,20 @@ export default function Home() {
                   <div className="space-y-4">
                     {[
                       {
-                        title: "Integrity",
-                        desc: "Transparent and honest in all dealings",
-                      },
-                      {
-                        title: "Excellence",
-                        desc: "Consistently delivering high-quality results",
+                        title: "Innovation",
+                        desc: "Leveraging technology for competitive advantage",
                       },
                       {
                         title: "Partnership",
-                        desc: "Your success is our success",
+                        desc: "Building sustainable business relationships",
                       },
                       {
-                        title: "Innovation",
-                        desc: "Creative solutions for complex challenges",
+                        title: "Excellence",
+                        desc: "Delivering high-quality results consistently",
+                      },
+                      {
+                        title: "Growth",
+                        desc: "Driving economic diversification and development",
                       },
                     ].map((value, idx) => (
                       <div
