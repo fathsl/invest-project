@@ -12,78 +12,78 @@ export default function Services() {
       id: 1,
       image:
         "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-      title: t("services.Market Analysis and Research"),
+      title: "Global Investment Opportunities",
       description:
-         t("services.Market Analysis and Research Description"),
+        "We provide members with early access to carefully selected international investment projects designed to generate long-term value and sustainable growth.",
       features: [
-        t("services.Market Analysis and Research Features 1"),
-        t("services.Market Analysis and Research Features 2"),
-        t("services.Market Analysis and Research Features 3"),
+        "Access to vetted international investment projects",
+        "Early-stage and exclusive deal opportunities",
+        "Risk assessment and opportunity evaluation",
       ],
     },
     {
       id: 2,
       image:
         "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
-      title: t("services.Entry Strategy Development"),
+      title: "Export & Trade Development",
       description:
-         t("services.Entry Strategy Development Description"),
+        "We help companies expand their exports by identifying international trade opportunities and connecting them with reliable global buyers and partners.",
       features: [
-        t("services.Entry Strategy Development Features 1"),
-        t("services.Entry Strategy Development Features 2"),
-        t("services.Entry Strategy Development Features 3"),
+        "Identification of export markets",
+        "Access to export deals and trade opportunities",
+        "Support in cross-border trade development",
       ],
     },
     {
       id: 3,
       image:
         "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80",
-      title: t("services.Business Partner Sourcing"),
+      title: "Strategic Business Partnerships",
       description:
-         t("services.Business Partner Sourcing Description"),
+        "We connect our members with trusted international partners to build strong, mutually beneficial, and long-term business relationships.",
       features: [
-        t("services.Business Partner Sourcing Features 1"),
-        t("services.Business Partner Sourcing Features 2"),
-        t("services.Business Partner Sourcing Features 3"),
+        "Partner identification and matchmaking",
+        "Building win-win cooperation models",
+        "Long-term partnership development",
       ],
     },
     {
       id: 4,
       image:
         "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
-      title: t("services.Compliance and Regulatory Consulting"),
+      title: "International Trade & Investment Consulting",
       description:
-         t("services.Compliance and Regulatory Consulting Description"),
+        "Our experts provide professional consulting to support decision-making in international trade, investments, and market expansion.",
       features: [
-        t("services.Compliance and Regulatory Consulting Features 1"),
-        t("services.Compliance and Regulatory Consulting Features 2"),
-        t("services.Compliance and Regulatory Consulting Features 3"),
+        "International market expertise",
+        "Investment and trade strategy consulting",
+        "Professional guidance and insights",
       ],
     },
     {
       id: 5,
       image:
         "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80",
-      title: t("services.Field Support"),
+      title: "Member Support & Advisory",
       description:
-         t("services.Field Support Description"),
+        "Members benefit from continuous support and advisory services to ensure successful execution of projects and international operations.",
       features: [
-        t("services.Field Support Features 1"),
-        t("services.Field Support Features 2"),
-        t("services.Field Support Features 3"),
+        "Dedicated expert support",
+        "Personalized advisory for premium members",
+        "Ongoing guidance throughout projects",
       ],
     },
     {
       id: 6,
       image:
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-      title: t("services.Growth and Scaling"),
+      title: "Networking & Global Community",
       description:
-         t("services.Growth and Scaling Description"),
+        "We offer access to a global network of investors, exporters, and industry leaders, enabling collaboration and new business opportunities worldwide.",
       features: [
-        t("services.Growth and Scaling Features 1"),
-        t("services.Growth and Scaling Features 2"),
-        t("services.Growth and Scaling Features 3"),
+        "International networking opportunities",
+        "Invitations to events and webinars",
+        "Access to a global business community",
       ],
     },
   ];
@@ -101,10 +101,13 @@ export default function Services() {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-20 animate-fadeIn">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-slate-900">
-            {t("pages.services.title") || "Hizmetlerimiz"}
+            Our Services
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            {t("pages.services.description") || "Hizmetlerimiz"}
+            We support companies, investors, and exporters in accessing
+            international markets by providing exclusive opportunities,
+            strategic partnerships, and expert guidance in global trade and
+            investment.
           </p>
         </div>
 
@@ -125,7 +128,7 @@ export default function Services() {
                   alt={service.title}
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-slate-900/60 to-transparent"></div>
 
                 <div className="absolute top-4 right-4 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
                   {service.id}
@@ -147,7 +150,7 @@ export default function Services() {
                       className="flex items-center text-sm text-slate-500"
                     >
                       <svg
-                        className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0"
+                        className="w-5 h-5 text-blue-600 mr-2 shrink-0"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -194,10 +197,22 @@ export default function Services() {
           style={{ animationDelay: "0.6s" }}
         >
           {[
-            { number: "50+", label: t("pages.services.stat1") || "Successful Projects" },
-            { number: "30+", label: t("pages.services.stat2") || "Country Experience" },
-            { number: "100%", label: t("pages.services.stat3") || "Customer Satisfaction" },
-            { number: "15+", label: t("pages.services.stat4") || "Years of Experience" },
+            {
+              number: "50+",
+              label: "Successful International Projects",
+            },
+            {
+              number: "30+",
+              label: "Countries and Markets Covered",
+            },
+            {
+              number: "100%",
+              label: "Trusted Partnerships & Client Satisfaction",
+            },
+            {
+              number: "15+",
+              label: "Years of Experience in Global Trade & Investment",
+            },
           ].map((stat, idx) => (
             <div
               key={idx}
@@ -215,20 +230,22 @@ export default function Services() {
           className="text-center animate-fadeIn"
           style={{ animationDelay: "0.8s" }}
         >
-          <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-12 shadow-2xl relative overflow-hidden">
+          <div className="bg-linear-to-br from-slate-900 to-slate-800 rounded-3xl p-12 shadow-2xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600 rounded-full filter blur-3xl opacity-20"></div>
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl opacity-20"></div>
 
             <div className="relative z-10">
               <h2 className="text-4xl font-bold mb-4 text-white">
-                {t("pages.services.stat7") || "Are You Ready for International Markets?"}
+                "Ready to Expand Your Business Globally?"
               </h2>
               <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
-                {t("pages.services.stat5") || "Years of Experience"}
+                "Join our international network and gain access to exclusive
+                investment opportunities, export deals, and expert support
+                designed to help you succeed worldwide."
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2">
-                  {t("pages.services.stat8") || "Free Consultation"}
+                  Apply for Membership
                   <svg
                     className="w-5 h-5"
                     fill="none"
@@ -243,7 +260,10 @@ export default function Services() {
                     />
                   </svg>
                 </button>
-                <button onClick={() => navigate("/contact")} className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 backdrop-blur-sm">
+                <button
+                  onClick={() => navigate("/contact")}
+                  className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 backdrop-blur-sm"
+                >
                   {t("pages.services.stat6") || "Years of Experience"}
                 </button>
               </div>

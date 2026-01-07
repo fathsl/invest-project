@@ -253,7 +253,7 @@ export default function Home() {
                       url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1920&q=80')`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 via-slate-900/40 to-slate-900/20"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-slate-900/60 via-slate-900/40 to-slate-900/20"></div>
 
         <div className="relative z-10 min-h-screen flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -347,9 +347,9 @@ export default function Home() {
 
       <section
         id="services"
-        className="py-20 bg-gradient-to-b from-white to-slate-50 relative overflow-hidden"
+        className="py-20 bg-linear-to-b from-white to-slate-50 relative overflow-hidden"
       >
-        <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] bg-[size:40px_40px]"></div>
+        <div className="absolute inset-0 bg-grid-slate-100 mask-[linear-gradient(0deg,white,rgba(255,255,255,0.6))] bg-size-[40px_40px]"></div>
 
         <div
           className={`relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${
@@ -387,7 +387,7 @@ export default function Home() {
                       <div className="relative">
                         {/* Decorative Background Elements */}
                         <div
-                          className={`absolute inset-0 bg-gradient-to-br ${
+                          className={`absolute inset-0 bg-linear-to-br ${
                             isEven
                               ? "from-blue-600/20 to-purple-600/20"
                               : "from-purple-600/20 to-blue-600/20"
@@ -398,11 +398,11 @@ export default function Home() {
 
                         {/* Main Image Container */}
                         <div className="relative overflow-hidden rounded-2xl shadow-2xl transform transition-all duration-700 group-hover:scale-[1.02]">
-                          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-slate-900/20 to-transparent z-10"></div>
+                          <div className="absolute inset-0 bg-linear-to-t from-slate-900/60 via-slate-900/20 to-transparent z-10"></div>
                           <img
                             src={service.image}
                             alt={service.title}
-                            className="w-full h-[450px] object-cover transform transition-transform duration-700 group-hover:scale-110"
+                            className="w-full h-112.5 object-cover transform transition-transform duration-700 group-hover:scale-110"
                           />
 
                           {/* Floating Icon Badge */}
@@ -411,7 +411,7 @@ export default function Home() {
                           </div>
 
                           {/* Bottom Info Bar */}
-                          <div className="absolute bottom-0 left-0 right-0 z-20 p-6 bg-gradient-to-t from-slate-900 to-transparent">
+                          <div className="absolute bottom-0 left-0 right-0 z-20 p-6 bg-linear-to-t from-slate-900 to-transparent">
                             <div className="text-white">
                               <div className="text-sm font-semibold text-blue-300 mb-1">
                                 {service.subtitle}
@@ -469,7 +469,7 @@ export default function Home() {
                                 key={fIdx}
                                 className="group/item flex items-start gap-3 p-3 rounded-lg hover:bg-blue-50 transition-colors duration-300"
                               >
-                                <div className="w-6 h-6 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0 transform group-hover/item:scale-110 group-hover/item:rotate-12 transition-all duration-300">
+                                <div className="w-6 h-6 bg-blue-600 rounded-lg flex items-center justify-center shrink-0 transform group-hover/item:scale-110 group-hover/item:rotate-12 transition-all duration-300">
                                   <CheckCircle2
                                     className="text-white"
                                     size={14}
@@ -498,7 +498,7 @@ export default function Home() {
 
                   {/* Connecting Line Between Services */}
                   {idx < services.length - 1 && (
-                    <div className="hidden lg:block absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-px h-16 bg-gradient-to-b from-slate-300 to-transparent"></div>
+                    <div className="hidden lg:block absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-px h-16 bg-linear-to-b from-slate-300 to-transparent"></div>
                   )}
                 </div>
               );
@@ -517,7 +517,7 @@ export default function Home() {
             className="absolute bottom-10 right-10 w-96 h-96 bg-purple-600/20 rounded-full filter blur-3xl animate-pulse"
             style={{ animationDelay: "1.5s" }}
           ></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/10 rounded-full filter blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-blue-600/10 rounded-full filter blur-3xl"></div>
         </div>
 
         <div
@@ -540,7 +540,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 relative">
-            <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -translate-y-1/2"></div>
+            <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-linear-to-r from-transparent via-white/20 to-transparent transform -translate-y-1/2"></div>
 
             {workingModels.map((model, idx) => {
               const Icon = model.icon;
@@ -552,7 +552,7 @@ export default function Home() {
                   }`}
                 >
                   <div
-                    className={`absolute inset-0 bg-gradient-to-br ${
+                    className={`absolute inset-0 bg-linear-to-br ${
                       model.popular
                         ? "from-blue-600/40 to-purple-600/40"
                         : "from-blue-600/20 to-purple-600/20"
@@ -568,7 +568,7 @@ export default function Home() {
                   >
                     {model.popular && (
                       <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-1.5 rounded-full text-sm font-bold shadow-lg flex items-center gap-2">
+                        <div className="bg-linear-to-r from-blue-600 to-purple-600 text-white px-6 py-1.5 rounded-full text-sm font-bold shadow-lg flex items-center gap-2">
                           <Award size={16} />
                           Most Popular
                         </div>
@@ -577,7 +577,7 @@ export default function Home() {
 
                     <div className="mb-6 relative">
                       <div
-                        className={`w-16 h-16 bg-gradient-to-br ${
+                        className={`w-16 h-16 bg-linear-to-br ${
                           model.popular
                             ? "from-blue-600 to-purple-600"
                             : "from-blue-600/80 to-blue-700/80"
@@ -591,10 +591,10 @@ export default function Home() {
                     <h3 className="text-2xl font-bold text-white mb-2">
                       {model.title}
                     </h3>
-                    <p className="text-slate-300 mb-4 min-h-[48px]">
+                    <p className="text-slate-300 mb-4 min-h-12">
                       {model.description}
                     </p>
-                    <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-6">
+                    <div className="text-3xl font-bold bg-linear-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-6">
                       {model.price}
                     </div>
 
@@ -604,7 +604,7 @@ export default function Home() {
                           key={fIdx}
                           className="flex items-start gap-3 group/item"
                         >
-                          <div className="w-5 h-5 bg-blue-600/30 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 transform group-hover/item:scale-110 group-hover/item:rotate-12 transition-all duration-300">
+                          <div className="w-5 h-5 bg-blue-600/30 rounded-lg flex items-center justify-center shrink-0 mt-0.5 transform group-hover/item:scale-110 group-hover/item:rotate-12 transition-all duration-300">
                             <CheckCircle2 className="text-blue-400" size={14} />
                           </div>
                           <span className="text-slate-300 text-sm">
@@ -623,7 +623,7 @@ export default function Home() {
                     <button
                       className={`w-full py-3.5 rounded-xl font-semibold transition-all duration-300 transform hover:scale-[1.02] active:scale-95 ${
                         model.popular
-                          ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg shadow-blue-600/50 hover:shadow-xl hover:shadow-blue-600/60"
+                          ? "bg-linear-to-r from-blue-600 to-purple-600 text-white shadow-lg shadow-blue-600/50 hover:shadow-xl hover:shadow-blue-600/60"
                           : "bg-white/10 backdrop-blur-sm text-white border border-white/20 hover:bg-white/20 hover:border-white/40"
                       }`}
                     >
@@ -631,7 +631,7 @@ export default function Home() {
                     </button>
                   </div>
 
-                  <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                  <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-linear-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
                     {idx + 1}
                   </div>
                 </div>
@@ -720,7 +720,7 @@ export default function Home() {
                   return (
                     <div
                       key={idx}
-                      className="group bg-gradient-to-br from-slate-50 to-blue-50 p-6 rounded-2xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
+                      className="group bg-linear-to-br from-slate-50 to-blue-50 p-6 rounded-2xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
                     >
                       <Icon
                         className="text-blue-600 mb-3 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300"
@@ -738,10 +738,10 @@ export default function Home() {
 
             <div className="relative">
               <div className="relative group">
-                <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl opacity-20 blur-xl group-hover:opacity-30 transition-opacity duration-500"></div>
+                <div className="absolute -inset-4 bg-linear-to-r from-blue-600 to-purple-600 rounded-3xl opacity-20 blur-xl group-hover:opacity-30 transition-opacity duration-500"></div>
 
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-transparent z-10"></div>
+                  <div className="absolute inset-0 bg-linear-to-br from-blue-600/10 to-transparent z-10"></div>
                   <img
                     src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
                     alt="Team collaboration"
@@ -750,7 +750,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="mt-8 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-8 text-white shadow-2xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-3xl relative overflow-hidden">
+              <div className="mt-8 bg-linear-to-br from-blue-600 to-blue-700 rounded-2xl p-8 text-white shadow-2xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-3xl relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -mr-20 -mt-20"></div>
                 <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full -ml-16 -mb-16"></div>
 
@@ -784,7 +784,7 @@ export default function Home() {
                         key={idx}
                         className="group/value flex items-start gap-4 pb-4 border-b border-white/20 last:border-0 last:pb-0 transition-all duration-300 hover:translate-x-2"
                       >
-                        <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0 transform group-hover/value:rotate-12 group-hover/value:scale-110 transition-all duration-300">
+                        <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center shrink-0 transform group-hover/value:rotate-12 group-hover/value:scale-110 transition-all duration-300">
                           <span className="text-sm font-bold">{idx + 1}</span>
                         </div>
                         <div>
@@ -897,7 +897,7 @@ export default function Home() {
                     const Icon = item.icon;
                     return (
                       <div key={idx} className="flex items-start gap-4">
-                        <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center shrink-0">
                           <Icon className="text-blue-600" size={22} />
                         </div>
                         <div>
@@ -935,7 +935,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Floating up/down pager control */}
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
         <button
           aria-label="Scroll up"

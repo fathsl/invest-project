@@ -8,93 +8,69 @@ export default function References() {
   const references = [
     {
       id: 1,
-      company: "TechFlow Solutions",
-      industry: t("pages.references.industry.technology"),
-      country: t("pages.references.country.germany"),
+      company: "Global Investment Group",
+      industry: "Investment & Finance",
+      country: "International",
       logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=400&q=80",
       testimonial:
-        t("pages.references.testimonial.technology"),
-      person: "Mehmet Yıldız",
-      position: "CEO",
-      result: t("pages.references.result.technology"),
+        "“Through AB Invest Export и Партнеры MMC, we gained access to exclusive international investment opportunities that significantly improved our portfolio performance.”",
+      person: "Senior Investment Manager",
+      position: "Investment Director",
+      result: "Access to high-yield international investment opportunities",
     },
     {
       id: 2,
-      company: "FoodExport Co.",
-      industry: t("pages.references.industry.food"),
-      country: t("pages.references.country.bae"),
+      company: "International Export Company",
+      industry: "Export & Trade",
+      country: "Europe / Middle East",
       logo: "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&q=80",
       testimonial:
-        t("pages.references.testimonial.food"),
-      person: "Ayşe Kara",
-      position: t("pages.references.position.food"),
-      result: t("pages.references.result.food"),
+        "“Thanks to the expertise and global network of AB Invest Export, we successfully entered new markets and increased our export volume by over 30%.”",
+      person: "Export Manager",
+      position: "Head of International Trade",
+      result: "Successful entry into new international markets",
     },
     {
       id: 3,
-      company: "MediPharm International",
-      industry: t("pages.references.industry.health"),
-      country: t("pages.references.country.france"),
+      company: "Global Trade Partner",
+      industry: "International Trade",
+      country: "Multinational",
       logo: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=400&q=80",
       testimonial:
-        t("pages.references.testimonial.health"),
-      person: "Dr. Can Özkan",
-      position: t("pages.references.position.health"),
-      result: t("pages.references.result.health"),
-    },
-    {
-      id: 4,
-      company: "TextilePro Turkey",
-      industry: t("pages.references.industry.textile"),
-      country: t("pages.references.country.italy"),
-      logo: "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=400&q=80",
-      testimonial:
-        t("pages.references.testimonial.textile"),
-      person: "Zeynep Arslan",
-      position: t("pages.references.position.textile"),
-      result: t("pages.references.result.textile"),
-    },
-    {
-      id: 5,
-      company: "GreenEnergy Solutions",
-      industry: t("pages.references.industry.energy"),
-      country: t("pages.references.country.netherlands"),
-      logo: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&q=80",
-      testimonial:
-        t("pages.references.testimonial.energy"),
-      person: "Emre Demir",
-      position: t("pages.references.position.energy"),
-      result: t("pages.references.result.energy"),
-    },
-    {
-      id: 6,
-      company: "AutoParts Export",
-      industry: t("pages.references.industry.auto"),
-      country: t("pages.references.country.spain"),
-      logo: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&q=80",
-      testimonial:
-        t("pages.references.testimonial.auto"),
-      person: "Ahmet Çelik",
-      position: t("pages.references.position.auto"),
-      result: t("pages.references.result.auto"),
+        "“The partnership with AB Invest Export allowed us to build strong, reliable business relationships across multiple countries.”",
+      person: "Business Development Lead",
+      position: "Partnership Manager",
+      result: "Long-term strategic international partnership",
     },
   ];
 
   const stats = [
-    { number: "50+", label: t("pages.references.stats.successfulProjects"), icon: "📊" },
-    { number: "30+", label: t("pages.references.stats.countries"), icon: "🌍" },
-    { number: "%95", label: t("pages.references.stats.customerSatisfaction"), icon: "⭐" },
-    { number: "€50M+", label: t("pages.references.stats.tradeVolume"), icon: "💼" },
+    {
+      number: "50+",
+      label: "Successful International Projects",
+      icon: "📊",
+    },
+    { number: "30+", label: "Countries & Markets Reached", icon: "🌍" },
+    {
+      number: "%95",
+      label: "Partner & Member Satisfaction",
+      icon: "⭐",
+    },
+    {
+      number: "€50M+",
+      label: "Total Trade & Investment Volume Facilitated",
+      icon: "💼",
+    },
   ];
 
   const industries = [
     "all",
-    t("pages.references.industry.technology"),
-    t("pages.references.industry.food"),
-    t("pages.references.industry.health"),
-    t("pages.references.industry.textile"),
-    t("pages.references.industry.energy"),
-    t("pages.references.industry.auto"),
+    "Investment & Finance",
+    "Export & Trade",
+    "Manufacturing & Industry",
+    "Energy & Sustainability",
+    "Healthcare & Pharmaceuticals",
+    "Automotive & Logistics",
   ];
 
   const filteredReferences =
@@ -104,14 +80,15 @@ export default function References() {
 
   return (
     <section className="min-h-screen bg-white">
-      <div className="relative py-20 px-6 bg-gradient-to-br from-slate-50 to-white">
+      <div className="relative py-20 px-6 bg-linear-to-br from-slate-50 to-white">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
-            {t("pages.references.title") || "Our Customers' Success Stories"}
+            Success Stories & Trusted Partnerships
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            {t("pages.references.description") ||
-              "We have helped dozens of companies from different sectors expand into international markets."}
+            We are proud to support investors and companies in expanding
+            globally through successful investment projects, export growth, and
+            long-term international partnerships.
           </p>
         </div>
       </div>
@@ -151,7 +128,9 @@ export default function References() {
                     : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                 }`}
               >
-                {industry === t("pages.references.industry.all") ? t("pages.references.industry.all") : industry}
+                {industry === t("pages.references.industry.all")
+                  ? t("pages.references.industry.all")
+                  : industry}
               </button>
             ))}
           </div>
@@ -175,7 +154,7 @@ export default function References() {
                     alt={ref.company}
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+                  <div className="absolute inset-0 bg-linear-to-t from-slate-900/60 to-transparent"></div>
 
                   <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
                     {ref.industry}
@@ -204,7 +183,7 @@ export default function References() {
 
                   <div className="bg-blue-50 border border-blue-100 rounded-lg p-3 flex items-start gap-2">
                     <svg
-                      className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"
+                      className="w-5 h-5 text-blue-600 shrink-0 mt-0.5"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -252,22 +231,23 @@ export default function References() {
         </div>
       </div>
 
-      <div className="py-20 px-6 bg-gradient-to-br from-slate-900 to-slate-800">
+      <div className="py-20 px-6 bg-linear-to-br from-slate-900 to-slate-800">
         <div className="max-w-4xl mx-auto text-center relative">
           <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600 rounded-full filter blur-3xl opacity-20"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl opacity-20"></div>
 
           <div className="relative z-10">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              {t("pages.references.title") || "Our Customers' Success Stories"}
+              Become Part of Our Global Success Network
             </h2>
             <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-              {t("pages.references.description") ||
-                "We have helped dozens of companies from different sectors expand into international markets."}
+              Join AB Invest Export и Партнеры MMC and gain access to a trusted
+              international network, exclusive investment opportunities, and
+              export-driven growth solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-xl inline-flex items-center justify-center gap-2">
-                {t("pages.references.button") || "Free Consultation"}
+                Apply for Membership
                 <svg
                   className="w-5 h-5"
                   fill="none"
@@ -283,7 +263,7 @@ export default function References() {
                 </svg>
               </button>
               <button className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 backdrop-blur-sm">
-                {t("pages.references.button") || "Request a Reference"}
+                Contact Our Team
               </button>
             </div>
           </div>
