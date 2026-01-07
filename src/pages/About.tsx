@@ -11,30 +11,26 @@ export default function AboutUs() {
   const values = [
     {
       id: 0,
-      title: "Reliability & Trust",
-      description:
-        "We build long-term relationships based on transparency, integrity, and mutual trust with our members and partners.",
+      title: t("reliability-and-trust"),
+      description: t("reliability and trust desc"),
       icon: "🤝",
     },
     {
       id: 1,
-      title: "Expertise & Professionalism",
-      description:
-        "We provide informed guidance backed by deep experience in international trade, investment, and market development",
+      title: t("expertise-and-professionalism"),
+      description: t("exp and profes desc"),
       icon: "🎯",
     },
     {
       id: 2,
-      title: "Results-Driven Approach",
-      description:
-        "We focus on delivering measurable outcomes and sustainable value for every investment and export project we support.",
+      title: t("results-driven-approach"),
+      description: t("result driven desc"),
       icon: "📈",
     },
     {
       id: 3,
-      title: "Innovation & Growth",
-      description:
-        "We continuously improve our methods, tools, and strategies to adapt to evolving global markets.",
+      title: t("innovation-and-growth"),
+      description: t("innov and growth desc"),
       icon: "💡",
     },
   ];
@@ -73,15 +69,13 @@ export default function AboutUs() {
   const milestones = [
     {
       year: "2010",
-      title: "Foundation of the Platform",
-      description:
-        "Establishment of AB Invest Export и Партнеры MMC with a focus on international trade and investment facilitation.",
+      title: t("foundation-of-the-platform"),
+      description: t("foundation platf desc"),
     },
     {
       year: "2015",
-      title: "Regional Expansion",
-      description:
-        "Expansion of operations across multiple regions, strengthening our international partner network.",
+      title: t("regional-expansion"),
+      description: t("regional exp desc"),
     },
     {
       year: "2018",
@@ -117,15 +111,13 @@ export default function AboutUs() {
         <div className="relative z-10 h-full flex items-center px-6">
           <div className="max-w-7xl mx-auto w-full">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 max-w-3xl animate-fadeIn">
-              AB Invest Export и Партнеры MMC
+              {t("ab invest expo")}
             </h1>
             <p
               className="text-xl text-gray-200 max-w-2xl leading-relaxed animate-fadeIn"
               style={{ animationDelay: "0.2s" }}
             >
-              An international investment and export platform connecting
-              businesses, investors, and partners to create sustainable global
-              growth through trusted collaboration.
+              {t("international invest")}.
             </p>
           </div>
         </div>
@@ -151,13 +143,10 @@ export default function AboutUs() {
                 </svg>
               </div>
               <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                Our Mission
+                {t("our mission")}
               </h2>
               <p className="text-slate-600 leading-relaxed text-lg">
-                Our mission is to open access to international investment and
-                export opportunities by building trusted partnerships,
-                delivering expert guidance, and creating long-term value for our
-                members.
+                {t("our mission descript")}.
               </p>
             </div>
 
@@ -187,9 +176,7 @@ export default function AboutUs() {
                 {t("pages.about.vision.title") || "AB Invest MMC"}
               </h2>
               <p className="text-slate-600 leading-relaxed text-lg">
-                To become a leading global platform recognized for enabling
-                international business success through innovation, partnership,
-                and strategic investment and trade solutions.
+                {t("become leading")}.
               </p>
             </div>
           </div>
@@ -200,11 +187,13 @@ export default function AboutUs() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Our Core Values
+              {t("our-core-values")}
             </h2>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              The principles that guide our decisions, partnerships, and
-              long-term commitment to global success.
+              {t(
+                "the-principles-that-guide-our-decisions-partnerships-and-long-term-commitment-to-global-success"
+              )}
+              .
             </p>
           </div>
 
@@ -240,8 +229,10 @@ export default function AboutUs() {
               {t("pages.about.journey.title") || "AB Invest MMC"}
             </h2>
             <p className="text-xl text-slate-600">
-              Key milestones that shaped our growth as an international
-              investment and export platform.
+              {t(
+                "key-milestones-that-shaped-our-growth-as-an-international-investment-and-export-platform"
+              )}
+              .
             </p>
           </div>
 
@@ -329,18 +320,19 @@ export default function AboutUs() {
 
           <div className="relative z-10">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Let’s Build Global Success Together
+              {t("lets-build-global-success-together")}
             </h2>
             <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-              Whether you are an investor, exporter, or business partner, we
-              invite you to join our growing international network and explore
-              new global opportunities.
+              {t(
+                "whether-you-are-an-investor-exporter-or-business-partner-we-invite-you-to-join-our-growing-international-network-and-explore-new-global-opportunities"
+              )}
+              .
             </p>
             <button
               onClick={() => navigate("/contact")}
               className="bg-blue-600 hover:bg-blue-500 text-white px-10 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-xl inline-flex items-center gap-3"
             >
-              Contact Our Team
+              {t("contact-our-team")}
               <svg
                 className="w-5 h-5"
                 fill="none"
