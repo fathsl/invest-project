@@ -66,151 +66,147 @@ export default function Home() {
   const services = [
     {
       icon: Search,
-      title: "Export Promotion",
-      subtitle: "International Market Access Solutions",
-      description:
-        "Supporting local products and services to reach international markets. We provide strategic guidance, market analysis, and connections to help Azerbaijani businesses expand their export potential and succeed globally.",
+      title: t("export-promotion"),
+      subtitle: t("international-market-access-solutions"),
+      description: t("international-market-access-solutions desc"),
       features: [
-        "International Market Entry Strategy",
-        "Export Documentation & Compliance",
-        "Trade Partnership Development",
-        "Market Research & Analysis",
+        t("international-market-entry-strategy"),
+        t("export-documentation-and-compliance"),
+        t("trade-partnership-development"),
+        t("market-research-and-analysis"),
       ],
       image:
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+        "https://www.shutterstock.com/image-illustration/financial-graph-chart-stock-market-260nw-1901288206.jpg",
     },
     {
       icon: Handshake,
-      title: "Foreign Investment Attraction",
-      subtitle: "Capital & Investment Facilitation",
-      description:
-        "Directing foreign capital to Azerbaijan's economy and improving the investment environment. We connect international investors with high-potential opportunities and facilitate successful investment partnerships.",
+      title: t("foreign-investment-attraction"),
+      subtitle: t("capital-and-investment-facilitation"),
+      description: t("capital-and-investment-facilitation des"),
       features: [
-        "Investment Opportunity Sourcing",
-        "Due Diligence Support",
-        "Investor Relations Management",
-        "Investment Climate Advisory",
+        t("investment-opportunity-sourcing"),
+        t("due-diligence-support"),
+        t("investor-relations-management"),
+        t("investment-climate-advisory"),
       ],
       image:
-        "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80",
+        "https://www.shutterstock.com/image-photo/creative-image-collage-young-attractive-260nw-2465091221.jpg",
     },
     {
       icon: Award,
-      title: "Digital Business Solutions",
-      subtitle: "Technology-Driven Innovation",
-      description:
-        "Developing and implementing innovative digital tools based on modern technologies. Our AI-powered platforms and digital solutions help businesses transform, scale, and compete in the global marketplace.",
+      title: t("digital-business-solutions"),
+      subtitle: t("technology-driven-innovation"),
+      description: t("technology-driven-innovation desc"),
       features: [
-        "AI-Integrated B2B Platforms",
-        "Digital Transformation Consulting",
-        "Virtual Business Portals",
-        "Technology Implementation",
+        t("ai-integrated-b2b-platforms"),
+        t("digital-transformation-consulting"),
+        t("virtual-business-portals"),
+        t("technology-implementation"),
       ],
       image:
-        "https://images.unsplash.com/photo-1553484771-371a605b060b?w=800&q=80",
+        "https://www.shutterstock.com/image-photo/team-collaborating-on-cybersecurity-solutions-260nw-2602984191.jpg",
     },
     {
       icon: Truck,
-      title: "Event & Consulting Services",
-      subtitle: "Strategic Business Development",
-      description:
-        "Professional business event organization, strategic consulting, and comprehensive training services. We create platforms for meaningful connections and provide expert guidance for business growth.",
+      title: t("event-and-consulting-services"),
+      subtitle: t("strategic-business-development"),
+      description: t("strategic-business-development desc"),
       features: [
-        "Business Event Management",
-        "Strategic Consulting Services",
-        "Professional Training Programs",
-        "Partnership Facilitation",
+        t("business-event-management"),
+        t("strategic-consulting-services"),
+        t("professional-training-programs"),
+        t("partnership-facilitation"),
       ],
       image:
-        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
+        "https://www.shutterstock.com/image-photo/woman-consulting-female-financial-manager-260nw-1784866628.jpg",
     },
   ];
 
   const workingModels = [
     {
       icon: FileText,
-      title: "Project-Based",
-      description:
-        "Single project consultation for specific business objectives with defined deliverables and timeline.",
-      price: "Custom Quote",
+      title: t("project-based"),
+      description: t("project-based-desc"),
+      price: t("custom-quote"),
       features: [
-        "Market Entry Projects",
-        "Investment Facilitation",
-        "Export Strategy Development",
-        "Digital Platform Integration",
+        t("market-entry-projects"),
+        t("investment-facilitation"),
+        t("export-strategy-development"),
+        t("digital-platform-integration"),
       ],
-      ideal:
-        "Ideal for: Companies seeking specific market entry or investment opportunities",
+      ideal: t(
+        "ideal-for-companies-seeking-specific-market-entry-or-investment-opportunities"
+      ),
     },
     {
       icon: Brain,
-      title: "Partnership Retainer (Popular)",
-      description:
-        "Ongoing strategic partnership for continuous business development and growth support.",
-      price: "Contact for Custom Package",
+      title: t("partnership-retainer-popular"),
+      description: t("partnership-retainer-popular desc"),
+      price: t("contact-for-custom-package"),
       features: [
-        "Continuous Strategic Guidance",
-        "Priority Investment Opportunities",
-        "Regular Business Matching",
-        "Ongoing Digital Support",
+        t("continuous-strategic-guidance"),
+        t("priority-investment-opportunities"),
+        t("regular-business-matching"),
+        t("ongoing-digital-support"),
       ],
-      ideal:
-        "Ideal for: Growing businesses and active exporters seeking sustained growth",
+      ideal: t(
+        "ideal-for-growing-businesses-and-active-exporters-seeking-sustained-growth"
+      ),
       popular: true,
     },
     {
       icon: Globe,
-      title: "Comprehensive Solutions",
-      description:
-        "Full-service package including all consulting, digital, and partnership services.",
-      price: "Custom Package",
+      title: t("comprehensive-solutions"),
+      description: t("full-service-package-desc"),
+      price: t("custom-package"),
       features: [
-        "Complete Business Development",
-        "End-to-End Digital Solutions",
-        "Event Participation Access",
-        "Dedicated Account Management",
+        t("complete-business-development"),
+        t("end-to-end-digital-solutions"),
+        t("event-participation-access"),
+        t("dedicated-account-management"),
       ],
-      ideal:
-        "Ideal for: Businesses committed to comprehensive international expansion",
+      ideal: t(
+        "ideal-for-businesses-committed-to-comprehensive-international-expansion"
+      ),
     },
   ];
 
   const whyChoose = [
     {
       icon: Building2,
-      title: "Foreign Investment Expertise",
-      description:
-        "Proven track record in attracting foreign capital to Azerbaijan with $65M+ successfully facilitated and strategic partnerships across international markets.",
+      title: t("foreign-investment-expertise"),
+      description: t("foreign-investment-expertise-desc"),
     },
     {
       icon: Globe,
-      title: "Digital Innovation Leaders",
-      description:
-        "Cutting-edge digital platforms with AI integration, supporting 720+ active users and delivering 70% success rate on digital transformation projects.",
+      title: t("digital-innovation-leaders"),
+      description: t("Digital Innovation Leaders desc"),
     },
     {
       icon: Target,
-      title: "Strategic Event Management",
-      description:
-        "Professional business event organization with 1,200+ annual participants, fostering valuable B2B connections and partnership opportunities.",
+      title: t("strategic-event-management"),
+      description: t("strategic-event-management-desc"),
     },
     {
       icon: Users,
-      title: "Comprehensive Business Support",
-      description:
-        "End-to-end consulting services from market entry to operational excellence, with 160+ businesses trained and 35+ strategic partnerships established.",
+      title: t("comprehensive-business-support"),
+      description: t("Comprehensive Business Support desc"),
     },
   ];
 
   const stats = [
-    { number: "$65M+", label: "Foreign Capital Attracted", icon: Target },
-    { number: "10+", label: "International Contracts Signed", icon: Award },
+    { number: "$65M+", label: t("foreign-capital-attracted"), icon: Target },
+    {
+      number: "10+",
+      label: t("international-contracts-signed"),
+      icon: Award,
+    },
     {
       number: "1,200+",
-      label: "Event Participants Annually",
+      label: t("event-participants-annually"),
       icon: TrendingUp,
     },
-    { number: "25+", label: "Countries in Our Network", icon: MapPin },
+    { number: "25+", label: t("countries-in-our-network"), icon: MapPin },
   ];
 
   const isVisible = (sectionId: string) => visibleSections.has(sectionId);
@@ -260,32 +256,30 @@ export default function Home() {
             <div className="w-full animate-fadeInUp">
               <div className="inline-flex items-center gap-2 bg-blue-600/20 backdrop-blur-sm text-blue-300 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-blue-400/30">
                 <Globe size={16} />
-                Your Gateway to Global Markets
+                {t("your-gateway-to-global-markets")}
               </div>
               <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
-                Your Gateway to Investment,
+                {t("your-gateway-to-investment")}
                 <span className="block text-blue-400 mt-2">
-                  Export & Global Partnerships
+                  {t("export-and-global-partnerships")}
                 </span>
               </h1>
               <p className="text-xl text-slate-200 leading-relaxed mb-8">
-                AB Invest – strategic business, investment, and export platform
-                connecting companies, investors, and partners across
-                international markets.
+                {t("export global partnership desc")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-16">
                 <a
                   href="#contact"
                   className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/30"
                 >
-                  Start Your Journey
+                  {t("start-your-journey")}
                   <ArrowRight size={20} />
                 </a>
                 <a
                   href="#services"
                   className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition-colors"
                 >
-                  Explore Services
+                  {t("explore-services")}
                 </a>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -314,10 +308,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">
-              Why Choose AB Invest?
+              {t("why-choose-ab-invest")}
             </h2>
             <p className="text-xl text-slate-600">
-              Your trusted partner for international business expansion
+              {t("your-trusted-partner-for-international-business-expansion")}
             </p>
           </div>
 
@@ -360,14 +354,13 @@ export default function Home() {
         >
           <div className="text-center mb-20">
             <div className="inline-block bg-blue-50 text-blue-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
-              Our Services
+              {t("our-services")}
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Comprehensive Export Solutions
+              {t("comprehensive-export-solutions")}
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              End-to-end consultancy services tailored to your international
-              expansion needs
+              {t("end-to-end-consultancy-services")}
             </p>
           </div>
 
@@ -445,7 +438,7 @@ export default function Home() {
                       <div className="space-y-6">
                         <div>
                           <div className="inline-block px-4 py-1.5 bg-blue-50 rounded-full text-blue-700 text-sm font-semibold mb-4">
-                            Service {idx + 1} of {services.length}
+                            {t("service")} {idx + 1} {t("of")} {services.length}
                           </div>
                           <h3 className="text-4xl font-bold text-slate-900 mb-3">
                             {service.title}
@@ -461,7 +454,7 @@ export default function Home() {
 
                         <div className="pt-4">
                           <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4">
-                            Key Capabilities
+                            {t("key-capabilities")}
                           </h4>
                           <div className="space-y-3">
                             {service.features.map((feature, fIdx) => (
@@ -485,7 +478,7 @@ export default function Home() {
 
                         <div className="pt-4">
                           <button className="group/btn inline-flex items-center gap-2 bg-slate-900 text-white px-8 py-3.5 rounded-xl font-semibold hover:bg-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl">
-                            Learn More
+                            {t("home.hero.cta_secondary")}
                             <ArrowRight
                               size={18}
                               className="transform group-hover/btn:translate-x-1 transition-transform"
@@ -529,13 +522,15 @@ export default function Home() {
         >
           <div className="text-center mb-20">
             <div className="inline-block bg-white/10 backdrop-blur-sm text-white px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
-              How We Work
+              {t("how-we-work")}
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Flexible Working Models
+              {t("flexible-working-models")}
             </h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Choose the collaboration model that best fits your business needs
+              {t(
+                "choose-the-collaboration-model-that-best-fits-your-business-needs"
+              )}
             </p>
           </div>
 
@@ -570,7 +565,7 @@ export default function Home() {
                       <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                         <div className="bg-linear-to-r from-blue-600 to-purple-600 text-white px-6 py-1.5 rounded-full text-sm font-bold shadow-lg flex items-center gap-2">
                           <Award size={16} />
-                          Most Popular
+                          {t("most-popular")}
                         </div>
                       </div>
                     )}
@@ -627,7 +622,7 @@ export default function Home() {
                           : "bg-white/10 backdrop-blur-sm text-white border border-white/20 hover:bg-white/20 hover:border-white/40"
                       }`}
                     >
-                      Choose Plan
+                      {t("choose-plan")}
                     </button>
                   </div>
 
@@ -641,13 +636,13 @@ export default function Home() {
 
           <div className="mt-16 text-center">
             <p className="text-slate-300 mb-6">
-              Not sure which model fits your needs?
+              {t("not-sure-which-model-fits-your-needs")}
             </p>
             <a
               href="#contact"
               className="inline-flex items-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-xl font-semibold hover:bg-slate-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
-              Schedule a Free Consultation
+              {t("schedule-a-free-consultation")}
               <ArrowRight size={20} />
             </a>
           </div>
@@ -673,47 +668,42 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="inline-block bg-blue-50 text-blue-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
-                About AB Invest
+                {t("about-ab-invest")}
               </div>
 
               <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-                Your Trusted Partner in International Business Growth
+                {t("your-trusted-partner-in-international-business-growth")}
               </h2>
 
               <p className="text-lg text-slate-600 leading-relaxed mb-6">
-                AB Invest & Export & Partners MMC is a professional consultancy
-                firm specializing in foreign investment attraction, export
-                promotion, and digital business innovation. Based in Baku,
-                Azerbaijan, we serve as a strategic bridge connecting local
-                businesses with international markets and foreign investors with
-                Azerbaijan's growing economy.
+                {t("about-ab-invest desc1")}
               </p>
 
               <p className="text-lg text-slate-600 leading-relaxed mb-8">
-                Our mission is to increase export opportunities, attract foreign
-                investment, and strengthen local-international business
-                cooperation through cutting-edge digital solutions. We combine
-                deep local market knowledge with global business expertise to
-                deliver measurable results and sustainable economic growth.
+                {t("about-ab-invest desc2")}
               </p>
 
               <div className="grid grid-cols-2 gap-6">
                 {[
-                  { icon: Award, number: "$65M+", label: "Capital Attracted" },
+                  {
+                    icon: Award,
+                    number: "$65M+",
+                    label: t("capital-attracted"),
+                  },
                   {
                     icon: Globe,
                     number: "10+",
-                    label: "International Contracts",
+                    label: t("international-contracts"),
                   },
                   {
                     icon: TrendingUpIcon,
                     number: "22+",
-                    label: "B2B Partnerships",
+                    label: t("b2b-partnerships"),
                   },
                   {
                     icon: Users,
                     number: "720+",
-                    label: "Platform Users",
+                    label: t("platform-users"),
                   },
                 ].map((stat, idx) => {
                   const Icon = stat.icon;
@@ -743,7 +733,7 @@ export default function Home() {
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                   <div className="absolute inset-0 bg-linear-to-br from-blue-600/10 to-transparent z-10"></div>
                   <img
-                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+                    src="https://www.shutterstock.com/image-photo/silhouette-view-business-people-team-260nw-1922521241.jpg"
                     alt="Team collaboration"
                     className="w-full transform transition-transform duration-700 group-hover:scale-105"
                   />
@@ -759,25 +749,29 @@ export default function Home() {
                     <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
                       <Award size={20} />
                     </div>
-                    Our Core Values
+                    {t("our-core-values")}
                   </h3>
                   <div className="space-y-4">
                     {[
                       {
-                        title: "Innovation",
-                        desc: "Leveraging technology for competitive advantage",
+                        title: t("innovation"),
+                        desc: t(
+                          "leveraging-technology-for-competitive-advantage"
+                        ),
                       },
                       {
-                        title: "Partnership",
-                        desc: "Building sustainable business relationships",
+                        title: t("partnership"),
+                        desc: t("building-sustainable-business-relationships"),
                       },
                       {
-                        title: "Excellence",
-                        desc: "Delivering high-quality results consistently",
+                        title: t("excellence"),
+                        desc: t("delivering-high-quality-results-consistently"),
                       },
                       {
-                        title: "Growth",
-                        desc: "Driving economic diversification and development",
+                        title: t("growth"),
+                        desc: t(
+                          "driving-economic-diversification-and-development"
+                        ),
                       },
                     ].map((value, idx) => (
                       <div
@@ -811,37 +805,40 @@ export default function Home() {
         >
           <div className="text-center mb-16">
             <div className="inline-block bg-blue-50 text-blue-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
-              Get In Touch
+              {t("get-in-touch")}
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Ready to Expand Globally?
+              {t("ready-to-expand-globally")}
             </h2>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Let's discuss how we can help your business succeed in
-              international markets
+              {t("lets-discuss-how-we-can-help")}
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="bg-white rounded-xl p-10 shadow-sm border border-slate-200">
               <h3 className="text-2xl font-bold text-slate-900 mb-8">
-                Send us a message
+                {t("send-us-a-message")}
               </h3>
               <div className="space-y-6">
                 {[
-                  { label: "Full Name", type: "text", placeholder: "John Doe" },
                   {
-                    label: "Email",
+                    label: t("full-name"),
+                    type: "text",
+                    placeholder: "John Doe",
+                  },
+                  {
+                    label: t("email"),
                     type: "email",
                     placeholder: "john@company.com",
                   },
                   {
-                    label: "Company",
+                    label: t("company"),
                     type: "text",
                     placeholder: "Your Company Name",
                   },
                   {
-                    label: "Phone",
+                    label: t("phone"),
                     type: "tel",
                     placeholder: "+1 (555) 000-0000",
                   },
@@ -860,7 +857,7 @@ export default function Home() {
 
                 <div>
                   <label className="block text-sm font-semibold text-slate-700 mb-2">
-                    Message
+                    {t("message")}
                   </label>
                   <textarea
                     rows={4}
@@ -877,7 +874,7 @@ export default function Home() {
                   }
                   className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center gap-2 shadow-lg shadow-blue-600/20"
                 >
-                  Send Message
+                  {t("send-message")}
                   <ArrowRight size={20} />
                 </button>
               </div>
@@ -886,13 +883,21 @@ export default function Home() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-10 shadow-sm border border-slate-200">
                 <h3 className="text-2xl font-bold text-slate-900 mb-8">
-                  Contact Information
+                  {t("contact-information")}
                 </h3>
                 <div className="space-y-6">
                   {[
-                    { icon: Mail, title: "Email", info: "info@abinvest.com" },
-                    { icon: Phone, title: "Phone", info: "+994 XX XXX XX XX" },
-                    { icon: MapPin, title: "Office", info: "Baku, Azerbaijan" },
+                    {
+                      icon: Mail,
+                      title: t("pages.contact.contactInfo.email.title"),
+                      info: "contact.abinvest2026@gmail.com",
+                    },
+                    { icon: Phone, title: t("phone"), info: "+994516581598" },
+                    {
+                      icon: MapPin,
+                      title: t("office"),
+                      info: "Baku, Azerbaijan",
+                    },
                   ].map((item, idx) => {
                     const Icon = item.icon;
                     return (
@@ -918,16 +923,17 @@ export default function Home() {
                     <Award className="text-white" size={28} />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold">Free Consultation</h3>
-                    <p className="text-blue-100">30-minute strategy session</p>
+                    <h3 className="text-2xl font-bold">
+                      {t("pages.references.button")}
+                    </h3>
+                    <p className="text-blue-100">
+                      {t("30-minute-strategy-session")}
+                    </p>
                   </div>
                 </div>
-                <p className="text-blue-100 mb-6">
-                  Get a complimentary consultation to discuss your international
-                  expansion goals and discover how we can help.
-                </p>
+                <p className="text-blue-100 mb-6">{t("get")}</p>
                 <button className="w-full bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
-                  Schedule Now
+                  {t("schedule-now")}
                 </button>
               </div>
             </div>

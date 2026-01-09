@@ -51,13 +51,13 @@ export default function Contact() {
     {
       icon: "📧",
       title: t("pages.contact.contactInfo.email.title"),
-      details: ["info@abinvest.com", "destek@abinvest.com"],
-      link: "mailto:info@abinvest.com",
+      details: ["contact.abinvest2026@gmail.com", "destek@abinvest.com"],
+      link: "mailto:contact.abinvest2026@gmail.com",
     },
     {
       icon: "📞",
       title: t("pages.contact.contactInfo.phone.title"),
-      details: ["+90 (212) 123 45 67", "+90 (532) 123 45 67"],
+      details: ["+994516581598"],
       link: "tel:+902121234567",
     },
     {
@@ -92,7 +92,7 @@ export default function Contact() {
 
   return (
     <section className="min-h-screen bg-white">
-      <div className="relative py-20 px-6 bg-gradient-to-br from-slate-900 to-slate-800 overflow-hidden">
+      <div className="relative py-20 px-6 bg-linear-to-br from-slate-900 to-slate-800 overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600 rounded-full filter blur-3xl opacity-20"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl opacity-20"></div>
 
@@ -203,7 +203,7 @@ export default function Contact() {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
-                        placeholder="+90 (5XX) XXX XX XX"
+                        placeholder="+994516581598"
                       />
                     </div>
                     <div>
@@ -233,13 +233,27 @@ export default function Contact() {
                       onChange={handleChange}
                       className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
                     >
-                      <option value="">{t("pages.contact.sendMessage.servicePlaceholder")}</option>
-                      <option value="market-analysis">{t("pages.contact.sendMessage.marketAnalysis")}</option>
-                      <option value="entry-strategy">{t("pages.contact.sendMessage.entryStrategy")}</option>
-                      <option value="partner-sourcing">{t("pages.contact.sendMessage.partnerSourcing")}</option>
-                      <option value="field-support">{t("pages.contact.sendMessage.fieldSupport")}</option>
-                      <option value="training">{t("pages.contact.sendMessage.training")}</option>
-                      <option value="other">{t("pages.contact.sendMessage.other")}</option>
+                      <option value="">
+                        {t("pages.contact.sendMessage.servicePlaceholder")}
+                      </option>
+                      <option value="market-analysis">
+                        {t("pages.contact.sendMessage.marketAnalysis")}
+                      </option>
+                      <option value="entry-strategy">
+                        {t("pages.contact.sendMessage.entryStrategy")}
+                      </option>
+                      <option value="partner-sourcing">
+                        {t("pages.contact.sendMessage.partnerSourcing")}
+                      </option>
+                      <option value="field-support">
+                        {t("pages.contact.sendMessage.fieldSupport")}
+                      </option>
+                      <option value="training">
+                        {t("pages.contact.sendMessage.training")}
+                      </option>
+                      <option value="other">
+                        {t("pages.contact.sendMessage.other")}
+                      </option>
                     </select>
                   </div>
 
@@ -371,7 +385,7 @@ export default function Contact() {
                 }}
               >
                 <h3 className="text-lg font-bold text-slate-900 mb-2 flex items-start gap-3">
-                  <span className="text-blue-600 flex-shrink-0">❓</span>
+                  <span className="text-blue-600 shrink-0">❓</span>
                   {faq.question}
                 </h3>
                 <p className="text-slate-600 pl-8">{faq.answer}</p>
@@ -390,7 +404,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="py-16 px-6 bg-gradient-to-r from-blue-600 to-blue-500">
+      <div className="py-16 px-6 bg-linear-to-r from-blue-600 to-blue-500">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
             {t("pages.contact.callToAction.title")}

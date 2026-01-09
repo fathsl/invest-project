@@ -8,145 +8,134 @@ export default function WorkingModels() {
   const models = [
     {
       id: 1,
-      title: "Project-Based Cooperation",
-      description:
-        "A structured, goal-oriented collaboration model focused on a specific international investment or export project with clearly defined scope, timeline, and deliverables.",
+      title: t("project-based-cooperation"),
+      description: t("project based desc"),
       image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
+        "https://www.shutterstock.com/image-photo/group-business-executives-suit-brainstorming-260nw-2635598865.jpg",
       icon: "📋",
       features: [
-        "International market and opportunity analysis",
-        "Investment or export project structuring",
-        "Partner identification and validation",
-        "Professional guidance until project completion",
+        t("international-market-and-opportunity-analysis"),
+        t("investment-or-export"),
+        t("partner-identification-and-validation"),
+        t("professional-guidance-until-project-completion"),
       ],
-      duration: "Fixed-term (project-based)",
-      ideal:
-        "Companies or investors seeking support for a specific international project",
-      pricing: "Fixed or milestone-based pricing",
+      duration: t("fixed-term-project-based"),
+      ideal: t("companies-or-investors"),
+      pricing: t("fixed-or-milestone-based-pricing"),
     },
     {
       id: 2,
-      title: "Ongoing Advisory & Membership Support",
-      description:
-        "Continuous advisory support providing members with regular access to international opportunities, expertise, and strategic guidance.",
+      title: t("ongoing-advisory-and-membership-support"),
+      description: t("continuous-advisory-support dexc"),
       image:
-        "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80",
+        "https://www.shutterstock.com/image-photo/call-center-man-computer-microphone-260nw-2488684449.jpg",
       icon: "🤝",
       features: [
-        "Continuous access to investment and export opportunities",
-        "Strategic consulting and decision support",
-        "Priority access for premium members",
+        t("continuous-access-to-investment-and-export-opportunities"),
+        t("strategic-consulting-and-decision-support"),
+        t("priority-access-for-premium-members"),
         ,
-        "Ongoing professional advisory services",
+        t("ongoing-professional-advisory-services"),
       ],
-      duration: "Monthly or annual engagement",
-      ideal:
-        "Businesses and investors requiring long-term international guidance",
-      pricing: "Subscription-based (membership model)",
+      duration: t("monthly-or-annual-engagement"),
+      ideal: t(
+        "businesses-and-investors-requiring-long-term-international-guidance"
+      ),
+      pricing: t("subscription-based-membership-model"),
     },
     {
       id: 3,
-      title: "Success-Based Partnership",
-      description:
-        "A performance-driven collaboration model where success is shared, aligning our interests with the growth and results of your international investment or export activities.",
+      title: t("success-based-partnership"),
+      description: "t('sucess partnership desc')",
       image:
-        "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=800&q=80",
+        "https://www.shutterstock.com/image-photo/startup-company-employee-team-stacking-260nw-2641481201.jpg",
       icon: "💼",
       features: [
-        "Shared success and risk alignment",
-        "Revenue or profit-based compensation",
-        "Long-term partnership mindset",
-        "Strong commitment to results",
+        t("shared-success-and-risk-alignment"),
+        t("revenue-or-profit-based-compensation"),
+        t("long-term-partnership-mindset"),
+        t("strong-commitment-to-results"),
       ],
-      duration: "Long-term partnership",
-      ideal:
-        "Investors and companies seeking shared-risk international expansion",
-      pricing: "Success or performance-based fees",
+      duration: t("long-term-partnership"),
+      ideal: t("investors and companies"),
+      pricing: t("success-or-performance-based-fees"),
     },
     {
       id: 4,
-      title: "International Field Support",
-      description:
-        "On-the-ground assistance to support your international activities, meetings, and market entry processes.",
+      title: t("international-field-support"),
+      description: t("international fields support desc"),
       image:
-        "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80",
+        "https://www.shutterstock.com/image-photo/soldier-working-ai-intelligence-on-260nw-2514086933.jpg",
       icon: "✈️",
       features: [
-        "Participation in international fairs and events",
-        "B2B meetings and partner visits",
-        "Translation and local representation",
-        "Local market guidance and coordination",
+        t("participation-in-international-fairs-and-events"),
+        t("b2b-meetings-and-partner-visits"),
+        t("translation-and-local-representation"),
+        t("local-market-guidance-and-coordination"),
       ],
-      duration: "Short-term or mission-based",
-      ideal: "Companies entering new international markets",
-      pricing: "Daily or project-based pricing",
+      duration: t("short-term-or-mission-based"),
+      ideal: t("companies-entering"),
+      pricing: t("daily-or-project-based-pricing"),
     },
     {
       id: 5,
-      title: "Export & Investment Training Programs",
-      description:
-        "Professional training programs designed to strengthen knowledge in international trade, export operations, and investment decision-making.",
+      title: t("export-and-investment-training-programs"),
+      description: t("export and investment desc"),
       image:
-        "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80",
+        "https://www.shutterstock.com/image-photo/happy-corporate-business-people-meeting-260nw-2627958437.jpg",
       icon: "📚",
       features: [
-        "International trade and export process training",
-        "Market research and opportunity analysis techniques",
-        "Negotiation skills and cultural awareness",
-        "Online and on-site training sessions",
+        t("international-trade-and-export-process-training"),
+        t("market-research-and-opportunity-analysis-techniques"),
+        t("negotiation-skills-and-cultural-awareness"),
+        t("online-and-on-site-training-sessions"),
       ],
-      duration: "Short-term programs or workshops",
-      ideal: "Companies and teams building international expertise",
-      pricing: "Per session or training package",
+      duration: t("short-term-programs-or-workshops"),
+      ideal: t("companies-and-teams-building-international-expertise"),
+      pricing: t("per-session-or-training-package"),
     },
     {
       id: 6,
-      title: " Custom & Hybrid Solutions",
-      description:
-        "Tailor-made collaboration models combining multiple services to meet unique international investment and export needs.",
+      title: t("custom-and-hybrid-solutions"),
+      description: t("tailor-made-collaboration-models desc"),
       image:
-        "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80",
+        "https://www.shutterstock.com/image-photo/global-software-development-coding-solutions-260nw-2700835771.jpg",
       icon: "⚙️",
       features: [
-        "Fully customized working models",
-        "Hybrid cooperation structures",
-        "Flexible payment options",
-        "Dedicated expert team assignment",
+        t("fully-customized-working-models"),
+        t("hybrid-cooperation-structures"),
+        t("flexible-payment-options"),
+        t("dedicated-expert-team-assignment"),
       ],
-      duration: "Flexible",
-      ideal: "Complex or multi-market international projects",
-      pricing: "Customized upon request",
+      duration: t("flexible"),
+      ideal: t("complex-or-multi-market-international-projects"),
+      pricing: t("customized-upon-request"),
     },
   ];
 
   const processSteps = [
     {
       step: "01",
-      title: "Initial Consultation",
-      description:
-        "Understanding your goals, expectations, and international ambitions.",
+      title: t("initial-consultation"),
+      description: t("initial consultation desc"),
       icon: "💬",
     },
     {
       step: "02",
-      title: "Analysis & Strategy Planning",
-      description:
-        "Market analysis, opportunity assessment, and collaboration model selection.",
+      title: t("analysis-and-strategy-planning"),
+      description: t("market-analysis-opportunity-desc"),
       icon: "📊",
     },
     {
       step: "03",
-      title: "Implementation & Execution",
-      description:
-        "Launching and managing the selected working model with expert support.",
+      title: t("implementation-and-execution"),
+      description: t("launching-and-managing-desc"),
       icon: "🚀",
     },
     {
       step: "04",
-      title: "Monitoring & Optimization",
-      description:
-        "Continuous tracking, optimization, and long-term value creation.",
+      title: t("monitoring-and-optimization"),
+      description: t("continuous-tracking-optimization-desc"),
       icon: "📈",
     },
   ];
@@ -159,15 +148,13 @@ export default function WorkingModels() {
 
         <div className="max-w-7xl mx-auto text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fadeIn">
-            Our Working Models
+            {t("our-working-models")}
           </h1>
           <p
             className="text-xl text-slate-300 max-w-3xl mx-auto animate-fadeIn"
             style={{ animationDelay: "0.2s" }}
           >
-            We offer flexible collaboration models designed to support
-            international investment, export development, and long-term global
-            partnerships according to your business goals.
+            {t("our-working-models-desc")}
           </p>
         </div>
       </div>
@@ -375,7 +362,7 @@ export default function WorkingModels() {
               <tbody className="divide-y divide-slate-200">
                 <tr className="hover:bg-slate-50">
                   <td className="px-6 py-4 text-sm text-slate-600">
-                    Initial Cost
+                    {t("initial-cost")}
                   </td>
                   <td className="px-6 py-4 text-center text-sm">
                     {t("pages.workingModels.medium")}
@@ -438,16 +425,14 @@ export default function WorkingModels() {
 
           <div className="relative z-10">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Choose the Right Model for Your Global Growth
+              {t("choose-the-right-model-for-your-global-growth")}
             </h2>
             <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-              Whether you seek a single project, long-term advisory, or a
-              success-based partnership, we provide flexible working models
-              designed for international success.
+              {t("choose-the-right-model-for-your-global-growth-desc")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-xl inline-flex items-center justify-center gap-2">
-                Apply for Membership
+                {t("apply-for-membership")}
                 <svg
                   className="w-5 h-5"
                   fill="none"
@@ -463,7 +448,7 @@ export default function WorkingModels() {
                 </svg>
               </button>
               <button className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 backdrop-blur-sm">
-                Contact Our Team
+                {t("contact-our-team")}
               </button>
             </div>
           </div>

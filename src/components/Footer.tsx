@@ -33,13 +33,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-xl font-bold">AB</span>
-              </div>
-              <div>
-                <h3 className="text-lg font-bold">AB Invest</h3>
-                <p className="text-xs text-slate-400">{t("pages.footer.company")}</p>
-              </div>
+              <img src="/logo.png" className="md:w-90 md:h-90 w-80 h-80" />
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
               {t("pages.footer.description")}
@@ -60,7 +54,7 @@ export default function Footer() {
               </button>
 
               {isLanguageOpen && (
-                <div className="absolute bottom-full mb-2 right-0 bg-white rounded-lg shadow-2xl py-2 min-w-[200px] border border-gray-200">
+                <div className="absolute bottom-full mb-2 right-0 bg-white rounded-lg shadow-2xl py-2 min-w-50 border border-gray-200">
                   {languages.map((language) => (
                     <button
                       key={language.code}
@@ -84,7 +78,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold text-lg mb-6">{t("pages.footer.services")}</h4>
+            <h4 className="font-bold text-lg mb-6">
+              {t("pages.footer.services")}
+            </h4>
             <ul className="space-y-3">
               {[
                 t("services.Market Analysis and Research"),
@@ -92,14 +88,14 @@ export default function Footer() {
                 t("services.Business Partner Sourcing"),
                 t("services.Compliance and Regulatory Consulting"),
                 t("services.Field Support"),
-                t("services.Growth and Scaling")
+                t("services.Growth and Scaling"),
               ].map((item, idx) => (
                 <li key={idx}>
                   <a
                     href="/services"
                     className="text-slate-400 hover:text-white transition-colors text-sm flex items-center gap-2"
                   >
-                    <ChevronDown className="rotate-[-90deg]" size={14} />
+                    <ChevronDown className="-rotate-90" size={14} />
                     {item}
                   </a>
                 </li>
@@ -108,11 +104,16 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold text-lg mb-6">{t("pages.footer.companyDetails")}</h4>
+            <h4 className="font-bold text-lg mb-6">
+              {t("pages.footer.companyDetails")}
+            </h4>
             <ul className="space-y-3">
               {[
                 { name: t("pages.footer.aboutUs"), link: "/about" },
-                { name: t("pages.footer.workingModels"), link: "/working-models" },
+                {
+                  name: t("pages.footer.workingModels"),
+                  link: "/working-models",
+                },
                 { name: t("pages.footer.contact"), link: "/contact" },
               ].map((item, idx) => (
                 <li key={idx}>
@@ -120,7 +121,7 @@ export default function Footer() {
                     href={item.link}
                     className="text-slate-400 hover:text-white transition-colors text-sm flex items-center gap-2"
                   >
-                    <ChevronDown className="rotate-[-90deg]" size={14} />
+                    <ChevronDown className="-rotate-90" size={14} />
                     {item.name}
                   </a>
                 </li>
@@ -129,7 +130,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold text-lg mb-6">{t("pages.footer.connectWithUs")}</h4>
+            <h4 className="font-bold text-lg mb-6">
+              {t("pages.footer.connectWithUs")}
+            </h4>
             <p className="text-slate-400 text-sm mb-6">
               {t("pages.footer.connectWithUsDescription")}
             </p>
@@ -151,18 +154,18 @@ export default function Footer() {
             </div>
             <div className="space-y-2">
               <a
-                href="tel:+994XXXXXXXXX"
+                href="tel:+994516581598"
                 className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm"
               >
                 <Phone size={14} />
-                +994 XX XXX XX XX
+                +994516581598
               </a>
               <a
-                href="mailto:info@abinvest.com"
+                href="mailto:contact.abinvest2026@gmail.com"
                 className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm"
               >
                 <Mail size={14} />
-                info@abinvest.com
+                contact.abinvest2026@gmail.com
               </a>
             </div>
           </div>

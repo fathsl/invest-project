@@ -8,69 +8,66 @@ export default function References() {
   const references = [
     {
       id: 1,
-      company: "Global Investment Group",
-      industry: "Investment & Finance",
-      country: "International",
-      logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=400&q=80",
-      testimonial:
-        "“Through AB Invest Export и Партнеры MMC, we gained access to exclusive international investment opportunities that significantly improved our portfolio performance.”",
-      person: "Senior Investment Manager",
-      position: "Investment Director",
-      result: "Access to high-yield international investment opportunities",
+      company: t("global-investment-group"),
+      industry: t("investment-and-finance"),
+      country: t("international"),
+      logo: "https://www.shutterstock.com/image-photo/money-global-invest-3d-render-260nw-2565789229.jpg",
+      testimonial: t("testimonial-1"),
+      person: t("senior-investment-manager"),
+      position: t("investment-director"),
+      result: t("access-to-high-yield"),
     },
     {
       id: 2,
-      company: "International Export Company",
-      industry: "Export & Trade",
-      country: "Europe / Middle East",
-      logo: "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&q=80",
-      testimonial:
-        "“Thanks to the expertise and global network of AB Invest Export, we successfully entered new markets and increased our export volume by over 30%.”",
-      person: "Export Manager",
-      position: "Head of International Trade",
-      result: "Successful entry into new international markets",
+      company: t("international-export-company"),
+      industry: t("export-and-trade"),
+      country: t("europe-middle-east"),
+      logo: "https://www.shutterstock.com/image-photo/aerial-view-freight-shipping-transport-260nw-2614392349.jpg",
+      testimonial: t("testimonial-2"),
+      person: t("export-manager"),
+      position: t("head-of-international-trade"),
+      result: t("successful-entry-into-new-international-markets"),
     },
     {
       id: 3,
-      company: "Global Trade Partner",
-      industry: "International Trade",
-      country: "Multinational",
-      logo: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=400&q=80",
-      testimonial:
-        "“The partnership with AB Invest Export allowed us to build strong, reliable business relationships across multiple countries.”",
-      person: "Business Development Lead",
-      position: "Partnership Manager",
-      result: "Long-term strategic international partnership",
+      company: t("global-trade-partner"),
+      industry: t("international-trade"),
+      country: t("multinational"),
+      logo: "https://www.shutterstock.com/image-photo/businessman-presents-holographic-global-partnership-260nw-2428029999.jpg",
+      testimonial: t("testimonial-3"),
+      person: t("business-development-lead"),
+      position: t("partnership-manager"),
+      result: t("long-term-strategic-international-partnership"),
     },
   ];
 
   const stats = [
     {
       number: "50+",
-      label: "Successful International Projects",
+      label: t("successful-international-projects"),
       icon: "📊",
     },
-    { number: "30+", label: "Countries & Markets Reached", icon: "🌍" },
+    { number: "30+", label: t("countries-and-markets-reached"), icon: "🌍" },
     {
       number: "%95",
-      label: "Partner & Member Satisfaction",
+      label: t("partner-and-member-satisfaction"),
       icon: "⭐",
     },
     {
       number: "€50M+",
-      label: "Total Trade & Investment Volume Facilitated",
+      label: t("total-trade-and-investment-volume-facilitated"),
       icon: "💼",
     },
   ];
 
   const industries = [
-    "all",
-    "Investment & Finance",
-    "Export & Trade",
-    "Manufacturing & Industry",
-    "Energy & Sustainability",
-    "Healthcare & Pharmaceuticals",
-    "Automotive & Logistics",
+    t("all"),
+    t("investment-and-finance-0"),
+    t("export-and-trade-0"),
+    t("manufacturing-and-industry"),
+    t("energy-and-sustainability"),
+    t("healthcare-and-pharmaceuticals"),
+    t("automotive-and-logistics"),
   ];
 
   const filteredReferences =
@@ -83,12 +80,10 @@ export default function References() {
       <div className="relative py-20 px-6 bg-linear-to-br from-slate-50 to-white">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
-            Success Stories & Trusted Partnerships
+            {t("success-stories-and-trusted-partnerships")}
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            We are proud to support investors and companies in expanding
-            globally through successful investment projects, export growth, and
-            long-term international partnerships.
+            {t("success-stories-and-trusted-partnerships-desc")}
           </p>
         </div>
       </div>
@@ -206,7 +201,7 @@ export default function References() {
         </div>
       </div>
 
-      <div className="py-16 px-6 bg-slate-50">
+      {/* <div className="py-16 px-6 bg-slate-50">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-slate-900 mb-4">
             {t("pages.references.title") || "Trusted Brands"}
@@ -229,7 +224,7 @@ export default function References() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="py-20 px-6 bg-linear-to-br from-slate-900 to-slate-800">
         <div className="max-w-4xl mx-auto text-center relative">
@@ -238,16 +233,14 @@ export default function References() {
 
           <div className="relative z-10">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Become Part of Our Global Success Network
+              {t("become-part-of-our-global-success-network")}
             </h2>
             <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-              Join AB Invest Export и Партнеры MMC and gain access to a trusted
-              international network, exclusive investment opportunities, and
-              export-driven growth solutions.
+              {t("become part desc")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-xl inline-flex items-center justify-center gap-2">
-                Apply for Membership
+                {t("apply-for-membership")}
                 <svg
                   className="w-5 h-5"
                   fill="none"
@@ -263,7 +256,7 @@ export default function References() {
                 </svg>
               </button>
               <button className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 backdrop-blur-sm">
-                Contact Our Team
+                {t("contact-our-team")}
               </button>
             </div>
           </div>

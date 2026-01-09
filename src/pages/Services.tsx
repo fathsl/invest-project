@@ -11,79 +11,75 @@ export default function Services() {
     {
       id: 1,
       image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-      title: "Global Investment Opportunities",
-      description:
-        "We provide members with early access to carefully selected international investment projects designed to generate long-term value and sustainable growth.",
+        "https://www.shutterstock.com/image-photo/financial-technology-concept-fintech-online-260nw-2112385907.jpg",
+      title: t("global-investment-opportunities"),
+      description: t(
+        "we-provide-members-with-early-access-to-carefully-selected-international-investment-projects-designed-to-generate-long-term-value-and-sustainable-growth"
+      ),
       features: [
-        "Access to vetted international investment projects",
-        "Early-stage and exclusive deal opportunities",
-        "Risk assessment and opportunity evaluation",
+        t("access-to-vetted-international-investment-projects"),
+        t("early-stage-and-exclusive-deal-opportunities"),
+        t("risk-assessment-and-opportunity-evaluation"),
       ],
     },
     {
       id: 2,
       image:
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
-      title: "Export & Trade Development",
-      description:
-        "We help companies expand their exports by identifying international trade opportunities and connecting them with reliable global buyers and partners.",
+        "https://www.shutterstock.com/image-photo/aerial-view-top-cargo-plane-260nw-2541816961.jpg",
+      title: t("export-and-trade-development"),
+      description: t("export-and-trade-development-desc"),
       features: [
-        "Identification of export markets",
-        "Access to export deals and trade opportunities",
-        "Support in cross-border trade development",
+        t("identification-of-export-markets"),
+        t("access-to-export-deals-and-trade-opportunities"),
+        t("support-in-cross-border-trade-development"),
       ],
     },
     {
       id: 3,
       image:
-        "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80",
-      title: "Strategic Business Partnerships",
-      description:
-        "We connect our members with trusted international partners to build strong, mutually beneficial, and long-term business relationships.",
+        "https://www.shutterstock.com/image-photo/business-administration-businessman-handshake-on-260nw-2671260781.jpg",
+      title: t("strategic-business-partnerships"),
+      description: t("strategic-business-partnerships-desc"),
       features: [
-        "Partner identification and matchmaking",
-        "Building win-win cooperation models",
-        "Long-term partnership development",
+        t("partner-identification-and-matchmaking"),
+        t("building-win-win-cooperation-models"),
+        t("long-term-partnership-development"),
       ],
     },
     {
       id: 4,
       image:
-        "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
-      title: "International Trade & Investment Consulting",
-      description:
-        "Our experts provide professional consulting to support decision-making in international trade, investments, and market expansion.",
+        "https://www.shutterstock.com/image-photo/container-truck-ship-port-business-260nw-2522912609.jpg",
+      title: t("international-trade-and-investment-consulting"),
+      description: t("international-trade-and-investment-consulting-desc"),
       features: [
-        "International market expertise",
-        "Investment and trade strategy consulting",
-        "Professional guidance and insights",
+        t("international-market-expertise"),
+        t("investment-and-trade-strategy-consulting"),
+        t("professional-guidance-and-insights"),
       ],
     },
     {
       id: 5,
       image:
-        "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80",
-      title: "Member Support & Advisory",
-      description:
-        "Members benefit from continuous support and advisory services to ensure successful execution of projects and international operations.",
+        "https://www.shutterstock.com/image-photo/professional-team-call-center-agents-260nw-2682370159.jpg",
+      title: t("member-support-and-advisory"),
+      description: t("member support desc"),
       features: [
-        "Dedicated expert support",
-        "Personalized advisory for premium members",
-        "Ongoing guidance throughout projects",
+        t("dedicated-expert-support"),
+        t("personalized-advisory-for-premium-members"),
+        t("ongoing-guidance-throughout-projects"),
       ],
     },
     {
       id: 6,
       image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-      title: "Networking & Global Community",
-      description:
-        "We offer access to a global network of investors, exporters, and industry leaders, enabling collaboration and new business opportunities worldwide.",
+        "https://www.shutterstock.com/image-photo/icons-representing-social-media-interaction-260nw-2666991357.jpg",
+      title: t("networking-and-global-community"),
+      description: t("networking-and-global-community des"),
       features: [
-        "International networking opportunities",
-        "Invitations to events and webinars",
-        "Access to a global business community",
+        t("international-networking-opportunities"),
+        t("invitations-to-events-and-webinars"),
+        t("access-to-a-global-business-community"),
       ],
     },
   ];
@@ -101,13 +97,10 @@ export default function Services() {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-20 animate-fadeIn">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-slate-900">
-            Our Services
+            {t("our-services")}
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            We support companies, investors, and exporters in accessing
-            international markets by providing exclusive opportunities,
-            strategic partnerships, and expert guidance in global trade and
-            investment.
+            {t("our-services des")}
           </p>
         </div>
 
@@ -199,19 +192,19 @@ export default function Services() {
           {[
             {
               number: "50+",
-              label: "Successful International Projects",
+              label: t("successful-international-projects"),
             },
             {
               number: "30+",
-              label: "Countries and Markets Covered",
+              label: t("countries-and-markets-covered"),
             },
             {
               number: "100%",
-              label: "Trusted Partnerships & Client Satisfaction",
+              label: t("trusted-partnerships-and-client-satisfaction"),
             },
             {
               number: "15+",
-              label: "Years of Experience in Global Trade & Investment",
+              label: t("years-of-experience-in-global-trade-and-investment"),
             },
           ].map((stat, idx) => (
             <div
@@ -236,16 +229,14 @@ export default function Services() {
 
             <div className="relative z-10">
               <h2 className="text-4xl font-bold mb-4 text-white">
-                "Ready to Expand Your Business Globally?"
+                {t("ready-to-expand-your-business-globally")}
               </h2>
               <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
-                "Join our international network and gain access to exclusive
-                investment opportunities, export deals, and expert support
-                designed to help you succeed worldwide."
+                {t("ready-to-expand-your-business-globally desc")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2">
-                  Apply for Membership
+                  {t("apply-for-membership-0")}
                   <svg
                     className="w-5 h-5"
                     fill="none"
