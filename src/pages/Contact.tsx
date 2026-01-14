@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { FaInstagram } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -13,12 +15,26 @@ export default function Contact() {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
-    setSubmitted(true);
 
-    setTimeout(() => {
-      setSubmitted(false);
+    try {
+      await emailjs.send(
+        "service_pu8p4cv",
+        "template_qcjrunn",
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          service: formData.service,
+          message: formData.message,
+          to_email: "contact.abinvest2026@gmail.com",
+        },
+        "wtMNx7iLZuXKk4N1N"
+      );
+
+      setSubmitted(true);
       setFormData({
         name: "",
         email: "",
@@ -27,7 +43,10 @@ export default function Contact() {
         service: "",
         message: "",
       });
-    }, 3000);
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      alert("Failed to send message. Please try again.");
+    }
   };
 
   const handleChange = (
@@ -69,10 +88,12 @@ export default function Contact() {
   ];
 
   const socialLinks = [
-    { name: "LinkedIn", icon: "💼", url: "#", color: "bg-blue-600" },
-    { name: "Twitter", icon: "🐦", url: "#", color: "bg-sky-500" },
-    { name: "Facebook", icon: "📘", url: "#", color: "bg-blue-700" },
-    { name: "Instagram", icon: "📸", url: "#", color: "bg-pink-600" },
+    {
+      name: "Instagram",
+      icon: FaInstagram,
+      url: "https://www.instagram.com/aahmadova_a?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      color: "bg-pink-600",
+    },
   ];
 
   const faqs = [
@@ -353,7 +374,7 @@ export default function Contact() {
                       href={social.url}
                       className={`${social.color} text-white rounded-xl p-4 flex items-center gap-3 hover:scale-105 transition-transform duration-300 shadow-md`}
                     >
-                      <span className="text-2xl">{social.icon}</span>
+                      <FaInstagram />
                       <span className="font-semibold">{social.name}</span>
                     </a>
                   ))}

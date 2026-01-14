@@ -1,6 +1,7 @@
 import { ChevronDown, Mail, Phone } from "lucide-react";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { FaEnvelope, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   const { i18n } = useTranslation();
@@ -137,20 +138,23 @@ export default function Footer() {
               {t("pages.footer.connectWithUsDescription")}
             </p>
             <div className="flex gap-3 mb-6">
-              {[
-                { icon: "in", label: "LinkedIn" },
-                { icon: "✉", label: "Email" },
-                { icon: "🌐", label: "Website" },
-              ].map((social, idx) => (
-                <a
-                  key={idx}
-                  href="#"
-                  title={social.label}
-                  className="w-11 h-11 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors"
-                >
-                  <span className="text-sm font-bold">{social.icon}</span>
-                </a>
-              ))}
+              <a
+                href="https://www.instagram.com/aahmadova_a?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                title="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-11 h-11 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-pink-600 transition-colors"
+              >
+                <FaInstagram className="text-white text-lg" />
+              </a>
+
+              <a
+                href="mailto:contact.abinvest2026@gmail.com"
+                title="Email"
+                className="w-11 h-11 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors"
+              >
+                <FaEnvelope className="text-white text-lg" />
+              </a>
             </div>
             <div className="space-y-2">
               <a
