@@ -135,7 +135,7 @@ export default function Home() {
         t("digital-platform-integration"),
       ],
       ideal: t(
-        "ideal-for-companies-seeking-specific-market-entry-or-investment-opportunities"
+        "ideal-for-companies-seeking-specific-market-entry-or-investment-opportunities",
       ),
     },
     {
@@ -150,7 +150,7 @@ export default function Home() {
         t("ongoing-digital-support"),
       ],
       ideal: t(
-        "ideal-for-growing-businesses-and-active-exporters-seeking-sustained-growth"
+        "ideal-for-growing-businesses-and-active-exporters-seeking-sustained-growth",
       ),
       popular: true,
     },
@@ -166,7 +166,7 @@ export default function Home() {
         t("dedicated-account-management"),
       ],
       ideal: t(
-        "ideal-for-businesses-committed-to-comprehensive-international-expansion"
+        "ideal-for-businesses-committed-to-comprehensive-international-expansion",
       ),
     },
   ];
@@ -194,21 +194,6 @@ export default function Home() {
     },
   ];
 
-  const stats = [
-    { number: "$65M+", label: t("foreign-capital-attracted"), icon: Target },
-    {
-      number: "10+",
-      label: t("international-contracts-signed"),
-      icon: Award,
-    },
-    {
-      number: "1,200+",
-      label: t("event-participants-annually"),
-      icon: TrendingUp,
-    },
-    { number: "25+", label: t("countries-in-our-network"), icon: MapPin },
-  ];
-
   const isVisible = (sectionId: string) => visibleSections.has(sectionId);
 
   useEffect(() => {
@@ -226,7 +211,7 @@ export default function Home() {
           }
         });
       },
-      { threshold: 0.15 }
+      { threshold: 0.15 },
     );
 
     document.querySelectorAll("section[id]").forEach((section) => {
@@ -281,23 +266,6 @@ export default function Home() {
                 >
                   {t("explore-services")}
                 </a>
-              </div>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                {stats.map((stat, idx) => {
-                  const Icon = stat.icon;
-                  return (
-                    <div
-                      key={idx}
-                      className="text-center bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20"
-                    >
-                      <Icon className="mx-auto mb-2 text-blue-400" size={28} />
-                      <div className="text-3xl font-bold text-white mb-1">
-                        {stat.number}
-                      </div>
-                      <div className="text-sm text-slate-300">{stat.label}</div>
-                    </div>
-                  );
-                })}
               </div>
             </div>
           </div>
@@ -529,7 +497,7 @@ export default function Home() {
             </h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
               {t(
-                "choose-the-collaboration-model-that-best-fits-your-business-needs"
+                "choose-the-collaboration-model-that-best-fits-your-business-needs",
               )}
             </p>
           </div>
@@ -682,48 +650,6 @@ export default function Home() {
               <p className="text-lg text-slate-600 leading-relaxed mb-8">
                 {t("about-ab-invest desc2")}
               </p>
-
-              <div className="grid grid-cols-2 gap-6">
-                {[
-                  {
-                    icon: Award,
-                    number: "$65M+",
-                    label: t("capital-attracted"),
-                  },
-                  {
-                    icon: Globe,
-                    number: "10+",
-                    label: t("international-contracts"),
-                  },
-                  {
-                    icon: TrendingUpIcon,
-                    number: "22+",
-                    label: t("b2b-partnerships"),
-                  },
-                  {
-                    icon: Users,
-                    number: "720+",
-                    label: t("platform-users"),
-                  },
-                ].map((stat, idx) => {
-                  const Icon = stat.icon;
-                  return (
-                    <div
-                      key={idx}
-                      className="group bg-linear-to-br from-slate-50 to-blue-50 p-6 rounded-2xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
-                    >
-                      <Icon
-                        className="text-blue-600 mb-3 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300"
-                        size={32}
-                      />
-                      <div className="text-3xl font-bold text-slate-900 mb-1">
-                        {stat.number}
-                      </div>
-                      <div className="text-sm text-slate-600">{stat.label}</div>
-                    </div>
-                  );
-                })}
-              </div>
             </div>
 
             <div className="relative">
@@ -756,7 +682,7 @@ export default function Home() {
                       {
                         title: t("innovation"),
                         desc: t(
-                          "leveraging-technology-for-competitive-advantage"
+                          "leveraging-technology-for-competitive-advantage",
                         ),
                       },
                       {
@@ -770,7 +696,7 @@ export default function Home() {
                       {
                         title: t("growth"),
                         desc: t(
-                          "driving-economic-diversification-and-development"
+                          "driving-economic-diversification-and-development",
                         ),
                       },
                     ].map((value, idx) => (
@@ -869,7 +795,7 @@ export default function Home() {
                 <button
                   onClick={() =>
                     alert(
-                      "Thank you for your interest! We will contact you soon."
+                      "Thank you for your interest! We will contact you soon.",
                     )
                   }
                   className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center gap-2 shadow-lg shadow-blue-600/20"
