@@ -5,3 +5,9 @@ html, body, #root {
 body {
   margin: 0;
 }
+/* never allow sideways scrolling; clip (unlike hidden) keeps sticky elements working */
+html,
+body {
+  overflow-x: clip;
+  max-width: 100%;
+}

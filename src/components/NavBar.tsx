@@ -1,20 +1,42 @@
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function NavBar() {
   const { t } = useTranslation();
+  const { pathname } = useLocation();
 
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-    window.addEventListener("scroll", handleScroll);
+    const handleScroll = () => setIsScrolled(window.scrollY > 10);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // close the mobile menu on navigation
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
+
+  // lock page scroll while the mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
+  // close the menu if the viewport grows to desktop size
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 1024px)");
+    const onChange = () => mq.matches && setIsOpen(false);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
   }, []);
 
   const navLinks = [
@@ -29,31 +51,43 @@ export default function NavBar() {
       to: "/working-models",
     },
     { name: t("nav.aboutUs", { defaultValue: "About Us" }), to: "/about" },
+    { name: t("nav.contact", { defaultValue: "Contact" }), to: "/contact" },
   ];
 
   return (
-    <nav
-      className={`w-full bg-sky-950 transition-all duration-300 ${
-        isScrolled ? "fixed top-0 left-0 right-0 shadow-md z-50" : ""
+    <header
+      className={`sticky top-0 z-50 w-full bg-sky-950 transition-shadow duration-300 ${
+        isScrolled || isOpen ? "shadow-lg shadow-slate-950/30" : ""
       }`}
     >
-      <div className="w-full px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-24">
-          <div className="shrink-0">
-            <img src="/logo.png" className="md:w-80 md:h-70 w-50 h-60 md:p-16 p-14" />
-          </div>
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between gap-4 h-16 lg:grid lg:grid-cols-[1fr_auto_1fr]">
+          {/* logo.png has wide transparent margins, so crop to the artwork */}
+          <Link
+            to="/"
+            aria-label="Home"
+            className="relative block shrink-0 overflow-hidden h-12 lg:h-14 aspect-[410/215] lg:justify-self-start"
+          >
+            <img
+              src="/logo.png"
+              alt="Logo"
+              className="absolute max-w-none"
+              style={{ width: "121.95%", left: "-9.756%", top: "-62.79%" }}
+            />
+          </Link>
 
-          <div className="hidden md:flex items-center justify-center flex-1">
-            <div className="flex space-x-8">
+          <div className="hidden lg:flex items-center justify-center">
+            <div className="flex items-center gap-1 xl:gap-4">
               {navLinks.map((link) => (
                 <NavLink
-                  key={link.name}
+                  key={link.to}
                   to={link.to}
+                  end
                   className={({ isActive }) =>
-                    `px-3 py-2 text-sm font-medium transition-colors ${
+                    `px-3 py-2 text-sm font-medium whitespace-nowrap rounded-full transition-colors ${
                       isActive
-                        ? "text-white underline underline-offset-4"
-                        : "text-white hover:text-white"
+                        ? "bg-white/15 text-white"
+                        : "text-sky-100/80 hover:text-white hover:bg-white/10"
                     }`
                   }
                 >
@@ -63,57 +97,51 @@ export default function NavBar() {
             </div>
           </div>
 
-          <div className="hidden md:block">
-            <Link to="/contact">
-              <button className="bg-white text-sky-950 px-6 py-2 rounded-md text-sm font-medium hover:bg-white transition-colors">
-                {t("nav.contact", { defaultValue: "Contact" })}
-              </button>
-            </Link>
+          <div className="hidden lg:block lg:justify-self-end">
+            <LanguageSwitcher variant="dark" />
           </div>
 
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-white p-2"
-            >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={() => setIsOpen((o) => !o)}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
+            className="lg:hidden text-white p-2 -mr-2 rounded-full hover:bg-white/10 transition-colors"
+          >
+            {isOpen ? <X size={26} /> : <Menu size={26} />}
+          </button>
         </div>
-      </div>
+      </nav>
 
       {isOpen && (
-        <div className="md:hidden fixed inset-0 top-16 bg-white z-40">
-          <div className="h-full px-6 pt-6 pb-3 flex flex-col">
+        <div className="lg:hidden fixed inset-x-0 top-16 h-[calc(100dvh-4rem)] z-40 bg-white overflow-y-auto overscroll-contain">
+          <div className="min-h-full px-6 pt-2 pb-6 flex flex-col">
             {navLinks.map((link) => (
               <NavLink
-                key={link.name}
+                key={link.to}
                 to={link.to}
+                end
                 className={({ isActive }) =>
-                  `block px-4 py-4 rounded-md text-lg font-medium border-b border-gray-100 ${
+                  `block px-2 py-3 [@media(min-height:700px)]:py-4 text-lg font-medium border-b border-slate-100 ${
                     isActive
-                      ? "text-blue-900"
-                      : "text-blue-900 hover:bg-blue-50"
+                      ? "text-sky-700"
+                      : "text-sky-950 hover:text-sky-700"
                   }`
                 }
-                onClick={() => setIsOpen(false)}
-                end
               >
                 {link.name}
               </NavLink>
             ))}
-            <Link
-              to="/contact"
-              onClick={() => setIsOpen(false)}
-              className="mt-auto mb-6"
-            >
-              <button className="w-full bg-blue-900 text-white px-4 py-4 rounded-md text-lg font-medium hover:bg-blue-800 transition-colors">
-                {t("nav.contact", { defaultValue: "Contact" })}
-              </button>
-            </Link>
+            <div className="mt-auto pt-6">
+              <LanguageSwitcher
+                variant="light"
+                direction="up"
+                className="w-full"
+              />
+            </div>
           </div>
         </div>
       )}
-    </nav>
+    </header>
   );
 }

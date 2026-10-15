@@ -1,9 +1,28 @@
+import {
+  ArrowRight,
+  BarChart3,
+  Briefcase,
+  CheckCircle2,
+  Globe2,
+  MapPin,
+  Quote,
+  SearchX,
+  Star,
+  UserRound,
+} from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import Reveal from "../components/Reveal";
+
+const img = (id: string, w = 1600) =>
+  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=85`;
+
+const ALL = "__all__";
 
 export default function References() {
   const { t } = useTranslation();
-  const [activeTab, setActiveTab] = useState("all");
+  const [activeTab, setActiveTab] = useState(ALL);
 
   const references = [
     {
@@ -11,7 +30,7 @@ export default function References() {
       company: t("global-investment-group"),
       industry: t("investment-and-finance"),
       country: t("international"),
-      logo: "https://www.shutterstock.com/image-photo/money-global-invest-3d-render-260nw-2565789229.jpg",
+      image: img("1611974789855-9c2a0a7236a3"),
       testimonial: t("testimonial-1"),
       person: t("senior-investment-manager"),
       position: t("investment-director"),
@@ -22,7 +41,7 @@ export default function References() {
       company: t("international-export-company"),
       industry: t("export-and-trade"),
       country: t("europe-middle-east"),
-      logo: "https://www.shutterstock.com/image-photo/aerial-view-freight-shipping-transport-260nw-2614392349.jpg",
+      image: img("1578575437130-527eed3abbec"),
       testimonial: t("testimonial-2"),
       person: t("export-manager"),
       position: t("head-of-international-trade"),
@@ -33,7 +52,7 @@ export default function References() {
       company: t("global-trade-partner"),
       industry: t("international-trade"),
       country: t("multinational"),
-      logo: "https://www.shutterstock.com/image-photo/businessman-presents-holographic-global-partnership-260nw-2428029999.jpg",
+      image: img("1600880292203-757bb62b4baf"),
       testimonial: t("testimonial-3"),
       person: t("business-development-lead"),
       position: t("partnership-manager"),
@@ -42,239 +61,237 @@ export default function References() {
   ];
 
   const stats = [
+    { icon: BarChart3, number: "50+", label: t("successful-international-projects") },
+    { icon: Globe2, number: "30+", label: t("countries-and-markets-reached") },
+    { icon: Star, number: "%95", label: t("partner-and-member-satisfaction") },
     {
-      number: "50+",
-      label: t("successful-international-projects"),
-      icon: "📊",
-    },
-    { number: "30+", label: t("countries-and-markets-reached"), icon: "🌍" },
-    {
-      number: "%95",
-      label: t("partner-and-member-satisfaction"),
-      icon: "⭐",
-    },
-    {
+      icon: Briefcase,
       number: "€50M+",
       label: t("total-trade-and-investment-volume-facilitated"),
-      icon: "💼",
     },
   ];
 
-  const industries = [
-    t("all"),
-    t("investment-and-finance-0"),
-    t("export-and-trade-0"),
-    t("manufacturing-and-industry"),
-    t("energy-and-sustainability"),
-    t("healthcare-and-pharmaceuticals"),
-    t("automotive-and-logistics"),
-  ];
+  // filter chips are built from the industries that actually have a reference,
+  // so no chip ever leads to an empty list
+  const industries = Array.from(new Set(references.map((r) => r.industry)));
 
-  const filteredReferences =
-    activeTab === "all"
+  const filtered =
+    activeTab === ALL
       ? references
-      : references.filter((ref) => ref.industry === activeTab);
+      : references.filter((r) => r.industry === activeTab);
 
   return (
-    <section className="min-h-screen bg-white">
-      <div className="relative py-20 px-6 bg-linear-to-br from-slate-50 to-white">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
-            {t("success-stories-and-trusted-partnerships")}
-          </h1>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            {t("success-stories-and-trusted-partnerships-desc")}
-          </p>
-        </div>
-      </div>
+    <div className="w-full bg-white text-slate-900 antialiased">
+      {/* HEADER */}
+      <section className="relative overflow-hidden bg-slate-950">
+        <img
+          src={img("1521737711867-e3b97375f902", 2400)}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-linear-to-r from-slate-950 via-slate-950/85 to-slate-950/50" />
+        <div className="absolute -top-32 -left-32 w-125 h-125 rounded-full bg-sky-500/20 blur-3xl" />
 
-      <div className="py-16 px-6 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {stats.map((stat, idx) => (
-              <div
-                key={idx}
-                className="text-center p-6 bg-slate-50 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300"
-                style={{
-                  animation: `slideUp 0.6s ease-out ${idx * 0.1}s both`,
-                }}
-              >
-                <div className="text-4xl mb-3">{stat.icon}</div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-slate-600 font-medium">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div className="py-8 px-6 bg-white border-b border-slate-200">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-wrap gap-3 justify-center">
-            {industries.map((industry) => (
-              <button
-                key={industry}
-                onClick={() => setActiveTab(industry)}
-                className={`px-6 py-2.5 rounded-full font-semibold text-sm transition-all duration-300 ${
-                  activeTab === industry
-                    ? "bg-blue-600 text-white shadow-lg"
-                    : "bg-slate-100 text-slate-700 hover:bg-slate-200"
-                }`}
-              >
-                {industry === t("pages.references.industry.all")
-                  ? t("pages.references.industry.all")
-                  : industry}
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div className="py-16 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredReferences.map((ref, index) => (
-              <div
-                key={ref.id}
-                className="bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-blue-300 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group"
-                style={{
-                  animation: `slideUp 0.6s ease-out ${index * 0.1}s both`,
-                }}
-              >
-                <div className="relative h-48 overflow-hidden bg-slate-100">
-                  <img
-                    src={ref.logo}
-                    alt={ref.company}
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-linear-to-t from-slate-900/60 to-transparent"></div>
-
-                  <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    {ref.industry}
-                  </div>
-
-                  <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm text-slate-900 px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-2">
-                    <span>🌍</span> {ref.country}
-                  </div>
-                </div>
-
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
-                    {ref.company}
-                  </h3>
-
-                  <p className="text-slate-600 text-sm leading-relaxed mb-4 italic">
-                    "{ref.testimonial}"
-                  </p>
-
-                  <div className="border-t border-slate-100 pt-4 mb-4">
-                    <p className="font-semibold text-slate-900 text-sm">
-                      {ref.person}
-                    </p>
-                    <p className="text-slate-500 text-xs">{ref.position}</p>
-                  </div>
-
-                  <div className="bg-blue-50 border border-blue-100 rounded-lg p-3 flex items-start gap-2">
-                    <svg
-                      className="w-5 h-5 text-blue-600 shrink-0 mt-0.5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    <p className="text-blue-900 text-sm font-semibold">
-                      {ref.result}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* <div className="py-16 px-6 bg-slate-50">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-slate-900 mb-4">
-            {t("pages.references.title") || "Trusted Brands"}
-          </h2>
-          <p className="text-slate-600 mb-12">
-            {t("pages.references.description") ||
-              "Valuable business partners we have worked with together"}
-          </p>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <div
-                key={item}
-                className="bg-white rounded-xl p-6 border border-slate-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300 flex items-center justify-center"
-              >
-                <div className="w-full h-16 bg-slate-100 rounded flex items-center justify-center text-slate-400 font-semibold">
-                  LOGO {item}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
-
-      <div className="py-20 px-6 bg-linear-to-br from-slate-900 to-slate-800">
-        <div className="max-w-4xl mx-auto text-center relative">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600 rounded-full filter blur-3xl opacity-20"></div>
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl opacity-20"></div>
-
-          <div className="relative z-10">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              {t("become-part-of-our-global-success-network")}
-            </h2>
-            <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-              {t("become part desc")}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-32">
+          <div className="max-w-3xl animate-fadeIn">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-6 wrap-break-word">
+              {t("success-stories-and-trusted-partnerships")}
+            </h1>
+            <p className="text-lg md:text-xl text-slate-300 leading-relaxed">
+              {t("success-stories-and-trusted-partnerships-desc")}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-xl inline-flex items-center justify-center gap-2">
-                {t("apply-for-membership")}
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </button>
-              <button className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 backdrop-blur-sm">
-                {t("contact-our-team")}
-              </button>
+          </div>
+        </div>
+      </section>
+
+      {/* STATS — overlaps the header */}
+      <section className="relative z-10 -mt-10 sm:-mt-14">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
+            {stats.map((stat, idx) => {
+              const Icon = stat.icon;
+              return (
+                <Reveal key={idx} delay={idx * 80}>
+                  <div className="h-full rounded-2xl sm:rounded-3xl bg-white border border-slate-200/80 shadow-xl shadow-slate-900/10 p-4 sm:p-7">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-sky-50 flex items-center justify-center mb-4">
+                      <Icon className="text-sky-700" size={22} />
+                    </div>
+                    <div className="text-3xl sm:text-4xl font-bold text-slate-950 mb-1.5">
+                      {stat.number}
+                    </div>
+                    <div className="text-xs sm:text-sm text-slate-600 leading-snug">
+                      {stat.label}
+                    </div>
+                  </div>
+                </Reveal>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* REFERENCES */}
+      <section className="py-16 sm:py-20 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* filter bar: scrolls sideways inside itself on small screens */}
+          <div className="-mx-4 sm:mx-0 px-4 sm:px-0 mb-10 overflow-x-auto sm:overflow-visible [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            <div
+              role="tablist"
+              className="flex sm:flex-wrap items-center gap-2 sm:gap-3 w-max sm:w-auto"
+            >
+              {[ALL, ...industries].map((industry) => {
+                const active = activeTab === industry;
+                const count =
+                  industry === ALL
+                    ? references.length
+                    : references.filter((r) => r.industry === industry).length;
+                return (
+                  <button
+                    key={industry}
+                    role="tab"
+                    aria-selected={active}
+                    onClick={() => setActiveTab(industry)}
+                    className={`inline-flex items-center gap-2 whitespace-nowrap rounded-full px-5 py-2.5 text-sm font-semibold transition-all duration-300 ${
+                      active
+                        ? "bg-slate-950 text-white shadow-lg shadow-slate-900/20"
+                        : "bg-slate-100 text-slate-700 hover:bg-slate-200"
+                    }`}
+                  >
+                    {industry === ALL ? t("all") : industry}
+                    <span
+                      className={`rounded-full px-2 py-0.5 text-xs ${
+                        active ? "bg-white/20" : "bg-white text-slate-500"
+                      }`}
+                    >
+                      {count}
+                    </span>
+                  </button>
+                );
+              })}
             </div>
           </div>
+
+          {filtered.length === 0 ? (
+            <div className="flex flex-col items-center py-20 text-slate-400">
+              <SearchX size={40} className="mb-4" />
+              <button
+                onClick={() => setActiveTab(ALL)}
+                className="font-semibold text-sky-700 hover:underline"
+              >
+                {t("all")}
+              </button>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+              {filtered.map((ref, idx) => (
+                <Reveal key={ref.id} delay={idx * 100}>
+                  <article className="group h-full flex flex-col overflow-hidden rounded-3xl bg-white border border-slate-200/80 shadow-sm hover:shadow-2xl hover:shadow-slate-900/10 transition-all duration-500">
+                    <div className="relative aspect-16/10 overflow-hidden shrink-0">
+                      <img
+                        src={ref.image}
+                        alt={ref.company}
+                        loading="lazy"
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-linear-to-t from-slate-950/80 via-slate-950/10 to-transparent" />
+                      <div className="absolute top-4 left-4 rounded-full bg-white/90 backdrop-blur-md px-3.5 py-1.5 text-xs font-semibold text-sky-900">
+                        {ref.industry}
+                      </div>
+                      <div className="absolute bottom-4 left-5 right-5 flex items-end justify-between gap-3">
+                        <h3 className="text-xl font-bold text-white leading-snug">
+                          {ref.company}
+                        </h3>
+                        <span className="shrink-0 inline-flex items-center gap-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 px-3 py-1 text-xs font-medium text-white">
+                          <MapPin size={12} />
+                          {ref.country}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col flex-1 p-6 sm:p-7">
+                      <Quote className="text-sky-200 mb-3" size={32} />
+                      <p className="text-slate-700 leading-relaxed mb-6">
+                        {ref.testimonial}
+                      </p>
+
+                      <div className="flex items-center gap-3 mb-6">
+                        <div className="w-11 h-11 rounded-full bg-sky-950 flex items-center justify-center shrink-0">
+                          <UserRound className="text-cyan-200" size={20} />
+                        </div>
+                        <div className="min-w-0">
+                          <p className="font-semibold text-slate-950 text-sm leading-snug">
+                            {ref.person}
+                          </p>
+                          <p className="text-slate-500 text-xs leading-snug">
+                            {ref.position}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="mt-auto flex items-start gap-3 rounded-2xl bg-sky-50 border border-sky-100 p-4">
+                        <CheckCircle2 className="text-sky-700 shrink-0 mt-0.5" size={20} />
+                        <p className="text-sky-950 text-sm font-semibold leading-snug">
+                          {ref.result}
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </Reveal>
+              ))}
+            </div>
+          )}
         </div>
-      </div>
+      </section>
+
+      {/* CTA */}
+      <section className="pb-16 sm:pb-20 lg:pb-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Reveal>
+            <div className="relative overflow-hidden rounded-4xl bg-slate-950 px-6 py-14 sm:px-12 sm:py-20 text-center shadow-2xl shadow-slate-900/20">
+              <img
+                src={img("1486406146926-c627a92ad1ab", 2000)}
+                alt=""
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover opacity-30"
+              />
+              <div className="absolute inset-0 bg-linear-to-br from-slate-950/90 via-sky-950/80 to-slate-950/90" />
+              <div className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-cyan-400/20 blur-3xl" />
+
+              <div className="relative">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 max-w-3xl mx-auto leading-tight">
+                  {t("become-part-of-our-global-success-network")}
+                </h2>
+                <p className="text-slate-300 text-lg mb-10 max-w-2xl mx-auto">
+                  {t("become part desc")}
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link
+                    to="/contact"
+                    className="group inline-flex items-center justify-center gap-2 rounded-full bg-white text-slate-950 px-8 py-4 font-semibold hover:bg-cyan-200 transition-colors"
+                  >
+                    {t("apply-for-membership")}
+                    <ArrowRight
+                      size={20}
+                      className="transition-transform group-hover:translate-x-1"
+                    />
+                  </Link>
+                  <Link
+                    to="/contact"
+                    className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/5 backdrop-blur-md text-white px-8 py-4 font-semibold hover:bg-white/15 transition-colors"
+                  >
+                    {t("contact-our-team")}
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
 
       <style>{`
-        @keyframes slideUp {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .animate-fadeIn { animation: fadeIn 1s ease-out both; }
       `}</style>
-    </section>
+    </div>
   );
 }

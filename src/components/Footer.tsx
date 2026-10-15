@@ -29,7 +29,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-slate-900 text-white py-16">
+    <footer className="bg-slate-900 text-white pt-16 pb-5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
@@ -193,6 +193,16 @@ export default function Footer() {
               {t("pages.footer.termsOfService")}
             </a>
           </div>
+        </div>
+
+        <div className="mt-5 pt-4 border-t border-slate-800 text-center text-sm text-slate-300">
+          {t("pages.footer.createdBy", { defaultValue: "Created by" })}{" "}
+          <a
+            href="mailto:fathtest5@gmail.com"
+            className="font-semibold text-cyan-300 hover:text-cyan-200 underline-offset-4 hover:underline transition-colors"
+          >
+            Fathstack
+          </a>
         </div>
       </div>
     </footer>
